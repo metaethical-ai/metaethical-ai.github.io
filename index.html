@@ -383,9 +383,11 @@
 			});
 			
 			set_width = function() {
-				var width =	parseInt($(window).width()) - 
-										parseInt($('#left').css('width')) - 5 + 'px';
-				$('#right').css('width', width);
+				if (window.innerHeight < window.innerWidth) {
+					var width =	parseInt($(window).width()) - 
+											parseInt($('#left').css('width')) - 5 + 'px';
+					$('#right').css('width', width);
+				}
 			}
 			
 			toggle_page = function() {

@@ -47,10 +47,24 @@
 						<br/>
 						<a id="mailto" href=""></a>
 					</p>				
+					<a id="arrow-up" onclick="toggle_page();">
+						<i class="fas fa-chevron-up fa-3x"></i>					
+					</a>					
 				</div>
 			</div>
 		</div>
 		<style type="text/css">
+			#arrow-up {
+				display: block;
+				margin: 0 auto;
+				position: relative;
+				cursor: pointer;
+				top: -10vh;
+				width: 48px;
+			}
+			#arrow-up:hover {
+				color: #81dfff;
+			}
 			#author {
 				text-align: right !important;
 				padding-bottom: 2.8vh;
@@ -339,6 +353,21 @@
 			#abstract {
 				position: absolute;
 				top: -100vh;
+			}
+			@media screen and (orientation:portrait) {
+				#left {
+					display: none;
+				}
+				#right {
+					float: none;
+					width: 84vh;
+				}
+				body, #window {
+					min-width: auto !important;
+				}
+				#arrow-up {
+					display: none;
+				}
 			}
 	  </style>
 		<script type="text/javascript">

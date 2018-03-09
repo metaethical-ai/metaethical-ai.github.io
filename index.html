@@ -364,13 +364,14 @@
 				if (home_active) {
 					active = '#home';
 					other = '#abstract';
+					$(active).animate({ top: '100vh' }, speed, 'swing');
+					$(other).animate({ top: '0' }, speed, 'swing');
 				} else {
 					active = '#abstract';
 					other = '#home';
+					$(active).animate({ top: '-100vh' }, speed, 'swing');
+					$(other).animate({ top: '0' }, speed, 'swing');
 				}
-				$(active).animate({ top: '100vh' }, speed, 'swing',
-													 function() { $(active).css('top', '-100vh') });
-				$(other).animate({ top: '0' }, speed, 'swing');
 			}
 		</script>
 	</body>

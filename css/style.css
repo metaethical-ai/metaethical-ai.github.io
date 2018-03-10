@@ -1,0 +1,266 @@
+#arrow-up {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	cursor: pointer;
+	top: -10vh;
+	width: 48px;
+}
+#arrow-up:hover {
+	color: #81dfff;
+}
+#author {
+	text-align: right !important;
+	padding-bottom: 2.8vh;
+}
+#mailto {
+	color: white;
+	letter-spacing: 0.75px;
+}
+#mailto:hover {
+	color: #81dfff;
+}
+#home h3 {
+	text-shadow: 2px 2px #111;
+}
+#back {
+	display: block;
+	padding-top: 0vh;
+	font-size: 2.4vh;
+	cursor: pointer;
+	position: absolute;
+	top: 1.7vh;
+	left: 8%;
+}
+#back span {
+	font-size: 4vh;
+	position: relative;
+	top: 0.3vh;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: rgb(47,38,55);
+	background-image: url("img/black-thread.png");
+	min-width: 900px;
+	overflow-x: scroll;
+}
+#window {
+	height: 100vh;
+	min-width: 900px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+#left {
+	height: 100%;
+	float: left;
+	width: auto;
+	position: relative;
+	z-index: -10;
+	max-width: 50%;
+}
+#robot2 {
+	height: 100%;
+	position: relative;
+	z-index: -11;
+	opacity: 0.01;
+	max-width: 50%;
+}
+#robot {
+	height: 100%;
+	z-index: -5;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#right {
+	float: left;
+	min-width: 400px;
+	height: 100vh;
+	width: 50%;
+	color: rgb(232, 249, 252);
+	font-family: 'Libre Baskerville', Georgia, serif;
+	max-height: 100vh;
+	overflow-y: visible;
+	overflow-x:visible;
+	position: relative;
+	z-index: 10;
+	background: rgb(47,38,55);
+	background-image: url("img/black-thread.png");
+}
+#right h1 span {
+	color: rgb(183,237,239);
+}
+#right h1 {
+	font-size: 7.1vh;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 8.72vh; 
+	margin-bottom: 3.967vh;
+	letter-spacing: 4px;
+	text-shadow: 4px 4px #111;
+	font-family: 'PT Sans Caption', sans-serif; 
+}
+#right h3 {
+	text-align: center;
+	margin-bottom: 12.628vh;
+	letter-spacing: 1px;
+	font-family: 'PT Sans Caption', sans-serif; 
+	font-size: 3.0vh;
+}
+#right h3 em {
+	color: rgb(183,237,239) !Important;
+	text-decoration: underline;
+}
+#right h2 {
+	text-align: center;
+	margin-top: 1.017vh;
+	margin-bottom: 2.89vh;
+	letter-spacing: 0px;
+	color: #e5eff3;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 3.288vh;
+}
+input {
+	font-family: arial, helvetica, sans-serif !important;
+}
+#abstract {
+	padding: 0 8%;
+	overflow-y: scroll;
+}
+#abstract p {
+	text-align: justify;
+	letter-spacing: 0.043vw;
+	font-size: 2.4vh;				
+	line-height: 130%;
+	margin-top: 1.89vh;
+}
+#abstract h3 {
+	margin-top: 0;				
+	padding-top: 2.0vh;
+	font-size: 3.6vh;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+#abstract h2 {
+	padding-top: 1.4vh;
+	text-align: left;
+	color: rgb(183,237,239);
+	letter-spacing: 1px;
+	border-bottom: 1px solid rgb(232, 249, 252); 
+	margin-bottom: 1.89vh;
+}
+#right h4 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 3.2vh;
+	margin-bottom: 5.12vh;
+	letter-spacing: 1px;
+	color: peru;
+}
+#inputs {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 1.517vh;
+}
+#email {
+	width: 58%;
+	font-size: 2.316vh;
+	padding: 0.58vh 38% 0.58vh 2%;
+	border-top-left-radius: 1.16vh;
+	border-bottom-left-radius: 1.16vh;
+	border-radius: 1.16vh;
+	margin-right: 0;
+	border-right: 0;
+	box-shadow: 0px 0px 1.1vh #d4fafe;
+}
+#button {
+	width: 37%;
+	padding: 0.58vh 3%;
+	border-radius: 1.16vh;
+	background: #416dc1;
+	font-size: 2.416vh;
+	color: white;
+	margin-left: -37%;
+	cursor: pointer;
+}
+#button:hover {
+	background: #4D82E5;
+	box-shadow: 0 0 6px white;
+}
+#notify {
+	padding: 2.18vh 15px;
+	padding-top: 2.18vh;
+	width: 350px;
+	margin: 0px auto;
+	border: 4px outset rgb(32, 110, 112);
+	background:  #3890a1;
+	max-width: 65vh;
+	box-shadow: 0px 3px 3px #222;
+}
+#abstract-arrow {
+	text-align: center;
+	margin-top: 11.22vh;
+	cursor: pointer;
+	color: #fff;
+	display: block;
+}
+#abstract-arrow:hover, #back:hover, #abstract h3:hover {
+	color: white !important;
+	color: #81dfff !important;
+}
+#abstract-arrow i {
+	font-size: 5.23vh;
+	color: inherit;
+}
+#read-abstract {
+	font-size: 4.07vh;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 2.18vh;
+	display: block;
+	text-decoration: underline;
+	color: inherit;
+}
+.page {
+	height: 100vh;				
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+#home {
+	position: absolute;
+	top: 0;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+#abstract {
+	position: absolute;
+	top: -100vh;
+}
+@media screen and (orientation:portrait) {
+	#left {
+		display: none !important;
+	}
+	#right {
+		float: none !important;
+		min-width: auto !important;
+		width: 100vw !important;
+	}
+	body, #window {
+		min-width: auto !important;
+		width: 100vw;
+	}
+	#arrow-up {
+		display: none !important;
+	}
+	#notify {
+		max-width: 75vw;
+		width: 75vw;
+	}
+	.page {
+		width: 84%;
+	}
+}
+

@@ -239,6 +239,9 @@ input {
 	position: absolute;
 	top: -100vh;
 }
+#abstract em {
+	letter-spacing: 1px;
+}
 @media screen and (orientation:portrait) {
 	#left {
 		display: none !important;

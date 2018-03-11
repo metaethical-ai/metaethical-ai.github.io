@@ -41,7 +41,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: rgb(47,38,55);
-	background-image: url("img/black-thread.png");
+	background-image: url("../img/black-thread.png");
 	min-width: 900px;
 	overflow-x: scroll;
 }
@@ -86,7 +86,7 @@ body {
 	position: relative;
 	z-index: 10;
 	background: rgb(47,38,55);
-	background-image: url("img/black-thread.png");
+	background-image: url("../img/black-thread.png");
 }
 #right h1 span {
 	color: rgb(183,237,239);

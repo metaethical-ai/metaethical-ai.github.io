@@ -1,3 +1,8 @@
+#logo {
+	height: 23vh;
+	margin: 2.2vh auto;
+	display: block;
+}
 #arrow-up {
 	display: block;
 	margin: 0 auto;
@@ -92,21 +97,22 @@ body {
 	color: rgb(183,237,239);
 }
 #right h1 {
-	font-size: 7.1vh;
+	font-size: 4.5vh;
 	text-align: center;
 	margin-top: 0;
-	padding-top: 8.72vh; 
-	margin-bottom: 3.967vh;
+	padding-top: 3.0vh; 
+	margin-bottom: 0.5vh;
 	letter-spacing: 4px;
 	text-shadow: 4px 4px #111;
 	font-family: 'PT Sans Caption', sans-serif; 
 }
 #right h3 {
 	text-align: center;
-	margin-bottom: 12.628vh;
+	margin-bottom: 2vh;
+	margin-top: 1.5vh;
 	letter-spacing: 1px;
 	font-family: 'PT Sans Caption', sans-serif; 
-	font-size: 3.0vh;
+	font-size: 2.8vh;
 }
 #right h3 em {
 	color: rgb(183,237,239) !Important;
@@ -154,7 +160,8 @@ input {
 	text-align: center;
 	font-weight: normal;
 	font-size: 3.2vh;
-	margin-bottom: 5.12vh;
+	margin-top: 6vh;
+	margin-bottom: 4vh;
 	letter-spacing: 1px;
 	color: peru;
 }
@@ -200,7 +207,7 @@ input {
 }
 #abstract-arrow {
 	text-align: center;
-	margin-top: 11.22vh;
+	margin-top: 9vh;
 	cursor: pointer;
 	color: #fff;
 	display: block;
@@ -217,7 +224,7 @@ input {
 	font-size: 4.07vh;
 	font-weight: bold;
 	letter-spacing: 1px;
-	margin-bottom: 2.18vh;
+	margin-bottom: 1.4vh;
 	display: block;
 	text-decoration: underline;
 	color: inherit;

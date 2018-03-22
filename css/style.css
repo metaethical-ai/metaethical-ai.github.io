@@ -13,6 +13,7 @@
 }
 #arrow-up:hover {
 	color: #81dfff;
+	color: #8dcef4;
 }
 #author {
 	text-align: right !important;
@@ -24,6 +25,7 @@
 }
 #mailto:hover {
 	color: #81dfff;
+	color: #8dcef4;
 }
 #home h3 {
 	text-shadow: 2px 2px #111;
@@ -95,6 +97,7 @@ body {
 }
 #right h1 span {
 	color: rgb(183,237,239);
+	color: #93e5e5;
 }
 #right h1 {
 	font-size: 4.5vh;
@@ -113,9 +116,11 @@ body {
 	letter-spacing: 1px;
 	font-family: 'PT Sans Caption', sans-serif; 
 	font-size: 2.8vh;
+	color: #dcdcdc;
 }
 #right h3 em {
 	color: rgb(183,237,239) !Important;
+	color: #8dcef4 !important;
 	text-decoration: underline;
 }
 #right h2 {
@@ -152,6 +157,7 @@ input {
 	padding-top: 1.4vh;
 	text-align: left;
 	color: rgb(183,237,239);
+	color: #93e5e5;
 	letter-spacing: 1px;
 	border-bottom: 1px solid rgb(232, 249, 252); 
 	margin-bottom: 1.89vh;
@@ -215,6 +221,7 @@ input {
 #abstract-arrow:hover, #back:hover, #abstract h3:hover {
 	color: white !important;
 	color: #81dfff !important;
+	color: #8dcef4 !important;
 }
 #abstract-arrow i {
 	font-size: 5.23vh;

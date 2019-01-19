@@ -6,6 +6,8 @@ $(document).ready(function() {
 	var email = 'june' + '@' + 'metaethical.ai';
 	$('#mailto').attr('href', 'mailto://' + email);
 	$('#mailto').html(email);
+	setTimeout("set_width()", 1000);
+	setTimeout("set_width()", 4000);
 });
 
 set_width = function() {

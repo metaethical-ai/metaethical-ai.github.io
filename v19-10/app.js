@@ -215,8 +215,12 @@ $(document).ready(function() {
 				window.select_tab('setlx');				
 				$('#quick_ref').show();
 				$('#cheat_sheet').hide();
+			} else {
+				window.select_tab('main');
 			}
-    }
+    } else { 
+			window.select_tab('main');
+		}
   };
   window.parse_anchor_hash();
 

@@ -545,6 +545,7 @@ pre {
   padding-left: 4px;
   background: #eee;
   margin-top: 2px;
+  box-sizing: content-box;  
 }
 #sidebar-footer #button {
   /* margin-left: -25px;  */
@@ -591,6 +592,9 @@ pre {
 #reddit {
   padding-right: 13px;
   padding-right: 0;
+}
+#reddit-link {
+  display: none;
 }
 #mailchimp form {
   margin-bottom: 0;

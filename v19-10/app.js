@@ -167,11 +167,12 @@ $(document).ready(function() {
     $('#' + file + '_tab').addClass('selected');			
     $('#' + file).addClass('selected');
     $('#test_' + file).addClass('selected');
-    $('html, body').scrollTop(window.scrollTops[file]);
+    // $('html, body').scrollTop(window.scrollTops[file]);
+    $(window).scrollTop(window.scrollTops[file]);
   }
 
   $(window).scroll(function() {
-    window.scrollTops[window.active_tab] = $('html, body').scrollTop();
+    window.scrollTops[window.active_tab] = $(window).scrollTop();
   });
 
   // highlight proc

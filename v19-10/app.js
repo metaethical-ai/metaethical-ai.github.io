@@ -221,7 +221,11 @@ $(document).ready(function() {
     } else { 
 			window.select_tab('main');
 		}
-		gtag('config', 'UA-115476228-1', { 'anonymize_ip': true });  
+		gtag('config', 'UA-115476228-1', { 
+					 'anonymize_ip':  true, 
+					 'page_location': document.location + '',
+					 'page_path':     document.location.pathname + document.location.hash
+				 });  
 	};
   window.parse_anchor_hash();
 

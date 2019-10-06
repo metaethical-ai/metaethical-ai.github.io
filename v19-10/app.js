@@ -221,7 +221,8 @@ $(document).ready(function() {
     } else { 
 			window.select_tab('main');
 		}
-  };
+		gtag('config', 'UA-115476228-1', { 'anonymize_ip': true });  
+	};
   window.parse_anchor_hash();
 
   // Scroll to proc

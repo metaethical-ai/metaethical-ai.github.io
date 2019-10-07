@@ -24,7 +24,7 @@ body {
   background-color: #40344c;
   background-color: #261f2e;
   background-color: #33293d;
-  background-image: url(https://www.transparenttextures.com/patterns/fabric-of-squares.png);
+  background-image: url(/images/fabric-of-squares.png);
   background-attachment: fixed;
   background-size: 410px;
 }
@@ -594,7 +594,6 @@ pre {
   padding-right: 0;
 }
 #reddit-link {
-  display: none;
 }
 #mailchimp form {
   margin-bottom: 0;

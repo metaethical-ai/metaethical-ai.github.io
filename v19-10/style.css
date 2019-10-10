@@ -695,11 +695,10 @@ pre {
 
 }
 
-@media only screen  // iphone XR
-    and (device-width : 414px) 
-    and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) { 
-  .vimCodeElement { 
-    font-size: smaller;
-  }
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .vimCodeElement {
+    font-size: 12px;
+  }  
 }
+
+

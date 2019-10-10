@@ -665,9 +665,10 @@ pre {
   display: none;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 815px) {
   .vimCodeElement {
     padding-left: 20px !important;
+      
   }
 
   #files {
@@ -692,4 +693,13 @@ pre {
     cursor: pointer;
   }
 
+}
+
+@media only screen  // iphone XR
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+  .vimCodeElement { 
+    font-size: smaller;
+  }
 }

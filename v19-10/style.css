@@ -673,6 +673,7 @@ pre {
 
   #files {
     padding-left: 20px;
+		padding-right: 200px;
   }
   
   #files-ribbon {
@@ -701,6 +702,5 @@ and (device-height : 812px)
 and (-webkit-device-pixel-ratio : 2) {
 	.vimCodeElement { 
 		font-size: 13px;
-		background: #999;
 	}
 }

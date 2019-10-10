@@ -547,7 +547,7 @@ pre {
   padding-left: 4px;
   background: #eee;
   margin-top: 2px;
-  box-sizing: content-box;  
+  box-sizing: content-box;
 }
 #sidebar-footer #button {
   /* margin-left: -25px;  */
@@ -660,3 +660,36 @@ pre {
   text-decoration: underline;
 }	
 
+
+#sidebar-button {
+  display: none;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .vimCodeElement {
+    padding-left: 20px !important;
+  }
+
+  #files {
+    padding-left: 20px;
+  }
+  
+  #files-ribbon {
+    display: none;
+  }
+
+  #sidebar-button {
+    display: block;
+    position: absolute;
+    right: -19px;
+    top: 54px;
+    background: #e59180;
+    width: 15px;
+    padding: 12px 0;
+    padding-left: 4px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    color: #444;
+    cursor: pointer;
+  }
+
+}

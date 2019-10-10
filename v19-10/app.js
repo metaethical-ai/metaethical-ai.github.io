@@ -10,6 +10,24 @@ $(document).ready(function() {
            'test_causal_markov_model': 'tcmm', 'test_main': 'main',
            'test_lib': 'tl' };
 
+  $('#sidebar').data('show', true);
+  $('#sidebar-button').click(function() {
+    chevron = $('#sidebar-button .fas');
+    if ($('#sidebar').data('show')) {
+      $('#sidebar').data('show', false);
+      $('#sidebar').css('left', '-330px');
+      $('#sidebar-footer').hide();
+      chevron.removeClass('fa-chevron-left');
+      chevron.addClass('fa-chevron-right');
+    } else {
+      $('#sidebar').data('show', true);
+      $('#sidebar').css('left', '0');
+      $('#sidebar-footer').show();
+      chevron.addClass('fa-chevron-left');
+      chevron.removeClass('fa-chevron-right');
+    }            
+  });
+
   if (window.dev) {
     // Note: Keep this before adding proc links and not live (ajax)
     $('.vimCodeElement .Comment a').attr('target', '_blank');

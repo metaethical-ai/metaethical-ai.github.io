@@ -4,185 +4,185 @@ window.procs = {
     "meai_psc_dist": 67
   },
   "decision_algorithm": {
-    "s": 102,
-    "t": 131,
-    "ns": 149,
-    "p_vars": 157,
-    "p_u_vars": 161,
-    "just_p_u_m2": 167,
-    "parents": 176,
-    "is_necessary_parent_of": 181,
-    "vals_diff": 191,
-    "children": 197,
-    "non_shared_ancestors": 204,
-    "non_shared_descendants": 219,
-    "f": 241,
-    "compute_f": 248,
-    "possible_fs": 264,
-    "poss_states": 268,
-    "is_implemented_by": 272,
-    "commutes": 294,
-    "drop_i": 316,
-    "lf": 324,
-    "compute_lf": 331,
-    "lf_commutes": 346,
-    "lf_inv": 361,
-    "lf_inv_at": 367,
-    "lf_cm": 374,
-    "lf_cm_vs": 379,
-    "lf_cm_p_inv": 390,
-    "plf_to_pf": 399,
-    "is_valid": 415,
-    "m2s_are_valid": 423,
-    "no_e_in_u": 445,
-    "e_in_u": 449,
-    "intension": 462,
-    "ref": 498,
-    "compute_ref": 505,
-    "i_ref": 520,
-    "str_exprs": 528,
-    "preds": 533,
-    "poss_base_expr_refs": 540,
-    "poss_base_refs": 547,
-    "full_ref": 564,
-    "rr": 586,
-    "less_sq_err": 688,
-    "sq_err": 692,
-    "true_p": 699,
-    "ref_expr": 708,
-    "actual_p_events": 717,
-    "prob_states": 731,
-    "prob_states_t": 739,
-    "eo": 750,
-    "instr_irrat": 756,
-    "e_dist": 763,
-    "e_i_dist": 771,
-    "exp_u": 788,
-    "incoherence": 833,
-    "max_p_dist": 850,
-    "poss_cms": 862,
-    "poss_cms_from_l": 870,
-    "poss_cms_from_p_pars": 883,
-    "coh_pcms": 897,
-    "poss_p_us": 905,
-    "p_range": 909,
-    "state_space": 914,
-    "p_u_is_coherent": 918,
-    "is_superset_of": 930,
-    "superset_is_coherent": 934,
-    "probs": 949,
-    "cond_probs": 963,
-    "calc_cond_prob": 967,
-    "subj_conds": 980,
-    "expr_to_p_funcs": 988,
-    "coh_cm_ps": 1000,
-    "sum_p_cms": 1019,
-    "distr_p_cm": 1039,
-    "add_p_distr": 1049,
-    "sum_p": 1057,
-    "equiv_p_expr": 1074,
-    "p_dist": 1082,
-    "sorted_rat": 1089,
-    "p_inv": 1102,
-    "p_cp_inv": 1111,
-    "p_var_inv": 1120,
-    "old_is_coherent": 1132,
-    "force_list": 1216,
-    "obeys_axiom_3": 1143,
-    "is_coherent": 1179,
-    "prob_distance": 1240,
-    "p_equiv_classes": 1261,
-    "pp_equiv": 1270,
-    "avg_p_class": 1277,
-    "poss_io_states": 1289,
-    "poss_s_states": 1293,
-    "poss_m_states": 1297,
-    "poss_m2_states": 1301,
-    "poss_ms_states": 1305,
-    "poss_i_states": 1309,
-    "poss_is_states": 1313,
-    "poss_o_states": 1317,
-    "poss_u_states": 1321,
-    "complexity": 1348,
-    "to_s": 1357,
-    "f_to_s": 1361,
-    "df_to_str": 1365,
-    "ambitiousness": 1399,
-    "hs_score": 1414,
-    "hs_similarity": 1418,
-    "h": 1424,
-    "h_complexity": 1433,
-    "ambitiousness_with_hs": 1437,
-    "d_star_sim": 1459,
-    "supersets_lte": 1475,
-    "is_subset_of": 1481,
-    "is_simplest_version": 1503,
-    "simplest_version": 1512,
-    "is_equal_to": 1519,
-    "is_isomorphic_to": 1525,
-    "possible_fms": 1536,
-    "apply_fm_m": 1556,
-    "fm_commutes": 1561,
-    "ruf": 1633,
-    "time_wt": 1666,
-    "voter_weight": 1668,
-    "rat_psc_dist": 1683,
-    "new_wb": 1689,
-    "optimal_rxs": 1709,
-    "optimality": 1715,
-    "sync_psc_dist": 1752,
-    "util_of_rxs": 1757,
-    "util_of_future": 1800,
-    "eval_expr": 1811,
-    "ext_ruf": 1822,
-    "w_util": 1831,
-    "agential_identity": 1862,
-    "agential_continuity": 1868,
-    "agential_connection": 1873,
-    "p_conn_continuity": 1879,
-    "p_conn": 1887,
-    "sim_cog_scores": 1900,
-    "p_i_sim": 1905,
-    "cog_change": 1911,
-    "id_expr": 1945,
-    "id_var": 1961,
-    "poss_i_events": 1965,
-    "e_vars": 1969,
-    "poss_ue_events": 1973,
-    "poss_p_i_events": 1978,
-    "poss_p_var_events": 1982,
-    "poss_rx_states": 1987,
-    "poss_rxs": 1993,
-    "u_conn": 2006,
-    "rx_to_tuple": 2018,
-    "observed": 2025,
-    "dist_to": 2058,
-    "rx_e_i_val": 2080,
-    "e_func": 2098,
-    "ue": 2106,
-    "ue_base_exprs": 2114,
-    "additive_to_ordinal": 2122,
-    "bs_msr_paths": 2161,
-    "next_bs_msrs": 2177,
-    "implemented_by": 2230,
-    "all": 2246,
-    "all_lte": 2252,
-    "ltr_up_to": 2278,
-    "vars_up_to": 2282,
-    "add_one": 2286,
-    "add_up_to": 2295,
-    "expr_to_ltr_var": 2303,
-    "poss_expr_to_ltr": 2307,
-    "poss_nj": 2312,
-    "poss_rs": 2320,
-    "poss_r_ue": 2340,
-    "poss_r_z": 2345,
-    "poss_ds": 2349,
-    "better_explanation": 2368,
-    "expl_score": 2374,
-    "simpler": 2379,
-    "new": 2385,
-    "da": 2394
+    "s": 123,
+    "t": 152,
+    "ns": 170,
+    "p_vars": 178,
+    "p_u_vars": 182,
+    "just_p_u_m2": 188,
+    "parents": 197,
+    "is_necessary_parent_of": 202,
+    "vals_diff": 212,
+    "children": 218,
+    "non_shared_ancestors": 225,
+    "non_shared_descendants": 240,
+    "f": 262,
+    "compute_f": 269,
+    "possible_fs": 285,
+    "poss_states": 289,
+    "is_implemented_by": 293,
+    "commutes": 315,
+    "drop_i": 337,
+    "lf": 345,
+    "compute_lf": 352,
+    "lf_commutes": 367,
+    "lf_inv": 382,
+    "lf_inv_at": 388,
+    "lf_cm": 395,
+    "lf_cm_vs": 400,
+    "lf_cm_p_inv": 411,
+    "plf_to_pf": 420,
+    "is_valid": 436,
+    "m2s_are_valid": 444,
+    "no_e_in_u": 466,
+    "e_in_u": 470,
+    "intension": 483,
+    "ref": 519,
+    "compute_ref": 526,
+    "i_ref": 541,
+    "str_exprs": 549,
+    "preds": 554,
+    "poss_base_expr_refs": 561,
+    "poss_base_refs": 568,
+    "full_ref": 585,
+    "rr": 607,
+    "less_sq_err": 709,
+    "sq_err": 713,
+    "true_p": 720,
+    "ref_expr": 729,
+    "actual_p_events": 738,
+    "prob_states": 752,
+    "prob_states_t": 760,
+    "eo": 771,
+    "instr_irrat": 777,
+    "e_dist": 784,
+    "e_i_dist": 792,
+    "exp_u": 809,
+    "incoherence": 854,
+    "max_p_dist": 871,
+    "poss_cms": 883,
+    "poss_cms_from_l": 891,
+    "poss_cms_from_p_pars": 904,
+    "coh_pcms": 918,
+    "poss_p_us": 926,
+    "p_range": 930,
+    "state_space": 935,
+    "p_u_is_coherent": 939,
+    "is_superset_of": 951,
+    "superset_is_coherent": 956,
+    "probs": 971,
+    "cond_probs": 985,
+    "calc_cond_prob": 989,
+    "subj_conds": 1002,
+    "expr_to_p_funcs": 1010,
+    "coh_cm_ps": 1022,
+    "sum_p_cms": 1041,
+    "distr_p_cm": 1061,
+    "add_p_distr": 1071,
+    "sum_p": 1079,
+    "equiv_p_expr": 1096,
+    "p_dist": 1104,
+    "sorted_rat": 1111,
+    "p_inv": 1124,
+    "p_cp_inv": 1133,
+    "p_var_inv": 1142,
+    "old_is_coherent": 1154,
+    "force_list": 1238,
+    "obeys_axiom_3": 1165,
+    "is_coherent": 1201,
+    "prob_distance": 1262,
+    "p_equiv_classes": 1283,
+    "pp_equiv": 1292,
+    "avg_p_class": 1299,
+    "poss_io_states": 1311,
+    "poss_s_states": 1315,
+    "poss_m_states": 1319,
+    "poss_m2_states": 1323,
+    "poss_ms_states": 1327,
+    "poss_i_states": 1331,
+    "poss_is_states": 1335,
+    "poss_o_states": 1339,
+    "poss_u_states": 1343,
+    "complexity": 1370,
+    "to_s": 1379,
+    "f_to_s": 1383,
+    "df_to_str": 1387,
+    "ambitiousness": 1421,
+    "hs_score": 1436,
+    "hs_similarity": 1440,
+    "h": 1446,
+    "h_complexity": 1455,
+    "ambitiousness_with_hs": 1459,
+    "d_star_sim": 1481,
+    "supersets_lte": 1497,
+    "is_subset_of": 1503,
+    "is_simplest_version": 1525,
+    "simplest_version": 1534,
+    "is_equal_to": 1541,
+    "is_isomorphic_to": 1547,
+    "possible_fms": 1558,
+    "apply_fm_m": 1578,
+    "fm_commutes": 1583,
+    "ruf": 1655,
+    "time_wt": 1688,
+    "voter_weight": 1690,
+    "rat_psc_dist": 1705,
+    "new_wb": 1711,
+    "optimal_rxs": 1731,
+    "optimality": 1737,
+    "sync_psc_dist": 1774,
+    "util_of_rxs": 1779,
+    "util_of_future": 1822,
+    "eval_expr": 1833,
+    "ext_ruf": 1844,
+    "w_util": 1853,
+    "agential_identity": 1884,
+    "agential_continuity": 1890,
+    "agential_connection": 1895,
+    "p_conn_continuity": 1901,
+    "p_conn": 1909,
+    "sim_cog_scores": 1922,
+    "p_i_sim": 1927,
+    "cog_change": 1933,
+    "id_expr": 1967,
+    "id_var": 1983,
+    "poss_i_events": 1987,
+    "e_vars": 1991,
+    "poss_ue_events": 1995,
+    "poss_p_i_events": 2000,
+    "poss_p_var_events": 2004,
+    "poss_rx_states": 2009,
+    "poss_rxs": 2015,
+    "u_conn": 2028,
+    "rx_to_tuple": 2040,
+    "observed": 2047,
+    "dist_to": 2080,
+    "rx_e_i_val": 2102,
+    "e_func": 2120,
+    "ue": 2128,
+    "ue_base_exprs": 2136,
+    "additive_to_ordinal": 2144,
+    "bs_msr_paths": 2183,
+    "next_bs_msrs": 2199,
+    "implemented_by": 2252,
+    "all": 2268,
+    "all_lte": 2274,
+    "ltr_up_to": 2300,
+    "vars_up_to": 2304,
+    "add_one": 2308,
+    "add_up_to": 2317,
+    "expr_to_ltr_var": 2325,
+    "poss_expr_to_ltr": 2329,
+    "poss_nj": 2334,
+    "poss_rs": 2342,
+    "poss_r_ue": 2362,
+    "poss_r_z": 2367,
+    "poss_ds": 2371,
+    "better_explanation": 2390,
+    "expl_score": 2396,
+    "simpler": 2401,
+    "new": 2407,
+    "da": 2416
   },
   "test_decision_algorithm": {
     "test_s": 4,
@@ -501,49 +501,49 @@ window.names = {
     [
       "s",
       "decision_algorithm",
-      102
+      123
     ]
   ],
   "t": [
     [
       "t",
       "decision_algorithm",
-      131
+      152
     ]
   ],
   "ns": [
     [
       "ns",
       "decision_algorithm",
-      149
+      170
     ]
   ],
   "p_vars": [
     [
       "p_vars",
       "decision_algorithm",
-      157
+      178
     ]
   ],
   "p_u_vars": [
     [
       "p_u_vars",
       "decision_algorithm",
-      161
+      182
     ]
   ],
   "just_p_u_m2": [
     [
       "just_p_u_m2",
       "decision_algorithm",
-      167
+      188
     ]
   ],
   "parents": [
     [
       "parents",
       "decision_algorithm",
-      176
+      197
     ],
     [
       "parents",
@@ -555,63 +555,63 @@ window.names = {
     [
       "is_necessary_parent_of",
       "decision_algorithm",
-      181
+      202
     ]
   ],
   "vals_diff": [
     [
       "vals_diff",
       "decision_algorithm",
-      191
+      212
     ]
   ],
   "children": [
     [
       "children",
       "decision_algorithm",
-      197
+      218
     ]
   ],
   "non_shared_ancestors": [
     [
       "non_shared_ancestors",
       "decision_algorithm",
-      204
+      225
     ]
   ],
   "non_shared_descendants": [
     [
       "non_shared_descendants",
       "decision_algorithm",
-      219
+      240
     ]
   ],
   "f": [
     [
       "f",
       "decision_algorithm",
-      241
+      262
     ]
   ],
   "compute_f": [
     [
       "compute_f",
       "decision_algorithm",
-      248
+      269
     ]
   ],
   "possible_fs": [
     [
       "possible_fs",
       "decision_algorithm",
-      264
+      285
     ]
   ],
   "poss_states": [
     [
       "poss_states",
       "decision_algorithm",
-      268
+      289
     ],
     [
       "poss_states",
@@ -628,964 +628,964 @@ window.names = {
     [
       "is_implemented_by",
       "decision_algorithm",
-      272
+      293
     ]
   ],
   "commutes": [
     [
       "commutes",
       "decision_algorithm",
-      294
+      315
     ]
   ],
   "drop_i": [
     [
       "drop_i",
       "decision_algorithm",
-      316
+      337
     ]
   ],
   "lf": [
     [
       "lf",
       "decision_algorithm",
-      324
+      345
     ]
   ],
   "compute_lf": [
     [
       "compute_lf",
       "decision_algorithm",
-      331
+      352
     ]
   ],
   "lf_commutes": [
     [
       "lf_commutes",
       "decision_algorithm",
-      346
+      367
     ]
   ],
   "lf_inv": [
     [
       "lf_inv",
       "decision_algorithm",
-      361
+      382
     ]
   ],
   "lf_inv_at": [
     [
       "lf_inv_at",
       "decision_algorithm",
-      367
+      388
     ]
   ],
   "lf_cm": [
     [
       "lf_cm",
       "decision_algorithm",
-      374
+      395
     ]
   ],
   "lf_cm_vs": [
     [
       "lf_cm_vs",
       "decision_algorithm",
-      379
+      400
     ]
   ],
   "lf_cm_p_inv": [
     [
       "lf_cm_p_inv",
       "decision_algorithm",
-      390
+      411
     ]
   ],
   "plf_to_pf": [
     [
       "plf_to_pf",
       "decision_algorithm",
-      399
+      420
     ]
   ],
   "is_valid": [
     [
       "is_valid",
       "decision_algorithm",
-      415
+      436
     ]
   ],
   "m2s_are_valid": [
     [
       "m2s_are_valid",
       "decision_algorithm",
-      423
+      444
     ]
   ],
   "no_e_in_u": [
     [
       "no_e_in_u",
       "decision_algorithm",
-      445
+      466
     ]
   ],
   "e_in_u": [
     [
       "e_in_u",
       "decision_algorithm",
-      449
+      470
     ]
   ],
   "intension": [
     [
       "intension",
       "decision_algorithm",
-      462
+      483
     ]
   ],
   "ref": [
     [
       "ref",
       "decision_algorithm",
-      498
+      519
     ]
   ],
   "compute_ref": [
     [
       "compute_ref",
       "decision_algorithm",
-      505
+      526
     ]
   ],
   "i_ref": [
     [
       "i_ref",
       "decision_algorithm",
-      520
+      541
     ]
   ],
   "str_exprs": [
     [
       "str_exprs",
       "decision_algorithm",
-      528
+      549
     ]
   ],
   "preds": [
     [
       "preds",
       "decision_algorithm",
-      533
+      554
     ]
   ],
   "poss_base_expr_refs": [
     [
       "poss_base_expr_refs",
       "decision_algorithm",
-      540
+      561
     ]
   ],
   "poss_base_refs": [
     [
       "poss_base_refs",
       "decision_algorithm",
-      547
+      568
     ]
   ],
   "full_ref": [
     [
       "full_ref",
       "decision_algorithm",
-      564
+      585
     ]
   ],
   "rr": [
     [
       "rr",
       "decision_algorithm",
-      586
+      607
     ]
   ],
   "less_sq_err": [
     [
       "less_sq_err",
       "decision_algorithm",
-      688
+      709
     ]
   ],
   "sq_err": [
     [
       "sq_err",
       "decision_algorithm",
-      692
+      713
     ]
   ],
   "true_p": [
     [
       "true_p",
       "decision_algorithm",
-      699
+      720
     ]
   ],
   "ref_expr": [
     [
       "ref_expr",
       "decision_algorithm",
-      708
+      729
     ]
   ],
   "actual_p_events": [
     [
       "actual_p_events",
       "decision_algorithm",
-      717
+      738
     ]
   ],
   "prob_states": [
     [
       "prob_states",
       "decision_algorithm",
-      731
+      752
     ]
   ],
   "prob_states_t": [
     [
       "prob_states_t",
       "decision_algorithm",
-      739
+      760
     ]
   ],
   "eo": [
     [
       "eo",
       "decision_algorithm",
-      750
+      771
     ]
   ],
   "instr_irrat": [
     [
       "instr_irrat",
       "decision_algorithm",
-      756
+      777
     ]
   ],
   "e_dist": [
     [
       "e_dist",
       "decision_algorithm",
-      763
+      784
     ]
   ],
   "e_i_dist": [
     [
       "e_i_dist",
       "decision_algorithm",
-      771
+      792
     ]
   ],
   "exp_u": [
     [
       "exp_u",
       "decision_algorithm",
-      788
+      809
     ]
   ],
   "incoherence": [
     [
       "incoherence",
       "decision_algorithm",
-      833
+      854
     ]
   ],
   "max_p_dist": [
     [
       "max_p_dist",
       "decision_algorithm",
-      850
+      871
     ]
   ],
   "poss_cms": [
     [
       "poss_cms",
       "decision_algorithm",
-      862
+      883
     ]
   ],
   "poss_cms_from_l": [
     [
       "poss_cms_from_l",
       "decision_algorithm",
-      870
+      891
     ]
   ],
   "poss_cms_from_p_pars": [
     [
       "poss_cms_from_p_pars",
       "decision_algorithm",
-      883
+      904
     ]
   ],
   "coh_pcms": [
     [
       "coh_pcms",
       "decision_algorithm",
-      897
+      918
     ]
   ],
   "poss_p_us": [
     [
       "poss_p_us",
       "decision_algorithm",
-      905
+      926
     ]
   ],
   "p_range": [
     [
       "p_range",
       "decision_algorithm",
-      909
+      930
     ]
   ],
   "state_space": [
     [
       "state_space",
       "decision_algorithm",
-      914
+      935
     ]
   ],
   "p_u_is_coherent": [
     [
       "p_u_is_coherent",
       "decision_algorithm",
-      918
+      939
     ]
   ],
   "is_superset_of": [
     [
       "is_superset_of",
       "decision_algorithm",
-      930
+      951
     ]
   ],
   "superset_is_coherent": [
     [
       "superset_is_coherent",
       "decision_algorithm",
-      934
+      956
     ]
   ],
   "probs": [
     [
       "probs",
       "decision_algorithm",
-      949
+      971
     ]
   ],
   "cond_probs": [
     [
       "cond_probs",
       "decision_algorithm",
-      963
+      985
     ]
   ],
   "calc_cond_prob": [
     [
       "calc_cond_prob",
       "decision_algorithm",
-      967
+      989
     ]
   ],
   "subj_conds": [
     [
       "subj_conds",
       "decision_algorithm",
-      980
+      1002
     ]
   ],
   "expr_to_p_funcs": [
     [
       "expr_to_p_funcs",
       "decision_algorithm",
-      988
+      1010
     ]
   ],
   "coh_cm_ps": [
     [
       "coh_cm_ps",
       "decision_algorithm",
-      1000
+      1022
     ]
   ],
   "sum_p_cms": [
     [
       "sum_p_cms",
       "decision_algorithm",
-      1019
+      1041
     ]
   ],
   "distr_p_cm": [
     [
       "distr_p_cm",
       "decision_algorithm",
-      1039
+      1061
     ]
   ],
   "add_p_distr": [
     [
       "add_p_distr",
       "decision_algorithm",
-      1049
+      1071
     ]
   ],
   "sum_p": [
     [
       "sum_p",
       "decision_algorithm",
-      1057
+      1079
     ]
   ],
   "equiv_p_expr": [
     [
       "equiv_p_expr",
       "decision_algorithm",
-      1074
+      1096
     ]
   ],
   "p_dist": [
     [
       "p_dist",
       "decision_algorithm",
-      1082
+      1104
     ]
   ],
   "sorted_rat": [
     [
       "sorted_rat",
       "decision_algorithm",
-      1089
+      1111
     ]
   ],
   "p_inv": [
     [
       "p_inv",
       "decision_algorithm",
-      1102
+      1124
     ]
   ],
   "p_cp_inv": [
     [
       "p_cp_inv",
       "decision_algorithm",
-      1111
+      1133
     ]
   ],
   "p_var_inv": [
     [
       "p_var_inv",
       "decision_algorithm",
-      1120
+      1142
     ]
   ],
   "old_is_coherent": [
     [
       "old_is_coherent",
       "decision_algorithm",
-      1132
+      1154
     ]
   ],
   "force_list": [
     [
       "force_list",
       "decision_algorithm",
-      1135
+      1157
     ],
     [
       "force_list",
       "decision_algorithm",
-      1216
+      1238
     ]
   ],
   "obeys_axiom_3": [
     [
       "obeys_axiom_3",
       "decision_algorithm",
-      1143
+      1165
     ]
   ],
   "is_coherent": [
     [
       "is_coherent",
       "decision_algorithm",
-      1179
+      1201
     ]
   ],
   "prob_distance": [
     [
       "prob_distance",
       "decision_algorithm",
-      1240
+      1262
     ]
   ],
   "p_equiv_classes": [
     [
       "p_equiv_classes",
       "decision_algorithm",
-      1261
+      1283
     ]
   ],
   "pp_equiv": [
     [
       "pp_equiv",
       "decision_algorithm",
-      1270
+      1292
     ]
   ],
   "avg_p_class": [
     [
       "avg_p_class",
       "decision_algorithm",
-      1277
+      1299
     ]
   ],
   "poss_io_states": [
     [
       "poss_io_states",
       "decision_algorithm",
-      1289
+      1311
     ]
   ],
   "poss_s_states": [
     [
       "poss_s_states",
       "decision_algorithm",
-      1293
+      1315
     ]
   ],
   "poss_m_states": [
     [
       "poss_m_states",
       "decision_algorithm",
-      1297
+      1319
     ]
   ],
   "poss_m2_states": [
     [
       "poss_m2_states",
       "decision_algorithm",
-      1301
+      1323
     ]
   ],
   "poss_ms_states": [
     [
       "poss_ms_states",
       "decision_algorithm",
-      1305
+      1327
     ]
   ],
   "poss_i_states": [
     [
       "poss_i_states",
       "decision_algorithm",
-      1309
+      1331
     ]
   ],
   "poss_is_states": [
     [
       "poss_is_states",
       "decision_algorithm",
-      1313
+      1335
     ]
   ],
   "poss_o_states": [
     [
       "poss_o_states",
       "decision_algorithm",
-      1317
+      1339
     ]
   ],
   "poss_u_states": [
     [
       "poss_u_states",
       "decision_algorithm",
-      1321
+      1343
     ]
   ],
   "complexity": [
     [
       "complexity",
       "decision_algorithm",
-      1348
+      1370
     ]
   ],
   "to_s": [
     [
       "to_s",
       "decision_algorithm",
-      1357
+      1379
     ]
   ],
   "f_to_s": [
     [
       "f_to_s",
       "decision_algorithm",
-      1361
+      1383
     ]
   ],
   "df_to_str": [
     [
       "df_to_str",
       "decision_algorithm",
-      1365
+      1387
     ]
   ],
   "ambitiousness": [
     [
       "ambitiousness",
       "decision_algorithm",
-      1399
+      1421
     ]
   ],
   "hs_score": [
     [
       "hs_score",
       "decision_algorithm",
-      1414
+      1436
     ]
   ],
   "hs_similarity": [
     [
       "hs_similarity",
       "decision_algorithm",
-      1418
+      1440
     ]
   ],
   "h": [
     [
       "h",
       "decision_algorithm",
-      1424
+      1446
     ]
   ],
   "h_complexity": [
     [
       "h_complexity",
       "decision_algorithm",
-      1433
+      1455
     ]
   ],
   "ambitiousness_with_hs": [
     [
       "ambitiousness_with_hs",
       "decision_algorithm",
-      1437
+      1459
     ]
   ],
   "d_star_sim": [
     [
       "d_star_sim",
       "decision_algorithm",
-      1459
+      1481
     ]
   ],
   "supersets_lte": [
     [
       "supersets_lte",
       "decision_algorithm",
-      1475
+      1497
     ]
   ],
   "is_subset_of": [
     [
       "is_subset_of",
       "decision_algorithm",
-      1481
+      1503
     ]
   ],
   "is_simplest_version": [
     [
       "is_simplest_version",
       "decision_algorithm",
-      1503
+      1525
     ]
   ],
   "simplest_version": [
     [
       "simplest_version",
       "decision_algorithm",
-      1512
+      1534
     ]
   ],
   "is_equal_to": [
     [
       "is_equal_to",
       "decision_algorithm",
-      1519
+      1541
     ]
   ],
   "is_isomorphic_to": [
     [
       "is_isomorphic_to",
       "decision_algorithm",
-      1525
+      1547
     ]
   ],
   "possible_fms": [
     [
       "possible_fms",
       "decision_algorithm",
-      1536
+      1558
     ]
   ],
   "apply_fm_m": [
     [
       "apply_fm_m",
       "decision_algorithm",
-      1556
+      1578
     ]
   ],
   "fm_commutes": [
     [
       "fm_commutes",
       "decision_algorithm",
-      1561
+      1583
     ]
   ],
   "ruf": [
     [
       "ruf",
       "decision_algorithm",
-      1633
+      1655
     ]
   ],
   "time_wt": [
     [
       "time_wt",
       "decision_algorithm",
-      1666
+      1688
     ]
   ],
   "voter_weight": [
     [
       "voter_weight",
       "decision_algorithm",
-      1668
+      1690
     ]
   ],
   "rat_psc_dist": [
     [
       "rat_psc_dist",
       "decision_algorithm",
-      1683
+      1705
     ]
   ],
   "new_wb": [
     [
       "new_wb",
       "decision_algorithm",
-      1689
+      1711
     ]
   ],
   "optimal_rxs": [
     [
       "optimal_rxs",
       "decision_algorithm",
-      1709
+      1731
     ]
   ],
   "optimality": [
     [
       "optimality",
       "decision_algorithm",
-      1715
+      1737
     ]
   ],
   "sync_psc_dist": [
     [
       "sync_psc_dist",
       "decision_algorithm",
-      1752
+      1774
     ]
   ],
   "util_of_rxs": [
     [
       "util_of_rxs",
       "decision_algorithm",
-      1757
+      1779
     ]
   ],
   "util_of_future": [
     [
       "util_of_future",
       "decision_algorithm",
-      1800
+      1822
     ]
   ],
   "eval_expr": [
     [
       "eval_expr",
       "decision_algorithm",
-      1811
+      1833
     ]
   ],
   "ext_ruf": [
     [
       "ext_ruf",
       "decision_algorithm",
-      1822
+      1844
     ]
   ],
   "w_util": [
     [
       "w_util",
       "decision_algorithm",
-      1831
+      1853
     ]
   ],
   "agential_identity": [
     [
       "agential_identity",
       "decision_algorithm",
-      1862
+      1884
     ]
   ],
   "agential_continuity": [
     [
       "agential_continuity",
       "decision_algorithm",
-      1868
+      1890
     ]
   ],
   "agential_connection": [
     [
       "agential_connection",
       "decision_algorithm",
-      1873
+      1895
     ]
   ],
   "p_conn_continuity": [
     [
       "p_conn_continuity",
       "decision_algorithm",
-      1879
+      1901
     ]
   ],
   "p_conn": [
     [
       "p_conn",
       "decision_algorithm",
-      1887
+      1909
     ]
   ],
   "sim_cog_scores": [
     [
       "sim_cog_scores",
       "decision_algorithm",
-      1900
+      1922
     ]
   ],
   "p_i_sim": [
     [
       "p_i_sim",
       "decision_algorithm",
-      1905
+      1927
     ]
   ],
   "cog_change": [
     [
       "cog_change",
       "decision_algorithm",
-      1911
+      1933
     ]
   ],
   "id_expr": [
     [
       "id_expr",
       "decision_algorithm",
-      1945
+      1967
     ]
   ],
   "id_var": [
     [
       "id_var",
       "decision_algorithm",
-      1961
+      1983
     ]
   ],
   "poss_i_events": [
     [
       "poss_i_events",
       "decision_algorithm",
-      1965
+      1987
     ]
   ],
   "e_vars": [
     [
       "e_vars",
       "decision_algorithm",
-      1969
+      1991
     ]
   ],
   "poss_ue_events": [
     [
       "poss_ue_events",
       "decision_algorithm",
-      1973
+      1995
     ]
   ],
   "poss_p_i_events": [
     [
       "poss_p_i_events",
       "decision_algorithm",
-      1978
+      2000
     ]
   ],
   "poss_p_var_events": [
     [
       "poss_p_var_events",
       "decision_algorithm",
-      1982
+      2004
     ]
   ],
   "poss_rx_states": [
     [
       "poss_rx_states",
       "decision_algorithm",
-      1987
+      2009
     ]
   ],
   "poss_rxs": [
     [
       "poss_rxs",
       "decision_algorithm",
-      1993
+      2015
     ]
   ],
   "u_conn": [
     [
       "u_conn",
       "decision_algorithm",
-      2006
+      2028
     ]
   ],
   "rx_to_tuple": [
     [
       "rx_to_tuple",
       "decision_algorithm",
-      2018
+      2040
     ]
   ],
   "observed": [
     [
       "observed",
       "decision_algorithm",
-      2025
+      2047
     ]
   ],
   "dist_to": [
     [
       "dist_to",
       "decision_algorithm",
-      2058
+      2080
     ],
     [
       "dist_to",
@@ -1602,175 +1602,175 @@ window.names = {
     [
       "rx_e_i_val",
       "decision_algorithm",
-      2080
+      2102
     ]
   ],
   "e_func": [
     [
       "e_func",
       "decision_algorithm",
-      2098
+      2120
     ]
   ],
   "ue": [
     [
       "ue",
       "decision_algorithm",
-      2106
+      2128
     ]
   ],
   "ue_base_exprs": [
     [
       "ue_base_exprs",
       "decision_algorithm",
-      2114
+      2136
     ]
   ],
   "additive_to_ordinal": [
     [
       "additive_to_ordinal",
       "decision_algorithm",
-      2122
+      2144
     ]
   ],
   "bs_msr_paths": [
     [
       "bs_msr_paths",
       "decision_algorithm",
-      2161
+      2183
     ]
   ],
   "next_bs_msrs": [
     [
       "next_bs_msrs",
       "decision_algorithm",
-      2177
+      2199
     ]
   ],
   "implemented_by": [
     [
       "implemented_by",
       "decision_algorithm",
-      2230
+      2252
     ]
   ],
   "all": [
     [
       "all",
       "decision_algorithm",
-      2246
+      2268
     ]
   ],
   "all_lte": [
     [
       "all_lte",
       "decision_algorithm",
-      2252
+      2274
     ]
   ],
   "ltr_up_to": [
     [
       "ltr_up_to",
       "decision_algorithm",
-      2278
+      2300
     ]
   ],
   "vars_up_to": [
     [
       "vars_up_to",
       "decision_algorithm",
-      2282
+      2304
     ]
   ],
   "add_one": [
     [
       "add_one",
       "decision_algorithm",
-      2286
+      2308
     ]
   ],
   "add_up_to": [
     [
       "add_up_to",
       "decision_algorithm",
-      2295
+      2317
     ]
   ],
   "expr_to_ltr_var": [
     [
       "expr_to_ltr_var",
       "decision_algorithm",
-      2303
+      2325
     ]
   ],
   "poss_expr_to_ltr": [
     [
       "poss_expr_to_ltr",
       "decision_algorithm",
-      2307
+      2329
     ]
   ],
   "poss_nj": [
     [
       "poss_nj",
       "decision_algorithm",
-      2312
+      2334
     ]
   ],
   "poss_rs": [
     [
       "poss_rs",
       "decision_algorithm",
-      2320
+      2342
     ]
   ],
   "poss_r_ue": [
     [
       "poss_r_ue",
       "decision_algorithm",
-      2340
+      2362
     ]
   ],
   "poss_r_z": [
     [
       "poss_r_z",
       "decision_algorithm",
-      2345
+      2367
     ]
   ],
   "poss_ds": [
     [
       "poss_ds",
       "decision_algorithm",
-      2349
+      2371
     ]
   ],
   "better_explanation": [
     [
       "better_explanation",
       "decision_algorithm",
-      2368
+      2390
     ]
   ],
   "expl_score": [
     [
       "expl_score",
       "decision_algorithm",
-      2374
+      2396
     ]
   ],
   "simpler": [
     [
       "simpler",
       "decision_algorithm",
-      2379
+      2401
     ]
   ],
   "new": [
     [
       "new",
       "decision_algorithm",
-      2385
+      2407
     ],
     [
       "new",
@@ -1787,7 +1787,7 @@ window.names = {
     [
       "da",
       "decision_algorithm",
-      2394
+      2416
     ]
   ],
   "test_s": [
@@ -3758,4 +3758,4 @@ window.names = {
       641
     ]
   ]
-};  
+};

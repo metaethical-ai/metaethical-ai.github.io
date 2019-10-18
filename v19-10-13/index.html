@@ -1,6 +1,6 @@
 <html><head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149364446-1"></script>
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115476228-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -65,7 +65,7 @@
 <span id="L25" class="LineNr">25 </span><span class="Comment">   Abstract: We construct a fully technical ethical goal function for AI by </span>
 <span id="L26" class="LineNr">26 </span><span class="Comment">   directly tackling the philosophical problems of metaethics and mental </span>
 <span id="L27" class="LineNr">27 </span><span class="Comment">   content. To simplify our reduction of these philosophical challenges into </span>
-<span id="L28" class="LineNr">28 </span><span class="Comment">   “merely” engineering ones, we suppose that unlimited computation and a </span>
+<span id="L28" class="LineNr">28 </span><span class="Comment">   "merely" engineering ones, we suppose that unlimited computation and a </span>
 <span id="L29" class="LineNr">29 </span><span class="Comment">   complete low-level causal model of the world and the adult human brains in </span>
 <span id="L30" class="LineNr">30 </span><span class="Comment">   it are available.</span>
 <span id="L31" class="LineNr">31 </span>
@@ -105,7 +105,7 @@
 <span id="L65" class="LineNr">65 </span>};
 <span id="L66" class="LineNr">66 </span>
 <span id="L67" class="LineNr">67 </span>  <span class="Identifier">meai_psc_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(psc_u, ext_rufs) {
-<span id="L68" class="LineNr">68 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-672">ord_u_dist</a>(<span class="Identifier">card_u_to_ord</span>(ext_ruf), <span class="Identifier">card_u_to_ord</span>(psc_u)) <span class="Type">**</span> <span class="Constant">2</span>
+<span id="L68" class="LineNr">68 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-672">ord_u_dist</a>(<a class="Identifier code-proc-link" href="#l-615">card_u_to_ord_u</a>(ext_ruf), <a class="Identifier code-proc-link" href="#l-615">card_u_to_ord_u</a>(psc_u))<span class="Type">**</span><span class="Constant">2</span>
 <span id="L69" class="LineNr">69 </span>                <span class="Type">:</span> ext_ruf <span class="Type">in</span> ext_rufs };
 <span id="L70" class="LineNr">70 </span>  };
 <span id="L71" class="LineNr">71 </span>
@@ -113,26 +113,26 @@
 <span id="L73" class="LineNr">73 </span><span class="Comment Heading">   -----------</span>
 <span id="L74" class="LineNr">74 </span><span class="Comment">   Copyright 2019 June Ku </span>
 <span id="L75" class="LineNr">75 </span>
-<span id="L76" class="LineNr">76 </span><span class="Comment">   Permission is hereby granted, free of charge, to any person obtaining a copy </span>
-<span id="L77" class="LineNr">77 </span><span class="Comment">   of this software and associated documentation files (the "Software"), to deal</span>
-<span id="L78" class="LineNr">78 </span><span class="Comment">   in the Software without restriction, including without limitation the rights </span>
-<span id="L79" class="LineNr">79 </span><span class="Comment">   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell </span>
-<span id="L80" class="LineNr">80 </span><span class="Comment">   copies of the Software, and to permit persons to whom the Software is </span>
-<span id="L81" class="LineNr">81 </span><span class="Comment">   furnished to do so, subject to the following conditions:</span>
+<span id="L76" class="LineNr">76 </span>   Permission is hereby granted, free of charge, to any person obtaining a copy
+<span id="L77" class="LineNr">77 </span>   of this software and associated documentation <span class="Identifier">files</span> (the <span class="Constant">"Software"</span>), to deal
+<span id="L78" class="LineNr">78 </span>   <span class="Type">in</span> the Software without restriction, including without limitation the rights
+<span id="L79" class="LineNr">79 </span>   to use, copy, modify, merge, publish, distribute, sublicense, and<span class="Type">/</span>or sell
+<span id="L80" class="LineNr">80 </span>   copies of the Software, and to permit persons to whom the Software is
+<span id="L81" class="LineNr">81 </span>   furnished to <span class="Statement">do</span> so, subject to the following conditions<span class="Type">:</span>
 <span id="L82" class="LineNr">82 </span>
-<span id="L83" class="LineNr">83 </span><span class="Comment">   The above copyright notice and this permission notice shall be included in </span>
-<span id="L84" class="LineNr">84 </span><span class="Comment">   all copies or substantial portions of the Software.</span>
+<span id="L83" class="LineNr">83 </span>   The above copyright notice and this permission notice shall be included <span class="Type">in</span>
+<span id="L84" class="LineNr">84 </span>   all copies or substantial portions of the Software.
 <span id="L85" class="LineNr">85 </span>
-<span id="L86" class="LineNr">86 </span><span class="Comment">   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR </span>
-<span id="L87" class="LineNr">87 </span><span class="Comment">   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, </span>
-<span id="L88" class="LineNr">88 </span><span class="Comment">   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE </span>
-<span id="L89" class="LineNr">89 </span><span class="Comment">   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER </span>
-<span id="L90" class="LineNr">90 </span><span class="Comment">   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING </span>
-<span id="L91" class="LineNr">91 </span><span class="Comment">   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS </span>
-<span id="L92" class="LineNr">92 </span><span class="Comment">   IN THE SOFTWARE.</span>
-<span id="L93" class="LineNr">93 </span><span class="Comment">*/</span>
+<span id="L86" class="LineNr">86 </span>   THE SOFTWARE IS PROVIDED <span class="Constant">"AS IS"</span>, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+<span id="L87" class="LineNr">87 </span>   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+<span id="L88" class="LineNr">88 </span>   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+<span id="L89" class="LineNr">89 </span>   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+<span id="L90" class="LineNr">90 </span>   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+<span id="L91" class="LineNr">91 </span>   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+<span id="L92" class="LineNr">92 </span>   IN THE SOFTWARE.
+<span id="L93" class="LineNr">93 </span><span class="Type">*/</span>
 </pre>
-<pre class="vimCodeElement" id="decision_algorithm"><span id="L1" class="LineNr">   1 </span><span class="Type">class</span> <span class="Identifier">decision_algorithm</span>(i, o, p, cp, u, m, m2, n, r, t_s, t_o,
+<pre class="vimCodeElement selected" id="decision_algorithm"><span id="L1" class="LineNr">   1 </span><span class="Type">class</span> <span class="Identifier">decision_algorithm</span>(i, o, p, cp, u, m, m2, n, r, t_s, t_o,
 <span id="L2" class="LineNr">   2 </span>                         cached_f, cached_lf, cached_ref) {
 <span id="L3" class="LineNr">   3 </span><span class="Comment Heading">// Definition and Structure of Decision Algorithms </span>
 <span id="L4" class="LineNr">   4 </span><span class="Comment Heading">// ===============================================</span>
@@ -401,7 +401,7 @@
 <span id="L267" class="LineNr"> 267 </span>  };
 <span id="L268" class="LineNr"> 268 </span>
 <span id="L269" class="LineNr"> 269 </span>  <span class="Identifier">compute_f</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(b) {
-<span id="L270" class="LineNr"> 270 </span>    fs <span class="Statement">:=</span> { pf <span class="Type">:</span> pf <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-285">possible_fs</a>(b) <span class="Type">|</span> <span class="Identifier">commutes</span>(pf, b) };
+<span id="L270" class="LineNr"> 270 </span>    fs <span class="Statement">:=</span> { pf <span class="Type">:</span> pf <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-285">possible_fs</a>(b) <span class="Type">|</span> <a class="Identifier code-proc-link" href="#da-315">commutes</a>(pf, b) };
 <span id="L271" class="LineNr"> 271 </span>    <span class="Comment">/* Todo: Sort by complexity and return the simplest? </span>
 <span id="L272" class="LineNr"> 272 </span><span class="Comment">       Or also factor in ambitiousness? Coverage of more states?  */</span>
 <span id="L273" class="LineNr"> 273 </span>    <span class="Statement">if</span> (<span class="Type">#</span>fs <span class="Type">&gt;</span> <span class="Constant">0</span>) {
@@ -432,32 +432,32 @@
 <span id="L298" class="LineNr"> 298 </span><span class="Comment Heading">     ----------------------</span>
 <span id="L299" class="LineNr"> 299 </span><span class="Comment">     Check whether a possible implementation functor pf commutes. See f.</span>
 <span id="L300" class="LineNr"> 300 </span>
-<span id="L301" class="LineNr"> 301 </span>     This basically implements Chalmers<span class="Constant">' criterion for when some causal system </span>
-<span id="L302" class="LineNr"> 302 </span><span class="Constant">     implements a computation: <a href="http://consc.net/papers/rock.html">http://consc.net/papers/rock.html</a></span>
+<span id="L301" class="LineNr"> 301 </span><span class="Comment">     This basically implements Chalmers' criterion for when some causal system </span>
+<span id="L302" class="LineNr"> 302 </span><span class="Comment">     implements a computation: <a href="http://consc.net/papers/rock.html" target="_blank">http://consc.net/papers/rock.html</a></span>
 <span id="L303" class="LineNr"> 303 </span>
-<span id="L304" class="LineNr"> 304 </span>     In category theory terms, we can say that f is an implementation functor.
-<span id="L305" class="LineNr"> 305 </span>     Given a category of brain states and the causal relations between them
-<span id="L306" class="LineNr"> 306 </span>     and another of decision states and cognitive state transitions between
-<span id="L307" class="LineNr"> 307 </span>     them, f would be a functor mapping i) brain states to decision states and
-<span id="L308" class="LineNr"> 308 </span>     ii) causal transitions to decision state transitions such that it doesn<span class="Constant">'t</span>
-<span id="L309" class="LineNr"> 309 </span><span class="Constant">     matter whether one goes from a) a brain state to the brain state it causes </span>
-<span id="L310" class="LineNr"> 310 </span><span class="Constant">     and then to the decision state f maps that brain state to or b) first from </span>
-<span id="L311" class="LineNr"> 311 </span><span class="Constant">     the same original brain state to the decision state f says it implements </span>
-<span id="L312" class="LineNr"> 312 </span><span class="Constant">     and then to the next decision state this decision algorithm transitions to.</span>
-<span id="L313" class="LineNr"> 313 </span><span class="Constant">     Either way, you would end up at the same final decision state. </span>
-<span id="L314" class="LineNr"> 314 </span><span class="Constant">  */</span>
-<span id="L315" class="LineNr"> 315 </span><span class="Constant">  commutes := procedure(pf, b) {</span>
-<span id="L316" class="LineNr"> 316 </span><span class="Constant">    /*                 pf</span>
-<span id="L317" class="LineNr"> 317 </span><span class="Constant">      bs_{b.uv_t_i-1} ------&gt; ds_iso_t_i-1</span>
-<span id="L318" class="LineNr"> 318 </span><span class="Constant">       |                       |</span>
-<span id="L319" class="LineNr"> 319 </span><span class="Constant">       | b.response            | restrict_domain</span>
-<span id="L320" class="LineNr"> 320 </span><span class="Constant">       |                       | t()</span>
-<span id="L321" class="LineNr"> 321 </span><span class="Constant">       v                       v</span>
-<span id="L322" class="LineNr"> 322 </span><span class="Constant">      bs_{b.v_ti} ----------&gt; ds_so_t_i</span>
-<span id="L323" class="LineNr"> 323 </span><span class="Constant">           +u  pf  restrict_domain</span>
+<span id="L304" class="LineNr"> 304 </span><span class="Comment">     In category theory terms, we can say that f is an implementation functor.</span>
+<span id="L305" class="LineNr"> 305 </span><span class="Comment">     Given a category of brain states and the causal relations between them</span>
+<span id="L306" class="LineNr"> 306 </span><span class="Comment">     and another of decision states and cognitive state transitions between</span>
+<span id="L307" class="LineNr"> 307 </span><span class="Comment">     them, f would be a functor mapping i) brain states to decision states and</span>
+<span id="L308" class="LineNr"> 308 </span><span class="Comment">     ii) causal transitions to decision state transitions such that it doesn't</span>
+<span id="L309" class="LineNr"> 309 </span><span class="Comment">     matter whether one goes from a) a brain state to the brain state it causes </span>
+<span id="L310" class="LineNr"> 310 </span><span class="Comment">     and then to the decision state f maps that brain state to or b) first from </span>
+<span id="L311" class="LineNr"> 311 </span><span class="Comment">     the same original brain state to the decision state f says it implements </span>
+<span id="L312" class="LineNr"> 312 </span><span class="Comment">     and then to the next decision state this decision algorithm transitions to.</span>
+<span id="L313" class="LineNr"> 313 </span><span class="Comment">     Either way, you would end up at the same final decision state. </span>
+<span id="L314" class="LineNr"> 314 </span><span class="Comment">  */</span>
+<span id="L315" class="LineNr" style=""><a href="#tda-291" data-file="test_decision_algorithm" title="test_commutes" class="checkmark">&#10004;</a> 315 </span>  <span class="Identifier" style="">commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(pf, b) {
+<span id="L316" class="LineNr"> 316 </span>    <span class="Comment Heading">/*                 pf</span>
+<span id="L317" class="LineNr"> 317 </span><span class="Comment Heading">      bs_{b.uv_t_i-1} ------&gt; ds_iso_t_i-1</span>
+<span id="L318" class="LineNr"> 318 </span><span class="Comment">       |                       |</span>
+<span id="L319" class="LineNr"> 319 </span><span class="Comment">       | b.response            | restrict_domain</span>
+<span id="L320" class="LineNr"> 320 </span><span class="Comment">       |                       | t()</span>
+<span id="L321" class="LineNr"> 321 </span><span class="Comment Heading">       v                       v</span>
+<span id="L322" class="LineNr"> 322 </span><span class="Comment Heading">      bs_{b.v_ti} ----------&gt; ds_so_t_i</span>
+<span id="L323" class="LineNr"> 323 </span><span class="Comment">           +u  pf  restrict_domain</span>
 <span id="L324" class="LineNr"> 324 </span>
-<span id="L325" class="LineNr"> 325 </span>      Roughly check that <span class="Identifier">t</span>( pf ) <span class="Type">==</span> <span class="Identifier">pf</span>( b.response )
-<span id="L326" class="LineNr"> 326 </span>    <span class="Type">*/</span>
+<span id="L325" class="LineNr"> 325 </span><span class="Comment">      Roughly check that t( pf ) == pf( b.response ) </span>
+<span id="L326" class="LineNr"> 326 </span><span class="Comment">    */</span>
 <span id="L327" class="LineNr"> 327 </span>    <span class="Statement">return</span> <span class="Type">forall</span>(bs <span class="Type">in</span> <span class="Identifier">domain</span>(pf) <span class="Type">|</span>
 <span id="L328" class="LineNr"> 328 </span>       <span class="Identifier">t</span>()[<a class="Identifier code-proc-link" href="#l-753">restrict_domain</a>(pf[bs], i <span class="Type">+</span> <a class="Identifier code-proc-link" href="#da-123">s</a>())] <span class="Type">==</span>
 <span id="L329" class="LineNr"> 329 </span>       <span class="Identifier">restrict_domain</span>(pf[
@@ -625,31 +625,31 @@
 <span id="L491" class="LineNr"> 491 </span><span class="Comment">     any, i.e. a set of poss events in the world or equivalently, functions</span>
 <span id="L492" class="LineNr"> 492 </span><span class="Comment">     assigning values to vars in the world. </span>
 <span id="L493" class="LineNr"> 493 </span>
-<span id="L494" class="LineNr"> 494 </span>     There are a few ways that reference is grounded.
+<span id="L494" class="LineNr"> 494 </span><span class="Comment">     There are a few ways that reference is grounded.</span>
 <span id="L495" class="LineNr"> 495 </span>
-<span id="L496" class="LineNr"> 496 </span>       <span class="Constant">1</span>. Input variable states refer to the brain states implementing them.
-<span id="L497" class="LineNr"> 497 </span>          You can think of their content <span class="Statement">as</span> something like <span class="Constant">"this sense datum</span>
-<span id="L498" class="LineNr"> 498 </span><span class="Constant">          is occurring"</span> or perhaps even <span class="Statement">as</span> just the pure demonstrative <span class="Constant">"this"</span>.
-<span id="L499" class="LineNr"> 499 </span>          It seems intuitive that these states can represent themselves since
-<span id="L500" class="LineNr"> 500 </span>          everything trivially carries information about itself.
+<span id="L496" class="LineNr"> 496 </span><span class="Comment">       1. Input variable states refer to the brain states implementing them.</span>
+<span id="L497" class="LineNr"> 497 </span><span class="Comment">          You can think of their content as something like "this sense datum</span>
+<span id="L498" class="LineNr"> 498 </span><span class="Comment">          is occurring" or perhaps even as just the pure demonstrative "this".</span>
+<span id="L499" class="LineNr"> 499 </span><span class="Comment">          It seems intuitive that these states can represent themselves since</span>
+<span id="L500" class="LineNr"> 500 </span><span class="Comment">          everything trivially carries information about itself. </span>
 <span id="L501" class="LineNr"> 501 </span>
-<span id="L502" class="LineNr"> 502 </span>       <span class="Constant">2</span>. The meanings of logical <a class="Identifier code-proc-link" href="#l-83">connectives</a> (e.g. And, Or, Implies) and the
-<span id="L503" class="LineNr"> 503 </span>          causal connective BoxArrow are grounded by the axioms that define
-<span id="L504" class="LineNr"> 504 </span>          them. These meanings are enforced by punishing any attributions of
-<span id="L505" class="LineNr"> 505 </span>          these connectives into credences that violate their axioms. See
-<span id="L506" class="LineNr"> 506 </span>          incoherence. Cf inferential <span class="Type">/</span> conceptual role semantics<span class="Type">:</span>
-<span id="L507" class="LineNr"> 507 </span>            https<span class="Type">:</span><span class="Comment">//plato.stanford.edu/entries/content-narrow/#rol  </span>
+<span id="L502" class="LineNr"> 502 </span><span class="Comment">       2. The meanings of logical connectives (e.g. And, Or, Implies) and the </span>
+<span id="L503" class="LineNr"> 503 </span><span class="Comment">          causal connective BoxArrow are grounded by the axioms that define </span>
+<span id="L504" class="LineNr"> 504 </span><span class="Comment">          them. These meanings are enforced by punishing any attributions of </span>
+<span id="L505" class="LineNr"> 505 </span><span class="Comment">          these connectives into credences that violate their axioms. See </span>
+<span id="L506" class="LineNr"> 506 </span><span class="Comment">          incoherence. Cf inferential / conceptual role semantics:</span>
+<span id="L507" class="LineNr"> 507 </span><span class="Comment">            <a href="https://plato.stanford.edu/entries/content-narrow/#rol" target="_blank">https://plato.stanford.edu/entries/content-narrow/#rol</a>  </span>
 <span id="L508" class="LineNr"> 508 </span>
-<span id="L509" class="LineNr"> 509 </span>       <span class="Constant">3</span>. The rest can be understood <span class="Statement">as</span> a kind of ramsification. Other posited
-<span id="L510" class="LineNr"> 510 </span>          objects<span class="Type">/</span>events, predicates and relations refer to those things
-<span id="L511" class="LineNr"> 511 </span>          (<span class="Statement">if</span> any) which play the roles posited <span class="Statement">for</span> them.
-<span id="L512" class="LineNr"> 512 </span>             https<span class="Type">:</span><span class="Comment">//en.wikipedia.org/wiki/Ramsey%E2%80%93Lewis_method</span>
-<span id="L513" class="LineNr"> 513 </span>             http<span class="Type">:</span><span class="Comment">//www.jimpryor.net/teaching/courses/mind/notes/ramseylewis.html</span>
-<span id="L514" class="LineNr"> 514 </span>          We soften the requirement of strict truth by scoring by squared error.
-<span id="L515" class="LineNr"> 515 </span>          This amounts to a principle of charity favoring interpretations
-<span id="L516" class="LineNr"> 516 </span>          that make more beliefs turn out to be <span class="Constant">true</span> (<span class="Statement">while</span> also adhering to
-<span id="L517" class="LineNr"> 517 </span>          the constraints above).
-<span id="L518" class="LineNr"> 518 </span>  <span class="Type">*/</span>
+<span id="L509" class="LineNr"> 509 </span><span class="Comment">       3. The rest can be understood as a kind of ramsification. Other posited </span>
+<span id="L510" class="LineNr"> 510 </span><span class="Comment">          objects/events, predicates and relations refer to those things</span>
+<span id="L511" class="LineNr"> 511 </span><span class="Comment">          (if any) which play the roles posited for them. </span>
+<span id="L512" class="LineNr"> 512 </span><span class="Comment">             <a href="https://en.wikipedia.org/wiki/Ramsey%E2%80%93Lewis_method" target="_blank">https://en.wikipedia.org/wiki/Ramsey%E2%80%93Lewis_method</a></span>
+<span id="L513" class="LineNr"> 513 </span><span class="Comment">             <a href="http://www.jimpryor.net/teaching/courses/mind/notes/ramseylewis.html" target="_blank">http://www.jimpryor.net/teaching/courses/mind/notes/ramseylewis.html</a></span>
+<span id="L514" class="LineNr"> 514 </span><span class="Comment">          We soften the requirement of strict truth by scoring by squared error.</span>
+<span id="L515" class="LineNr"> 515 </span><span class="Comment">          This amounts to a principle of charity favoring interpretations</span>
+<span id="L516" class="LineNr"> 516 </span><span class="Comment">          that make more beliefs turn out to be true (while also adhering to</span>
+<span id="L517" class="LineNr"> 517 </span><span class="Comment">          the constraints above).  </span>
+<span id="L518" class="LineNr"> 518 </span><span class="Comment">  */</span>
 <span id="L519" class="LineNr"> 519 </span>  <span class="Identifier">ref</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b) {
 <span id="L520" class="LineNr"> 520 </span>    <span class="Statement">if</span> (cached_ref <span class="Type">==</span> <span class="Constant">om</span>) {
 <span id="L521" class="LineNr"> 521 </span>      cached_ref <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-526">compute_ref</a>(w, b);
@@ -880,9 +880,9 @@
 <span id="L746" class="LineNr"> 746 </span><span class="Comment">     At each time, use f(b) to see what decision state it maps the </span>
 <span id="L747" class="LineNr"> 747 </span><span class="Comment">     brain state to and collect the states for range(p) + range(cp). </span>
 <span id="L748" class="LineNr"> 748 </span>
-<span id="L749" class="LineNr"> 749 </span>     Actual world b.a is a function from times to assignments of values to
-<span id="L750" class="LineNr"> 750 </span>     variables at that time.
-<span id="L751" class="LineNr"> 751 </span>        e.g. b.a <span class="Statement">:=</span> { [<span class="Constant">1</span>, <a class="Identifier code-proc-link" href="#l-407">assign_time</a>({ [y, <span class="Constant">true</span>] <span class="Type">:</span> y <span class="Type">in</span> b.<a class="Identifier code-proc-link" href="#cmm-24">uv</a>() }, <span class="Constant">1</span>)], <span class="Statement">..</span>.} <span class="Type">*/</span>
+<span id="L749" class="LineNr"> 749 </span><span class="Comment">     Actual world b.a is a function from times to assignments of values to </span>
+<span id="L750" class="LineNr"> 750 </span><span class="Comment">     variables at that time.</span>
+<span id="L751" class="LineNr"> 751 </span><span class="Comment">        e.g. b.a := { [1, assign_time({ [y, true] : y in b.uv() }, 1)], ...} */</span>
 <span id="L752" class="LineNr"><a href="#tda-704" data-file="test_decision_algorithm" title="test_prob_states" class="checkmark">&#10004;</a> 752 </span>  <span class="Identifier">prob_states</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b) {
 <span id="L753" class="LineNr"> 753 </span>    <span class="Statement">return</span> { [ti, <a class="Identifier code-proc-link" href="#da-760">prob_states_t</a>(b, ti) ] <span class="Type">:</span> ti <span class="Type">in</span> [<span class="Constant">1</span><span class="Statement">..</span>b.n] };
 <span id="L754" class="LineNr"> 754 </span>  };
@@ -964,23 +964,23 @@
 <span id="L830" class="LineNr"> 830 </span><span class="Comment">           Is this not so easy though since it needs to refer to a *future* o </span>
 <span id="L831" class="LineNr"> 831 </span><span class="Comment">         state?</span>
 <span id="L832" class="LineNr"> 832 </span>
-<span id="L833" class="LineNr"> 833 </span>         Add up the expectations of utility. Here we are interpreting our
-<span id="L834" class="LineNr"> 834 </span>         utility vars <span class="Statement">as</span> additive values. <span class="Identifier">U</span>(x &amp; y) = <span class="Identifier">U</span>(x) <span class="Type">+</span> <span class="Identifier">U</span>(y). If,
-<span id="L835" class="LineNr"> 835 </span>         however, there are exceptions, they can still be encoded by
-<span id="L836" class="LineNr"> 836 </span>         having a util var associated with the conjunction. Then, <span class="Statement">if</span> <span class="Identifier">U</span>(x)
-<span id="L837" class="LineNr"> 837 </span>         and <span class="Identifier">U</span>(y) are still defined, you may need to be careful to encode
-<span id="L838" class="LineNr"> 838 </span>         only the intended difference from additive <span class="Type">in</span> the conjunction
-<span id="L839" class="LineNr"> 839 </span>         rather than doubly counting its full value.
-<span id="L840" class="LineNr"> 840 </span>           Here, we are assuming the <span class="Identifier">P</span>(o []<span class="Type">-</span><span class="Type">&gt;</span> u) beliefs reflect the agent<span class="Constant">'s</span>
-<span id="L841" class="LineNr"> 841 </span><span class="Constant">         judgment of overall utility. If the agent is poor at aggregating </span>
-<span id="L842" class="LineNr"> 842 </span><span class="Constant">         utilities, their final judgment might come apart from these </span>
-<span id="L843" class="LineNr"> 843 </span><span class="Constant">         credences. There may also be issues with the timing of these</span>
-<span id="L844" class="LineNr"> 844 </span><span class="Constant">         and any aggregated judgments. While this may require much </span>
-<span id="L845" class="LineNr"> 845 </span><span class="Constant">         technical work to thoroughly address, we hope it is at least </span>
-<span id="L846" class="LineNr"> 846 </span><span class="Constant">         conceptually and philosophical clear what is to be done. */</span>
-<span id="L847" class="LineNr"> 847 </span><span class="Constant">      return +/ {  actual_d_st[ p[BoxArrow(o_expr, u_expr)] ] // P(o []-&gt; u)</span>
-<span id="L848" class="LineNr"> 848 </span><span class="Constant">                 * actual_d_st[e_i_j] : [u_expr, e_i_j] in e_i }; // * u</span>
-<span id="L849" class="LineNr"> 849 </span><span class="Constant">    }; // end exp_u</span>
+<span id="L833" class="LineNr"> 833 </span><span class="Comment">         Add up the expectations of utility. Here we are interpreting our   </span>
+<span id="L834" class="LineNr"> 834 </span><span class="Comment">         utility vars as additive values. U(x &amp; y) = U(x) + U(y). If, </span>
+<span id="L835" class="LineNr"> 835 </span><span class="Comment">         however, there are exceptions, they can still be encoded by </span>
+<span id="L836" class="LineNr"> 836 </span><span class="Comment">         having a util var associated with the conjunction. Then, if U(x)</span>
+<span id="L837" class="LineNr"> 837 </span><span class="Comment">         and U(y) are still defined, you may need to be careful to encode </span>
+<span id="L838" class="LineNr"> 838 </span><span class="Comment">         only the intended difference from additive in the conjunction </span>
+<span id="L839" class="LineNr"> 839 </span><span class="Comment">         rather than doubly counting its full value. </span>
+<span id="L840" class="LineNr"> 840 </span><span class="Comment">           Here, we are assuming the P(o []-&gt; u) beliefs reflect the agent's</span>
+<span id="L841" class="LineNr"> 841 </span><span class="Comment">         judgment of overall utility. If the agent is poor at aggregating </span>
+<span id="L842" class="LineNr"> 842 </span><span class="Comment">         utilities, their final judgment might come apart from these </span>
+<span id="L843" class="LineNr"> 843 </span><span class="Comment">         credences. There may also be issues with the timing of these</span>
+<span id="L844" class="LineNr"> 844 </span><span class="Comment">         and any aggregated judgments. While this may require much </span>
+<span id="L845" class="LineNr"> 845 </span><span class="Comment">         technical work to thoroughly address, we hope it is at least </span>
+<span id="L846" class="LineNr"> 846 </span><span class="Comment">         conceptually and philosophical clear what is to be done. */</span>
+<span id="L847" class="LineNr"> 847 </span>      <span class="Statement">return</span> <span class="Type">+/</span> {  actual_d_st[ p[<span class="Identifier">BoxArrow</span>(o_expr, u_expr)] ] <span class="Comment">// P(o []-&gt; u)</span>
+<span id="L848" class="LineNr"> 848 </span>                 <span class="Type">*</span> actual_d_st[e_i_j] <span class="Type">:</span> [u_expr, e_i_j] <span class="Type">in</span> e_i }; <span class="Comment">// * u</span>
+<span id="L849" class="LineNr"> 849 </span>    }; <span class="Comment">// end exp_u</span>
 <span id="L850" class="LineNr"> 850 </span>
 <span id="L851" class="LineNr"> 851 </span><span class="Comment Heading">// Probabilistic Coherence </span>
 <span id="L852" class="LineNr"> 852 </span><span class="Comment Heading">// =======================</span>
@@ -1006,10 +1006,10 @@
 <span id="L872" class="LineNr"> 872 </span>    poss_p_states <span class="Statement">:=</span> [poss_p <span class="Type">:</span> poss_p <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-347">possible_states</a>(<a class="Identifier code-proc-link" href="#da-178">p_vars</a>(), r)];
 <span id="L873" class="LineNr"> 873 </span>    p_states <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-760">prob_states_t</a>(b, ti);
 <span id="L874" class="LineNr"> 874 </span>    farthest_pp <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-710">sort_list</a>(poss_p_states, <span class="Type">procedure</span>(pp1,pp2) {
-<span id="L875" class="LineNr"> 875 </span>                               <span class="Statement">return</span> <span class="Identifier">prob_distance</span>(p, cp, p_states, pp1) <span class="Type">&gt;</span>
+<span id="L875" class="LineNr"> 875 </span>                               <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-1262">prob_distance</a>(p, cp, p_states, pp1) <span class="Type">&gt;</span>
 <span id="L876" class="LineNr"> 876 </span>                                      <span class="Identifier">prob_distance</span>(p, cp, p_states, pp2);
 <span id="L877" class="LineNr"> 877 </span>                             })[<span class="Constant">1</span>];
-<span id="L878" class="LineNr"> 878 </span>    <span class="Statement">return</span> <span class="Identifier">prob_distance</span>(p, cp, p_states, farthest_pp);
+<span id="L878" class="LineNr"> 878 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-1262">prob_distance</a>(p, cp, p_states, farthest_pp);
 <span id="L879" class="LineNr"> 879 </span>  };
 <span id="L880" class="LineNr"> 880 </span>
 <span id="L881" class="LineNr"> 881 </span>  <span class="Comment">/* Returns the set of possible causal models formed from the base variables</span>
@@ -1237,7 +1237,7 @@
 <span id="L1103" class="LineNr">1103 </span><span class="Comment">     probability distribution and returns the distance to it. */</span>
 <span id="L1104" class="LineNr">1104 </span>  <span class="Identifier">p_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, ti) {
 <span id="L1105" class="LineNr">1105 </span>    p_states <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-760">prob_states_t</a>(b, ti);
-<span id="L1106" class="LineNr">1106 </span>    <span class="Statement">return</span> <span class="Identifier">prob_distance</span>(p, cp, <a class="Identifier code-proc-link" href="#da-1111">sorted_rat</a>(p_states)[<span class="Constant">1</span>], p_states);
+<span id="L1106" class="LineNr">1106 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-1262">prob_distance</a>(p, cp, <a class="Identifier code-proc-link" href="#da-1111">sorted_rat</a>(p_states)[<span class="Constant">1</span>], p_states);
 <span id="L1107" class="LineNr">1107 </span>  };
 <span id="L1108" class="LineNr">1108 </span>
 <span id="L1109" class="LineNr">1109 </span>  <span class="Comment">/* Takes a prob state and returns a list of coherent probability </span>
@@ -1247,7 +1247,7 @@
 <span id="L1113" class="LineNr">1113 </span>      <span class="Comment">/* A procedure measuring which of two probability states is closer to </span>
 <span id="L1114" class="LineNr">1114 </span><span class="Comment">         the original one given.  */</span>
 <span id="L1115" class="LineNr">1115 </span>      <span class="Type">procedure</span>(pp1, pp2) {
-<span id="L1116" class="LineNr">1116 </span>        <span class="Statement">return</span> <span class="Identifier">prob_distance</span>(p, cp, pp1, p_states) <span class="Type">&lt;</span>
+<span id="L1116" class="LineNr">1116 </span>        <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-1262">prob_distance</a>(p, cp, pp1, p_states) <span class="Type">&lt;</span>
 <span id="L1117" class="LineNr">1117 </span>               <span class="Identifier">prob_distance</span>(p, cp, pp2, p_states);
 <span id="L1118" class="LineNr">1118 </span>      }
 <span id="L1119" class="LineNr">1119 </span>    );
@@ -1316,22 +1316,22 @@
 <span id="L1182" class="LineNr">1182 </span>  <span class="Comment">/* From Lasky, Kathryn. "Axiomatic First-Order Probability" </span>
 <span id="L1183" class="LineNr">1183 </span><span class="Comment">     <a href="http://ceur-ws.org/Vol-527/paper5.pdf" target="_blank">http://ceur-ws.org/Vol-527/paper5.pdf</a> </span>
 <span id="L1184" class="LineNr">1184 </span>
-<span id="L1185" class="LineNr">1185 </span>      Laskey axioms
-<span id="L1186" class="LineNr">1186 </span>        P1. probabilities are between <span class="Constant">0</span> and <span class="Constant">1</span>
-<span id="L1187" class="LineNr">1187 </span>        P2. probabilities <span class="Type">in</span> tautologies are <span class="Constant">1</span>
-<span id="L1188" class="LineNr">1188 </span>              or just logical truths
-<span id="L1189" class="LineNr">1189 </span>        P3. <span class="Statement">if</span> probability <span class="Type">in</span> two statements both being <span class="Constant">true</span> are <span class="Constant">0</span>, then
-<span id="L1190" class="LineNr">1190 </span>              probability of one or the other is equal to adding probability
-<span id="L1191" class="LineNr">1191 </span>              <span class="Type">in</span> each
-<span id="L1192" class="LineNr">1192 </span>        P4. Bayesian conditioning
-<span id="L1193" class="LineNr">1193 </span>        P5. interchangeability of logically equivalent statements
+<span id="L1185" class="LineNr">1185 </span><span class="Comment">      Laskey axioms</span>
+<span id="L1186" class="LineNr">1186 </span><span class="Comment">        P1. probabilities are between 0 and 1</span>
+<span id="L1187" class="LineNr">1187 </span><span class="Comment">        P2. probabilities in tautologies are 1</span>
+<span id="L1188" class="LineNr">1188 </span><span class="Comment">              or just logical truths</span>
+<span id="L1189" class="LineNr">1189 </span><span class="Comment">        P3. if probability in two statements both being true are 0, then </span>
+<span id="L1190" class="LineNr">1190 </span><span class="Comment">              probability of one or the other is equal to adding probability </span>
+<span id="L1191" class="LineNr">1191 </span><span class="Comment">              in each</span>
+<span id="L1192" class="LineNr">1192 </span><span class="Comment">        P4. Bayesian conditioning</span>
+<span id="L1193" class="LineNr">1193 </span><span class="Comment">        P5. interchangeability of logically equivalent statements</span>
 <span id="L1194" class="LineNr">1194 </span>
-<span id="L1195" class="LineNr">1195 </span>     Todo<span class="Type">:</span> Double<span class="Type">-</span>check <span class="Statement">if</span> it<span class="Constant">'s necessary to handle undefined/om probability </span>
-<span id="L1196" class="LineNr">1196 </span><span class="Constant">           values. It seems p_u_is_coherent checks its coherence by seeing if</span>
-<span id="L1197" class="LineNr">1197 </span><span class="Constant">           a superset is perfectly coherent so I think that strategy should </span>
-<span id="L1198" class="LineNr">1198 </span><span class="Constant">           work. But there may be some slight technical issues making sure </span>
-<span id="L1199" class="LineNr">1199 </span><span class="Constant">           we'</span>re allowing or disallowing <span class="Constant">om</span> <span class="Type">in</span> the right places there.
-<span id="L1200" class="LineNr">1200 </span>  <span class="Type">*/</span>
+<span id="L1195" class="LineNr">1195 </span><span class="Comment">     Todo: Double-check if it's necessary to handle undefined/om probability </span>
+<span id="L1196" class="LineNr">1196 </span><span class="Comment">           values. It seems p_u_is_coherent checks its coherence by seeing if</span>
+<span id="L1197" class="LineNr">1197 </span><span class="Comment">           a superset is perfectly coherent so I think that strategy should </span>
+<span id="L1198" class="LineNr">1198 </span><span class="Comment">           work. But there may be some slight technical issues making sure </span>
+<span id="L1199" class="LineNr">1199 </span><span class="Comment">           we're allowing or disallowing om in the right places there.</span>
+<span id="L1200" class="LineNr">1200 </span><span class="Comment">  */</span>
 <span id="L1201" class="LineNr">1201 </span>  <span class="Identifier">is_coherent</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(pp) {
 <span id="L1202" class="LineNr">1202 </span>    pp <span class="Statement">:=</span> { [<a class="Identifier code-proc-link" href="#da-1157">force_list</a>(v), num] <span class="Type">:</span> [v,num] <span class="Type">in</span> pp };
 <span id="L1203" class="LineNr">1203 </span>    <span class="Statement">return</span> <span class="Type">forall</span>(l <span class="Type">in</span> <span class="Identifier">domain</span>(pp) <span class="Type">|</span>
@@ -1381,31 +1381,31 @@
 <span id="L1247" class="LineNr">1247 </span><span class="Comment">     the difference. See Staffel, Julia. Measuring the Overall Incoherence of </span>
 <span id="L1248" class="LineNr">1248 </span><span class="Comment">     Credence Functions. Synthese, 2015. DOI 10.1007/s11229-014-0640-x </span>
 <span id="L1249" class="LineNr">1249 </span>
-<span id="L1250" class="LineNr">1250 </span>     Technical Note<span class="Type">:</span> Takes p and <span class="Identifier">cp</span> (which should just be the usual this.p and
-<span id="L1251" class="LineNr">1251 </span>     this.cp) but needs to be passed explicitly because of a setlx bug<span class="Type">:</span> The
-<span id="L1252" class="LineNr">1252 </span>     second and subsequent calls to an instance <span class="Type">procedure</span> within a nested
-<span id="L1253" class="LineNr">1253 </span>     <span class="Type">procedure</span> is not able to access instance variables <span class="Type">/</span> procedures.
+<span id="L1250" class="LineNr">1250 </span><span class="Comment">     Technical Note: Takes p and cp (which should just be the usual this.p and </span>
+<span id="L1251" class="LineNr">1251 </span><span class="Comment">     this.cp) but needs to be passed explicitly because of a setlx bug: The </span>
+<span id="L1252" class="LineNr">1252 </span><span class="Comment">     second and subsequent calls to an instance procedure within a nested </span>
+<span id="L1253" class="LineNr">1253 </span><span class="Comment">     procedure is not able to access instance variables / procedures. </span>
 <span id="L1254" class="LineNr">1254 </span>
-<span id="L1255" class="LineNr">1255 </span>     See ambitiousness <span class="Statement">for</span> a more general workaround. There and elsewhere we
-<span id="L1256" class="LineNr">1256 </span>     assign <span class="Type">*</span>this<span class="Type">*</span> (the decision algorithm instance) to <span class="Type">*</span>self<span class="Type">*</span> and then pass
-<span id="L1257" class="LineNr">1257 </span>     <span class="Type">in</span> self <span class="Statement">as</span> the first parameter. The receiving instance <span class="Type">procedure</span> then
-<span id="L1258" class="LineNr">1258 </span>     makes sure to call any instance variables and procedures on self rather
-<span id="L1259" class="LineNr">1259 </span>     than their implicit and buggy this. The result may be likened to Python<span class="Constant">'s</span>
-<span id="L1260" class="LineNr">1260 </span><span class="Constant">     way of handling instance methods.</span>
-<span id="L1261" class="LineNr">1261 </span><span class="Constant">  */</span>
-<span id="L1262" class="LineNr">1262 </span><span class="Constant">  prob_distance := procedure(p, cp, pp1, pp2) {</span>
-<span id="L1263" class="LineNr">1263 </span><span class="Constant">    /* First pass: (but doesn'</span>t handle undefineds and logical equivalents)
-<span id="L1264" class="LineNr">1264 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <span class="Identifier">abs</span>(pp1[v] <span class="Type">-</span> pp2[v]) <span class="Type">:</span> v <span class="Type">in</span> <span class="Identifier">domain</span>(pp1) <span class="Type">|</span> v <span class="Type">in</span> <span class="Identifier">domain</span>(pp2) };
-<span id="L1265" class="LineNr">1265 </span>    <span class="Comment">// Second pass: (but doesn't handle double-counting)</span>
-<span id="L1266" class="LineNr">1266 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <span class="Identifier">abs</span>(pp1[v] <span class="Type">-</span> pp2[v2]) <span class="Type">:</span> [v, v2] <span class="Type">in</span> <span class="Identifier">domain</span>(pp1) <span class="Type">&gt;&lt;</span> <span class="Identifier">domain</span>(pp2)
-<span id="L1267" class="LineNr">1267 </span>                                      <span class="Type">|</span> v <span class="Type">==</span> v2 <span class="Type">||</span> <a class="Identifier code-proc-link" href="#da-1096">equiv_p_expr</a>(v, v2) };
-<span id="L1268" class="LineNr">1268 </span>       Consider three people where the <span class="Constant">"true"</span> probability is <span class="Constant">90</span><span class="Type">%</span>
-<span id="L1269" class="LineNr">1269 </span>         Person <span class="Constant">1</span><span class="Type">:</span> A &amp; B <span class="Constant">80</span><span class="Type">%</span>, B &amp; A <span class="Constant">70</span><span class="Type">%</span>
-<span id="L1270" class="LineNr">1270 </span>         Person <span class="Constant">2</span><span class="Type">:</span> A &amp; B <span class="Constant">80</span><span class="Type">%</span>
-<span id="L1271" class="LineNr">1271 </span>         Person <span class="Constant">3</span><span class="Type">:</span> A &amp; B <span class="Constant">80</span><span class="Type">%</span>, B &amp; A <span class="Constant">80</span><span class="Type">%</span>
-<span id="L1272" class="LineNr">1272 </span>       Averaging probabilities <span class="Type">in</span> logical equivalents favors person <span class="Constant">2</span> and <span class="Constant">3</span>
-<span id="L1273" class="LineNr">1273 </span>       over <span class="Constant">1</span> but not <span class="Constant">2</span> over <span class="Constant">3</span>.
-<span id="L1274" class="LineNr">1274 </span>    <span class="Type">*/</span>
+<span id="L1255" class="LineNr">1255 </span><span class="Comment">     See ambitiousness for a more general workaround. There and elsewhere we</span>
+<span id="L1256" class="LineNr">1256 </span><span class="Comment">     assign *this* (the decision algorithm instance) to *self* and then pass</span>
+<span id="L1257" class="LineNr">1257 </span><span class="Comment">     in self as the first parameter. The receiving instance procedure then</span>
+<span id="L1258" class="LineNr">1258 </span><span class="Comment">     makes sure to call any instance variables and procedures on self rather </span>
+<span id="L1259" class="LineNr">1259 </span><span class="Comment">     than their implicit and buggy this. The result may be likened to Python's</span>
+<span id="L1260" class="LineNr">1260 </span><span class="Comment">     way of handling instance methods.</span>
+<span id="L1261" class="LineNr">1261 </span><span class="Comment">  */</span>
+<span id="L1262" class="LineNr"><a href="#tda-1044" data-file="test_decision_algorithm" title="test_prob_distance" class="checkmark">&#10004;</a>1262 </span>  <span class="Identifier">prob_distance</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p, cp, pp1, pp2) {
+<span id="L1263" class="LineNr">1263 </span>    <span class="Comment">/* First pass: (but doesn't handle undefineds and logical equivalents)</span>
+<span id="L1264" class="LineNr">1264 </span><span class="Comment">    return +/ { abs(pp1[v] - pp2[v]) : v in domain(pp1) | v in domain(pp2) };</span>
+<span id="L1265" class="LineNr">1265 </span><span class="Comment">    // Second pass: (but doesn't handle double-counting)</span>
+<span id="L1266" class="LineNr">1266 </span><span class="Comment">    return +/ { abs(pp1[v] - pp2[v2]) : [v, v2] in domain(pp1) &gt;&lt; domain(pp2)</span>
+<span id="L1267" class="LineNr">1267 </span><span class="Comment">                                      | v == v2 || equiv_p_expr(v, v2) };     </span>
+<span id="L1268" class="LineNr">1268 </span><span class="Comment">       Consider three people where the "true" probability is 90%</span>
+<span id="L1269" class="LineNr">1269 </span><span class="Comment">         Person 1: A &amp; B 80%, B &amp; A 70%</span>
+<span id="L1270" class="LineNr">1270 </span><span class="Comment">         Person 2: A &amp; B 80%</span>
+<span id="L1271" class="LineNr">1271 </span><span class="Comment">         Person 3: A &amp; B 80%, B &amp; A 80%</span>
+<span id="L1272" class="LineNr">1272 </span><span class="Comment">       Averaging probabilities in logical equivalents favors person 2 and 3 </span>
+<span id="L1273" class="LineNr">1273 </span><span class="Comment">       over 1 but not 2 over 3.</span>
+<span id="L1274" class="LineNr">1274 </span><span class="Comment">    */</span>
 <span id="L1275" class="LineNr">1275 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <span class="Identifier">abs</span>( <a class="Identifier code-proc-link" href="#da-1292">pp_equiv</a>(p, cp, pp1)[p_class] <span class="Type">-</span>
 <span id="L1276" class="LineNr">1276 </span>                     <span class="Identifier">pp_equiv</span>(p, cp, pp2)[p_class] )
 <span id="L1277" class="LineNr">1277 </span>                <span class="Type">:</span> p_class <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-1283">p_equiv_classes</a>(p, cp)
@@ -1488,27 +1488,27 @@
 <span id="L1354" class="LineNr">1354 </span><span class="Comment">     Intentional Stance. </span>
 <span id="L1355" class="LineNr">1355 </span><span class="Comment">       See e.g. <a href="https://sites.google.com/site/minddict/intentional-stance-the" target="_blank">https://sites.google.com/site/minddict/intentional-stance-the</a></span>
 <span id="L1356" class="LineNr">1356 </span>
-<span id="L1357" class="LineNr">1357 </span>     On a first pass, the best intentional explanation can be taken to be the
-<span id="L1358" class="LineNr">1358 </span>     one which best compresses the brain<span class="Constant">'s behavior.</span>
-<span id="L1359" class="LineNr">1359 </span><span class="Constant">       See better_explanation for further considerations.</span>
+<span id="L1357" class="LineNr">1357 </span><span class="Comment">     On a first pass, the best intentional explanation can be taken to be the</span>
+<span id="L1358" class="LineNr">1358 </span><span class="Comment">     one which best compresses the brain's behavior.</span>
+<span id="L1359" class="LineNr">1359 </span><span class="Comment">       See better_explanation for further considerations.</span>
 <span id="L1360" class="LineNr">1360 </span>
-<span id="L1361" class="LineNr">1361 </span>     Also see https<span class="Type">:</span><span class="Comment">//en.wikipedia.org/wiki/Minimum_description_length:</span>
-<span id="L1362" class="LineNr">1362 </span>       <span class="Constant">"The minimum description length (MDL) principle is a formalization of </span>
-<span id="L1363" class="LineNr">1363 </span><span class="Constant">        Occam's razor in which the best hypothesis (a model and its parameters) </span>
-<span id="L1364" class="LineNr">1364 </span><span class="Constant">        for a given set of data is the one that leads to the best compression </span>
-<span id="L1365" class="LineNr">1365 </span><span class="Constant">        of the data."</span>
+<span id="L1361" class="LineNr">1361 </span><span class="Comment">     Also see <a href="https://en.wikipedia.org/wiki/Minimum_description_length:" target="_blank">https://en.wikipedia.org/wiki/Minimum_description_length:</a></span>
+<span id="L1362" class="LineNr">1362 </span><span class="Comment">       "The minimum description length (MDL) principle is a formalization of </span>
+<span id="L1363" class="LineNr">1363 </span><span class="Comment">        Occam's razor in which the best hypothesis (a model and its parameters) </span>
+<span id="L1364" class="LineNr">1364 </span><span class="Comment">        for a given set of data is the one that leads to the best compression </span>
+<span id="L1365" class="LineNr">1365 </span><span class="Comment">        of the data." </span>
 <span id="L1366" class="LineNr">1366 </span>
-<span id="L1367" class="LineNr">1367 </span>     Since b and d already contain information on their transitions from any
-<span id="L1368" class="LineNr">1368 </span>     possible state, we don<span class="Constant">'t need to run this for each time step.</span>
-<span id="L1369" class="LineNr">1369 </span><span class="Constant">  */</span>
-<span id="L1370" class="LineNr">1370 </span><span class="Constant">  complexity := cachedProcedure(b) {</span>
-<span id="L1371" class="LineNr">1371 </span><span class="Constant">    // Complexity of b given d and f + Complexity of d and f</span>
-<span id="L1372" class="LineNr">1372 </span><span class="Constant">    raw_score := k_given(b.t_to_str(), df_to_str(b)) + k(df_to_str(b));</span>
-<span id="L1373" class="LineNr">1373 </span><span class="Constant">    /* Now normalize. Worst case is it doesn'</span>t help encode b any better and
-<span id="L1374" class="LineNr">1374 </span>       it<span class="Constant">'s just as complex as b. Best case is if it could take 0 bits.  */</span>
-<span id="L1375" class="LineNr">1375 </span><span class="Constant">    worst_score := 2 * k(b.t_to_str());</span>
-<span id="L1376" class="LineNr">1376 </span><span class="Constant">    return 1 - raw_score / worst_score;</span>
-<span id="L1377" class="LineNr">1377 </span><span class="Constant">  };</span>
+<span id="L1367" class="LineNr">1367 </span><span class="Comment">     Since b and d already contain information on their transitions from any </span>
+<span id="L1368" class="LineNr">1368 </span><span class="Comment">     possible state, we don't need to run this for each time step.</span>
+<span id="L1369" class="LineNr">1369 </span><span class="Comment">  */</span>
+<span id="L1370" class="LineNr">1370 </span>  <span class="Identifier">complexity</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(b) {
+<span id="L1371" class="LineNr">1371 </span>    <span class="Comment">// Complexity of b given d and f + Complexity of d and f</span>
+<span id="L1372" class="LineNr">1372 </span>    raw_score <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-792">k_given</a>(b.<a class="Identifier code-proc-link" href="#cmm-116">t_to_str</a>(), <a class="Identifier code-proc-link" href="#da-1387">df_to_str</a>(b)) <span class="Type">+</span> <a class="Identifier code-proc-link" href="#l-771">k</a>(<a class="Identifier code-proc-link" href="#da-1387">df_to_str</a>(b));
+<span id="L1373" class="LineNr">1373 </span>    <span class="Comment">/* Now normalize. Worst case is it doesn't help encode b any better and </span>
+<span id="L1374" class="LineNr">1374 </span><span class="Comment">       it's just as complex as b. Best case is if it could take 0 bits.  */</span>
+<span id="L1375" class="LineNr">1375 </span>    worst_score <span class="Statement">:=</span> <span class="Constant">2</span> <span class="Type">*</span> <a class="Identifier code-proc-link" href="#l-771">k</a>(b.<a class="Identifier code-proc-link" href="#cmm-116">t_to_str</a>());
+<span id="L1376" class="LineNr">1376 </span>    <span class="Statement">return</span> <span class="Constant">1</span> <span class="Type">-</span> raw_score <span class="Type">/</span> worst_score;
+<span id="L1377" class="LineNr">1377 </span>  };
 <span id="L1378" class="LineNr">1378 </span>
 <span id="L1379" class="LineNr">1379 </span>  <span class="Identifier">to_s</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L1380" class="LineNr">1380 </span>    <span class="Statement">return</span> <span class="Identifier">str</span>([i, p, cp, u, m, m2, n, o, r, <a class="Identifier code-proc-link" href="#da-152">t</a>()]);
@@ -1738,54 +1738,54 @@
 <span id="L1604" class="LineNr">1604 </span><span class="Comment">     center-of-mass / social-choice of the resulting first order utility </span>
 <span id="L1605" class="LineNr">1605 </span><span class="Comment">     functions. </span>
 <span id="L1606" class="LineNr">1606 </span>
-<span id="L1607" class="LineNr">1607 </span>     This comes out of the metaethical view developed by Howard Nye and June
-<span id="L1608" class="LineNr">1608 </span>     Ku and written up at http<span class="Type">:</span><span class="Comment">//www.metaethical.ai/norm_descriptivism.pdf. </span>
-<span id="L1609" class="LineNr">1609 </span>     There we focused on the simple <span class="Statement">case</span> <span class="Type">in</span> which the norms we accept or our
-<span id="L1610" class="LineNr">1610 </span>     higher<span class="Type">-</span>order preferences formed a hierarchy with a single fundamental norm
-<span id="L1611" class="LineNr">1611 </span>     or highest<span class="Type">-</span>order utility function governing our lower<span class="Type">-</span>order norms <span class="Type">/</span>
-<span id="L1612" class="LineNr">1612 </span>     functions. (Also see the comments above n <span class="Statement">:=</span> n towards the top.) In that
-<span id="L1613" class="LineNr">1613 </span>     <span class="Statement">case</span>, what we have most reason to <span class="Statement">do</span> would be what that highest order
-<span id="L1614" class="LineNr">1614 </span>     utility function would prescribe, perhaps through the prescription of
-<span id="L1615" class="LineNr">1615 </span>     certain lower<span class="Type">-</span>level utilty functions.
+<span id="L1607" class="LineNr">1607 </span><span class="Comment">     This comes out of the metaethical view developed by Howard Nye and June</span>
+<span id="L1608" class="LineNr">1608 </span><span class="Comment">     Ku and written up at <a href="http://www.metaethical.ai/norm_descriptivism.pdf" target="_blank">http://www.metaethical.ai/norm_descriptivism.pdf</a>. </span>
+<span id="L1609" class="LineNr">1609 </span><span class="Comment">     There we focused on the simple case in which the norms we accept or our</span>
+<span id="L1610" class="LineNr">1610 </span><span class="Comment">     higher-order preferences formed a hierarchy with a single fundamental norm </span>
+<span id="L1611" class="LineNr">1611 </span><span class="Comment">     or highest-order utility function governing our lower-order norms /</span>
+<span id="L1612" class="LineNr">1612 </span><span class="Comment">     functions. (Also see the comments above n := n towards the top.) In that </span>
+<span id="L1613" class="LineNr">1613 </span><span class="Comment">     case, what we have most reason to do would be what that highest order </span>
+<span id="L1614" class="LineNr">1614 </span><span class="Comment">     utility function would prescribe, perhaps through the prescription of </span>
+<span id="L1615" class="LineNr">1615 </span><span class="Comment">     certain lower-level utilty functions.</span>
 <span id="L1616" class="LineNr">1616 </span>
-<span id="L1617" class="LineNr">1617 </span>     Elsewhere, we have acknowledged that things might be more complicated. We
-<span id="L1618" class="LineNr">1618 </span>     might have a network of accepted norms <span class="Type">/</span> higher<span class="Type">-</span>order preferences <span class="Type">in</span> which
-<span id="L1619" class="LineNr">1619 </span>     they all influence one another rather than a strict top<span class="Type">-</span>down hierarchy.
-<span id="L1620" class="LineNr">1620 </span>     We have suggested that <span class="Type">in</span> that <span class="Statement">case</span>, the weights of each accepted norm and
-<span id="L1621" class="LineNr">1621 </span>     the parameters governing the network behavior could be treated <span class="Statement">as</span> the
-<span id="L1622" class="LineNr">1622 </span>     fundamental norm. Developing this further, we might model it <span class="Statement">as</span> a markov
-<span id="L1623" class="LineNr">1623 </span>     model with states of norm acceptances influencing other acceptances and
-<span id="L1624" class="LineNr">1624 </span>     look <span class="Statement">for</span> a stationary distribution, i.e. an equilibrium state <span class="Type">in</span> which the
-<span id="L1625" class="LineNr">1625 </span>     state it transitions to is the same state it started with.
+<span id="L1617" class="LineNr">1617 </span><span class="Comment">     Elsewhere, we have acknowledged that things might be more complicated. We </span>
+<span id="L1618" class="LineNr">1618 </span><span class="Comment">     might have a network of accepted norms / higher-order preferences in which </span>
+<span id="L1619" class="LineNr">1619 </span><span class="Comment">     they all influence one another rather than a strict top-down hierarchy.</span>
+<span id="L1620" class="LineNr">1620 </span><span class="Comment">     We have suggested that in that case, the weights of each accepted norm and</span>
+<span id="L1621" class="LineNr">1621 </span><span class="Comment">     the parameters governing the network behavior could be treated as the </span>
+<span id="L1622" class="LineNr">1622 </span><span class="Comment">     fundamental norm. Developing this further, we might model it as a markov </span>
+<span id="L1623" class="LineNr">1623 </span><span class="Comment">     model with states of norm acceptances influencing other acceptances and </span>
+<span id="L1624" class="LineNr">1624 </span><span class="Comment">     look for a stationary distribution, i.e. an equilibrium state in which the </span>
+<span id="L1625" class="LineNr">1625 </span><span class="Comment">     state it transitions to is the same state it started with. </span>
 <span id="L1626" class="LineNr">1626 </span>
-<span id="L1627" class="LineNr">1627 </span>     However, even that makes a simplifying assumption that the network
-<span id="L1628" class="LineNr">1628 </span>     topology of which norms influence which others remains constant. But <span class="Statement">if</span>
-<span id="L1629" class="LineNr">1629 </span>     we imagine a brain<span class="Constant">'s behavior in response to varying inputs, it seems</span>
-<span id="L1630" class="LineNr">1630 </span><span class="Constant">     likely that sometimes, which higher-order preferences influence which </span>
-<span id="L1631" class="LineNr">1631 </span><span class="Constant">     others would also vary. To handle this, we implement a parliamentary model</span>
-<span id="L1632" class="LineNr">1632 </span><span class="Constant">     to aggregate the various influences across different possible </span>
-<span id="L1633" class="LineNr">1633 </span><span class="Constant">     continuations of the agent. </span>
-<span id="L1634" class="LineNr">1634 </span><span class="Constant">       This is inspired by Nick Bostrom and Toby Ord on Parliamentary Models </span>
-<span id="L1635" class="LineNr">1635 </span><span class="Constant">     for Moral Uncertainty. Although it'</span>s applied <span class="Type">in</span> a different context, it<span class="Constant">'s</span>
-<span id="L1636" class="LineNr">1636 </span><span class="Constant">     similar in that both are aggregating many utility functions into one.</span>
-<span id="L1637" class="LineNr">1637 </span><span class="Constant">     <a href="http://www.overcomingbias.com/2009/01/moral-uncertainty-towards-a-solution.html">http://www.overcomingbias.com/2009/01/moral-uncertainty-towards-a-solution.html</a></span>
+<span id="L1627" class="LineNr">1627 </span><span class="Comment">     However, even that makes a simplifying assumption that the network </span>
+<span id="L1628" class="LineNr">1628 </span><span class="Comment">     topology of which norms influence which others remains constant. But if </span>
+<span id="L1629" class="LineNr">1629 </span><span class="Comment">     we imagine a brain's behavior in response to varying inputs, it seems</span>
+<span id="L1630" class="LineNr">1630 </span><span class="Comment">     likely that sometimes, which higher-order preferences influence which </span>
+<span id="L1631" class="LineNr">1631 </span><span class="Comment">     others would also vary. To handle this, we implement a parliamentary model</span>
+<span id="L1632" class="LineNr">1632 </span><span class="Comment">     to aggregate the various influences across different possible </span>
+<span id="L1633" class="LineNr">1633 </span><span class="Comment">     continuations of the agent. </span>
+<span id="L1634" class="LineNr">1634 </span><span class="Comment">       This is inspired by Nick Bostrom and Toby Ord on Parliamentary Models </span>
+<span id="L1635" class="LineNr">1635 </span><span class="Comment">     for Moral Uncertainty. Although it's applied in a different context, it's</span>
+<span id="L1636" class="LineNr">1636 </span><span class="Comment">     similar in that both are aggregating many utility functions into one.</span>
+<span id="L1637" class="LineNr">1637 </span><span class="Comment">     <a href="http://www.overcomingbias.com/2009/01/moral-uncertainty-towards-a-solution.html" target="_blank">http://www.overcomingbias.com/2009/01/moral-uncertainty-towards-a-solution.html</a></span>
 <span id="L1638" class="LineNr">1638 </span>
-<span id="L1639" class="LineNr">1639 </span>     In the end, this does bring us closer to the ideal response <span class="Type">/</span> advisor
-<span id="L1640" class="LineNr">1640 </span>     family of metaethical theories but I think our focus on the influence of
-<span id="L1641" class="LineNr">1641 </span>     optimal normative judgments remains distinctive and arguably avoids some
-<span id="L1642" class="LineNr">1642 </span>     worries. We are reading off the first<span class="Type">-</span>order utility function from ideal
-<span id="L1643" class="LineNr">1643 </span>     selves rather than the actions so we have less distortion from the
-<span id="L1644" class="LineNr">1644 </span>     idealization process to worry about since there<span class="Constant">'s less to change. We</span>
-<span id="L1645" class="LineNr">1645 </span><span class="Constant">     address remaining worries about distortion with agential identity to </span>
-<span id="L1646" class="LineNr">1646 </span><span class="Constant">     measure how much one remains the same agent. </span>
+<span id="L1639" class="LineNr">1639 </span><span class="Comment">     In the end, this does bring us closer to the ideal response / advisor</span>
+<span id="L1640" class="LineNr">1640 </span><span class="Comment">     family of metaethical theories but I think our focus on the influence of</span>
+<span id="L1641" class="LineNr">1641 </span><span class="Comment">     optimal normative judgments remains distinctive and arguably avoids some</span>
+<span id="L1642" class="LineNr">1642 </span><span class="Comment">     worries. We are reading off the first-order utility function from ideal</span>
+<span id="L1643" class="LineNr">1643 </span><span class="Comment">     selves rather than the actions so we have less distortion from the </span>
+<span id="L1644" class="LineNr">1644 </span><span class="Comment">     idealization process to worry about since there's less to change. We</span>
+<span id="L1645" class="LineNr">1645 </span><span class="Comment">     address remaining worries about distortion with agential identity to </span>
+<span id="L1646" class="LineNr">1646 </span><span class="Comment">     measure how much one remains the same agent. </span>
 <span id="L1647" class="LineNr">1647 </span>
-<span id="L1648" class="LineNr">1648 </span>     The idealization is mostly done by weighting more heavily selves who are
-<span id="L1649" class="LineNr">1649 </span>     the result of normative judgments that best satisfy the decision criteria
-<span id="L1650" class="LineNr">1650 </span>     governing them. We also incorporate subjective likelihood of the inputs
-<span id="L1651" class="LineNr">1651 </span>     determining possible continuations to factor <span class="Type">in</span> normal operating
-<span id="L1652" class="LineNr">1652 </span>     conditions without letting <span class="Type">in</span> external factors and violating supervenience
-<span id="L1653" class="LineNr">1653 </span>     on just the brain.
-<span id="L1654" class="LineNr">1654 </span>  <span class="Type">*/</span>
+<span id="L1648" class="LineNr">1648 </span><span class="Comment">     The idealization is mostly done by weighting more heavily selves who are</span>
+<span id="L1649" class="LineNr">1649 </span><span class="Comment">     the result of normative judgments that best satisfy the decision criteria</span>
+<span id="L1650" class="LineNr">1650 </span><span class="Comment">     governing them. We also incorporate subjective likelihood of the inputs</span>
+<span id="L1651" class="LineNr">1651 </span><span class="Comment">     determining possible continuations to factor in normal operating </span>
+<span id="L1652" class="LineNr">1652 </span><span class="Comment">     conditions without letting in external factors and violating supervenience</span>
+<span id="L1653" class="LineNr">1653 </span><span class="Comment">     on just the brain.</span>
+<span id="L1654" class="LineNr">1654 </span><span class="Comment">  */</span>
 <span id="L1655" class="LineNr">1655 </span>  <span class="Identifier">ruf</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b) {
 <span id="L1656" class="LineNr">1656 </span>    t_z <span class="Statement">:=</span> <span class="Constant">10</span> <span class="Type">**</span> <span class="Constant">9</span>; <span class="Comment">// Number of time steps of continuations to consider</span>
 <span id="L1657" class="LineNr">1657 </span>    <span class="Comment">/* Todo: Find a more principled way</span>
@@ -1797,7 +1797,7 @@
 <span id="L1663" class="LineNr">1663 </span>    t_i <span class="Statement">:=</span> <span class="Constant">1</span>;
 <span id="L1664" class="LineNr">1664 </span>    bs1 <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-413">drop_time</a>(b.a[b.n]);
 <span id="L1665" class="LineNr">1665 </span>    <span class="Statement">while</span> (t_i <span class="Type">&lt;=</span> t_z) {
-<span id="L1666" class="LineNr">1666 </span>      bmps <span class="Statement">:=</span> <span class="Identifier">bs_msr_paths</span>(w, b, bs1, t_i);
+<span id="L1666" class="LineNr">1666 </span>      bmps <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-2183">bs_msr_paths</a>(w, b, bs1, t_i);
 <span id="L1667" class="LineNr">1667 </span>      voter_wts <span class="Statement">:=</span> voter_wts <span class="Type">+</span> {
 <span id="L1668" class="LineNr">1668 </span>        [ <span class="Identifier">additive_to_ordinal</span>(<a class="Identifier code-proc-link" href="#da-262">f</a>(b)[<span class="Identifier">first</span>(<span class="Identifier">last</span>(bmp))], <span class="Constant">0</span>), <span class="Comment">// voter util func</span>
 <span id="L1669" class="LineNr">1669 </span>          <span class="Identifier">time_wt</span>(t_i) <span class="Type">*</span> <a class="Identifier code-proc-link" href="#da-1690">voter_weight</a>(w, b, bmp) ]        <span class="Comment">// voter weight</span>
@@ -1921,37 +1921,37 @@
 <span id="L1787" class="LineNr">1787 </span><span class="Comment">           may need to model a set of possible worlds and a probability </span>
 <span id="L1788" class="LineNr">1788 </span><span class="Comment">           distribution or measure over them.</span>
 <span id="L1789" class="LineNr">1789 </span>
-<span id="L1790" class="LineNr">1790 </span>           We might typically expect higher<span class="Type">-</span>order utilities to be placed <span class="Type">in</span>
-<span id="L1791" class="LineNr">1791 </span>           some change <span class="Type">in</span> lower<span class="Type">-</span>order utility and then a recognition that some
-<span id="L1792" class="LineNr">1792 </span>           prescription would more<span class="Type">-</span>or<span class="Type">-</span>less immediately cause that change would
-<span id="L1793" class="LineNr">1793 </span>           cause the prescription and <span class="Type">in</span> turn, the intended change. But since
-<span id="L1794" class="LineNr">1794 </span>           we can neither assume that the higher<span class="Type">-</span>order utility is placed <span class="Type">in</span>
-<span id="L1795" class="LineNr">1795 </span>           a specific, concrete lower<span class="Type">-</span>order utility change <span class="Type">in</span> the near future <span class="Statement">as</span>
-<span id="L1796" class="LineNr">1796 </span>           opposed to more open<span class="Type">-</span>ended properties nor assume the immediacy of the
-<span id="L1797" class="LineNr">1797 </span>           prescription<span class="Constant">'s causation of a lower-order utility change, we just </span>
-<span id="L1798" class="LineNr">1798 </span><span class="Constant">           look very far into the future and sum up the utility of any events </span>
-<span id="L1799" class="LineNr">1799 </span><span class="Constant">           in that 4-dimensional space-time block that would be included in the</span>
-<span id="L1800" class="LineNr">1800 </span><span class="Constant">           reference of higher-order utility expressions. Since the network</span>
-<span id="L1801" class="LineNr">1801 </span><span class="Constant">           topology of the higher-order utility functions may be path dependent,</span>
-<span id="L1802" class="LineNr">1802 </span><span class="Constant">           we also use the bs_msr_paths to aggregate over the different futures</span>
-<span id="L1803" class="LineNr">1803 </span><span class="Constant">           made possible by various input states weighted by their subjective</span>
-<span id="L1804" class="LineNr">1804 </span><span class="Constant">           likelihood.</span>
-<span id="L1805" class="LineNr">1805 </span><span class="Constant">        */</span>
-<span id="L1806" class="LineNr">1806 </span><span class="Constant">        new_ds2 := rxs + { [var, val] : [var, val] in ds2 </span>
-<span id="L1807" class="LineNr">1807 </span><span class="Constant">                                      | !(var in domain(rxs)) };</span>
-<span id="L1808" class="LineNr">1808 </span><span class="Constant">        bs := inv(f(b))[new_ds2];</span>
-<span id="L1809" class="LineNr">1809 </span><span class="Constant">        bmps := bs_msr_paths(w, b, bs, 10 ** 9);</span>
-<span id="L1810" class="LineNr">1810 </span><span class="Constant">        future_wts := {                      // collect a ... </span>
-<span id="L1811" class="LineNr">1811 </span><span class="Constant">          [ [first(bs_msr) : bs_msr in bmp], // list of brain states, bss,</span>
-<span id="L1812" class="LineNr">1812 </span><span class="Constant">            last(last(bmp)) ]                // &amp; measure from the final state</span>
-<span id="L1813" class="LineNr">1813 </span><span class="Constant">          : bmp in last(bmps)                // for each bs_msr_path</span>
-<span id="L1814" class="LineNr">1814 </span><span class="Constant">        }; // to get { [bss, msr], ... }</span>
-<span id="L1815" class="LineNr">1815 </span><span class="Constant">    </span>
-<span id="L1816" class="LineNr">1816 </span><span class="Constant">        return +/ { </span>
-<span id="L1817" class="LineNr">1817 </span><span class="Constant">          msr * util_of_future(w, b, t_i, ds, psc_base_exprs, sc_u, bss) </span>
-<span id="L1818" class="LineNr">1818 </span><span class="Constant">          : [bss, msr] in future_wts </span>
-<span id="L1819" class="LineNr">1819 </span><span class="Constant">        };</span>
-<span id="L1820" class="LineNr">1820 </span><span class="Constant">      }; // end util_of_rxs</span>
+<span id="L1790" class="LineNr">1790 </span><span class="Comment">           We might typically expect higher-order utilities to be placed in </span>
+<span id="L1791" class="LineNr">1791 </span><span class="Comment">           some change in lower-order utility and then a recognition that some</span>
+<span id="L1792" class="LineNr">1792 </span><span class="Comment">           prescription would more-or-less immediately cause that change would </span>
+<span id="L1793" class="LineNr">1793 </span><span class="Comment">           cause the prescription and in turn, the intended change. But since</span>
+<span id="L1794" class="LineNr">1794 </span><span class="Comment">           we can neither assume that the higher-order utility is placed in </span>
+<span id="L1795" class="LineNr">1795 </span><span class="Comment">           a specific, concrete lower-order utility change in the near future as</span>
+<span id="L1796" class="LineNr">1796 </span><span class="Comment">           opposed to more open-ended properties nor assume the immediacy of the</span>
+<span id="L1797" class="LineNr">1797 </span><span class="Comment">           prescription's causation of a lower-order utility change, we just </span>
+<span id="L1798" class="LineNr">1798 </span><span class="Comment">           look very far into the future and sum up the utility of any events </span>
+<span id="L1799" class="LineNr">1799 </span><span class="Comment">           in that 4-dimensional space-time block that would be included in the</span>
+<span id="L1800" class="LineNr">1800 </span><span class="Comment">           reference of higher-order utility expressions. Since the network</span>
+<span id="L1801" class="LineNr">1801 </span><span class="Comment">           topology of the higher-order utility functions may be path dependent,</span>
+<span id="L1802" class="LineNr">1802 </span><span class="Comment">           we also use the bs_msr_paths to aggregate over the different futures</span>
+<span id="L1803" class="LineNr">1803 </span><span class="Comment">           made possible by various input states weighted by their subjective</span>
+<span id="L1804" class="LineNr">1804 </span><span class="Comment">           likelihood.</span>
+<span id="L1805" class="LineNr">1805 </span><span class="Comment">        */</span>
+<span id="L1806" class="LineNr">1806 </span>        new_ds2 <span class="Statement">:=</span> rxs <span class="Type">+</span> { [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> ds2
+<span id="L1807" class="LineNr">1807 </span>                                      <span class="Type">|</span> <span class="Type">!</span>(var <span class="Type">in</span> <span class="Identifier">domain</span>(rxs)) };
+<span id="L1808" class="LineNr">1808 </span>        bs <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-259">inv</a>(<a class="Identifier code-proc-link" href="#da-262">f</a>(b))[new_ds2];
+<span id="L1809" class="LineNr">1809 </span>        bmps <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-2183">bs_msr_paths</a>(w, b, bs, <span class="Constant">10</span> <span class="Type">**</span> <span class="Constant">9</span>);
+<span id="L1810" class="LineNr">1810 </span>        future_wts <span class="Statement">:=</span> {                      <span class="Comment">// collect a ... </span>
+<span id="L1811" class="LineNr">1811 </span>          [ [<span class="Identifier">first</span>(bs_msr) <span class="Type">:</span> bs_msr <span class="Type">in</span> bmp], <span class="Comment">// list of brain states, bss,</span>
+<span id="L1812" class="LineNr">1812 </span>            <span class="Identifier">last</span>(<span class="Identifier">last</span>(bmp)) ]                <span class="Comment">// &amp; measure from the final state</span>
+<span id="L1813" class="LineNr">1813 </span>          <span class="Type">:</span> bmp <span class="Type">in</span> <span class="Identifier">last</span>(bmps)                <span class="Comment">// for each bs_msr_path</span>
+<span id="L1814" class="LineNr">1814 </span>        }; <span class="Comment">// to get { [bss, msr], ... }</span>
+<span id="L1815" class="LineNr">1815 </span>
+<span id="L1816" class="LineNr">1816 </span>        <span class="Statement">return</span> <span class="Type">+/</span> {
+<span id="L1817" class="LineNr">1817 </span>          msr <span class="Type">*</span> <a class="Identifier code-proc-link" href="#da-1822">util_of_future</a>(w, b, t_i, ds, psc_base_exprs, sc_u, bss)
+<span id="L1818" class="LineNr">1818 </span>          <span class="Type">:</span> [bss, msr] <span class="Type">in</span> future_wts
+<span id="L1819" class="LineNr">1819 </span>        };
+<span id="L1820" class="LineNr">1820 </span>      }; <span class="Comment">// end util_of_rxs</span>
 <span id="L1821" class="LineNr">1821 </span>
 <span id="L1822" class="LineNr">1822 </span>        <span class="Identifier">util_of_future</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b, t_i, ds, psc_base_exprs, sc_u, bss) {
 <span id="L1823" class="LineNr">1823 </span>          wb <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-1711">new_wb</a>(w, b, bss);
@@ -2001,20 +2001,20 @@
 <span id="L1867" class="LineNr">1867 </span><span class="Comment">     concerns when someone is the same agent for purposes of trusting their</span>
 <span id="L1868" class="LineNr">1868 </span><span class="Comment">     normative judgments. </span>
 <span id="L1869" class="LineNr">1869 </span>
-<span id="L1870" class="LineNr">1870 </span>     If we are thinking <span class="Type">in</span> terms of ideal advisor <span class="Type">/</span> observer theories, we might
-<span id="L1871" class="LineNr">1871 </span>     be considering hypothetical versions of ourselves with more information
-<span id="L1872" class="LineNr">1872 </span>     or other qualities. But consider the full knowledge of what heroin feels
-<span id="L1873" class="LineNr">1873 </span>     like. If we had that information, we might become addicts and change our
-<span id="L1874" class="LineNr">1874 </span>     values. But this probably isn<span class="Constant">'t a change that would make us want to defer</span>
-<span id="L1875" class="LineNr">1875 </span><span class="Constant">     to that self'</span>s values. We may protest that something <span class="Type">in</span> the process of
-<span id="L1876" class="LineNr">1876 </span>     adding this knowledge has changed our values, not illuminated them.
-<span id="L1877" class="LineNr">1877 </span>
-<span id="L1878" class="LineNr">1878 </span>     The concept of agential identity is meant to measure how much other
-<span id="L1879" class="LineNr">1879 </span>     possible selves truly reflect <span class="Type">*</span>our<span class="Type">*</span> values and agency. Generally, this
-<span id="L1880" class="LineNr">1880 </span>     will be measured either by similarity to our current selves or by
-<span id="L1881" class="LineNr">1881 </span>     identifying the changes <span class="Statement">as</span> cognitive changes made through inference or
-<span id="L1882" class="LineNr">1882 </span>     applying higher<span class="Type">-</span>order decision criteria to values.
-<span id="L1883" class="LineNr">1883 </span>  <span class="Type">*/</span>
+<span id="L1870" class="LineNr">1870 </span><span class="Comment">     If we are thinking in terms of ideal advisor / observer theories, we might</span>
+<span id="L1871" class="LineNr">1871 </span><span class="Comment">     be considering hypothetical versions of ourselves with more information </span>
+<span id="L1872" class="LineNr">1872 </span><span class="Comment">     or other qualities. But consider the full knowledge of what heroin feels </span>
+<span id="L1873" class="LineNr">1873 </span><span class="Comment">     like. If we had that information, we might become addicts and change our </span>
+<span id="L1874" class="LineNr">1874 </span><span class="Comment">     values. But this probably isn't a change that would make us want to defer</span>
+<span id="L1875" class="LineNr">1875 </span><span class="Comment">     to that self's values. We may protest that something in the process of</span>
+<span id="L1876" class="LineNr">1876 </span><span class="Comment">     adding this knowledge has changed our values, not illuminated them.</span>
+<span id="L1877" class="LineNr">1877 </span><span class="Comment">     </span>
+<span id="L1878" class="LineNr">1878 </span><span class="Comment">     The concept of agential identity is meant to measure how much other </span>
+<span id="L1879" class="LineNr">1879 </span><span class="Comment">     possible selves truly reflect *our* values and agency. Generally, this </span>
+<span id="L1880" class="LineNr">1880 </span><span class="Comment">     will be measured either by similarity to our current selves or by</span>
+<span id="L1881" class="LineNr">1881 </span><span class="Comment">     identifying the changes as cognitive changes made through inference or</span>
+<span id="L1882" class="LineNr">1882 </span><span class="Comment">     applying higher-order decision criteria to values. </span>
+<span id="L1883" class="LineNr">1883 </span><span class="Comment">  */</span>
 <span id="L1884" class="LineNr">1884 </span>  <span class="Identifier">agential_identity</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(dss, w, b) { <span class="Comment">// dss : list of decision states</span>
 <span id="L1885" class="LineNr">1885 </span>    <span class="Statement">return</span> <span class="Constant">0.5</span> <span class="Type">*</span> <a class="Identifier code-proc-link" href="#da-1890">agential_continuity</a>(dss, w, b) <span class="Type">+</span>
 <span id="L1886" class="LineNr">1886 </span>           <span class="Comment">// kinda like: 0.5 * agential_connection(dss[1], {}, dss[#dss])</span>
@@ -2291,41 +2291,41 @@
 <span id="L2157" class="LineNr">2157 </span><span class="Comment">     line from root to leaf collecting pairs of brain states and measures along</span>
 <span id="L2158" class="LineNr">2158 </span><span class="Comment">     the way. </span>
 <span id="L2159" class="LineNr">2159 </span>
-<span id="L2160" class="LineNr">2160 </span>     e.g. [bs_msr_paths_t1, <span class="Statement">..</span>., bs_msr_paths_tz]
-<span id="L2161" class="LineNr">2161 </span>       bs_msr_paths_tj <span class="Statement">:=</span> { bs_msrs_tj_1, bs_msr_tj_2, <span class="Statement">..</span>. }
-<span id="L2162" class="LineNr">2162 </span>         bs_msrs_tj_k <span class="Statement">:=</span> [ bs_msr_t1, <span class="Statement">..</span>., bs_msr_tj ]
-<span id="L2163" class="LineNr">2163 </span>           bs_msr_tj <span class="Statement">:=</span> [bs_tj, msr]
+<span id="L2160" class="LineNr">2160 </span><span class="Comment">     e.g. [bs_msr_paths_t1, ..., bs_msr_paths_tz]</span>
+<span id="L2161" class="LineNr">2161 </span><span class="Comment">       bs_msr_paths_tj := { bs_msrs_tj_1, bs_msr_tj_2, ... }</span>
+<span id="L2162" class="LineNr">2162 </span><span class="Comment">         bs_msrs_tj_k := [ bs_msr_t1, ..., bs_msr_tj ]</span>
+<span id="L2163" class="LineNr">2163 </span><span class="Comment">           bs_msr_tj := [bs_tj, msr]</span>
 <span id="L2164" class="LineNr">2164 </span>
-<span id="L2165" class="LineNr">2165 </span>                     [ bs1, <span class="Constant">1</span> ]
-<span id="L2166" class="LineNr">2166 </span>                    <span class="Type">/</span>   <span class="Type">|</span>      <span class="Type">\</span>
-<span id="L2167" class="LineNr">2167 </span>               is1 <span class="Type">/</span>    <span class="Type">|</span>is2    <span class="Type">\</span>  <span class="Identifier">is3</span>   (input states leading to continuations)
-<span id="L2168" class="LineNr">2168 </span>                  <span class="Type">/</span>     <span class="Type">|</span>        <span class="Type">\</span>
-<span id="L2169" class="LineNr">2169 </span>                 <span class="Type">/</span>      <span class="Type">|</span>         <span class="Type">\</span>
-<span id="L2170" class="LineNr">2170 </span>     [bs_t2a, <span class="Constant">1</span><span class="Type">/</span><span class="Constant">6</span>]  [bs_t2b, <span class="Constant">1</span><span class="Type">/</span><span class="Constant">2</span>]  [bs_t2c, <span class="Constant">1</span><span class="Type">/</span><span class="Constant">3</span>]
-<span id="L2171" class="LineNr">2171 </span>      <span class="Type">/</span>    <span class="Type">|</span>    <span class="Type">\</span>     <span class="Type">/</span>   <span class="Type">|</span>   <span class="Type">\</span>      <span class="Type">/</span>   <span class="Type">|</span>   <span class="Type">\</span>
-<span id="L2172" class="LineNr">2172 </span>     <span class="Statement">..</span>.
+<span id="L2165" class="LineNr">2165 </span><span class="Comment">                     [ bs1, 1 ]</span>
+<span id="L2166" class="LineNr">2166 </span><span class="Comment">                    /   |      \</span>
+<span id="L2167" class="LineNr">2167 </span><span class="Comment">               is1 /    |is2    \  is3   (input states leading to continuations)</span>
+<span id="L2168" class="LineNr">2168 </span><span class="Comment">                  /     |        \  </span>
+<span id="L2169" class="LineNr">2169 </span><span class="Comment">                 /      |         \</span>
+<span id="L2170" class="LineNr">2170 </span><span class="Comment">     [bs_t2a, 1/6]  [bs_t2b, 1/2]  [bs_t2c, 1/3]  </span>
+<span id="L2171" class="LineNr">2171 </span><span class="Comment">      /    |    \     /   |   \      /   |   \</span>
+<span id="L2172" class="LineNr">2172 </span><span class="Comment">     ...</span>
 <span id="L2173" class="LineNr">2173 </span>
-<span id="L2174" class="LineNr">2174 </span>     There<span class="Constant">'s some duplication and space inefficiency in having the previous </span>
-<span id="L2175" class="LineNr">2175 </span><span class="Constant">     times'</span> brain states and measures present both <span class="Type">in</span> the earlier elements of
-<span id="L2176" class="LineNr">2176 </span>     the top level list <span class="Statement">as</span> well <span class="Statement">as</span> within the set of paths <span class="Statement">for</span> each element.
-<span id="L2177" class="LineNr">2177 </span>     We probably could <span class="Statement">do</span> without it but it makes it a little more convenient
-<span id="L2178" class="LineNr">2178 </span>     when calculating the voter weights <span class="Statement">for</span> each time<span class="Constant">'s voters in computing</span>
-<span id="L2179" class="LineNr">2179 </span><span class="Constant">     the rational utility function. Some aspects of those weights like the </span>
-<span id="L2180" class="LineNr">2180 </span><span class="Constant">     agential identity depend on the entire path taken and not just the final</span>
-<span id="L2181" class="LineNr">2181 </span><span class="Constant">     brain state.</span>
-<span id="L2182" class="LineNr">2182 </span><span class="Constant">  */</span>
-<span id="L2183" class="LineNr">2183 </span><span class="Constant">  bs_msr_paths := procedure(w, b, bs1, t_j) {</span>
-<span id="L2184" class="LineNr">2184 </span><span class="Constant">    if (t_j == 1) {</span>
-<span id="L2185" class="LineNr">2185 </span><span class="Constant">      return [{[[bs1, 1]]}];</span>
-<span id="L2186" class="LineNr">2186 </span><span class="Constant">    } else {</span>
-<span id="L2187" class="LineNr">2187 </span><span class="Constant">      return bs_msr_paths(w, b, bs1, t_j - 1) + </span>
-<span id="L2188" class="LineNr">2188 </span><span class="Constant">        [+/ { </span>
-<span id="L2189" class="LineNr">2189 </span><span class="Constant">           { bmp + [bs_msr] </span>
-<span id="L2190" class="LineNr">2190 </span><span class="Constant">             : bs_msr in next_bs_msrs(w, b, last(bmp)[1], last(bmp)[2], t_j-1) }</span>
-<span id="L2191" class="LineNr">2191 </span><span class="Constant">           : bmp in last(bs_msr_paths(w, b, bs1, t_j - 1))</span>
-<span id="L2192" class="LineNr">2192 </span><span class="Constant">         }];</span>
-<span id="L2193" class="LineNr">2193 </span><span class="Constant">    }</span>
-<span id="L2194" class="LineNr">2194 </span><span class="Constant">  };  </span>
+<span id="L2174" class="LineNr">2174 </span><span class="Comment">     There's some duplication and space inefficiency in having the previous </span>
+<span id="L2175" class="LineNr">2175 </span><span class="Comment">     times' brain states and measures present both in the earlier elements of</span>
+<span id="L2176" class="LineNr">2176 </span><span class="Comment">     the top level list as well as within the set of paths for each element.</span>
+<span id="L2177" class="LineNr">2177 </span><span class="Comment">     We probably could do without it but it makes it a little more convenient</span>
+<span id="L2178" class="LineNr">2178 </span><span class="Comment">     when calculating the voter weights for each time's voters in computing</span>
+<span id="L2179" class="LineNr">2179 </span><span class="Comment">     the rational utility function. Some aspects of those weights like the </span>
+<span id="L2180" class="LineNr">2180 </span><span class="Comment">     agential identity depend on the entire path taken and not just the final</span>
+<span id="L2181" class="LineNr">2181 </span><span class="Comment">     brain state.</span>
+<span id="L2182" class="LineNr">2182 </span><span class="Comment">  */</span>
+<span id="L2183" class="LineNr">2183 </span>  <span class="Identifier">bs_msr_paths</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b, bs1, t_j) {
+<span id="L2184" class="LineNr">2184 </span>    <span class="Statement">if</span> (t_j <span class="Type">==</span> <span class="Constant">1</span>) {
+<span id="L2185" class="LineNr">2185 </span>      <span class="Statement">return</span> [{[[bs1, <span class="Constant">1</span>]]}];
+<span id="L2186" class="LineNr">2186 </span>    } <span class="Statement">else</span> {
+<span id="L2187" class="LineNr">2187 </span>      <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-2183">bs_msr_paths</a>(w, b, bs1, t_j <span class="Type">-</span> <span class="Constant">1</span>) <span class="Type">+</span>
+<span id="L2188" class="LineNr">2188 </span>        [<span class="Type">+/</span> {
+<span id="L2189" class="LineNr">2189 </span>           { bmp <span class="Type">+</span> [bs_msr]
+<span id="L2190" class="LineNr">2190 </span>             <span class="Type">:</span> bs_msr <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-2199">next_bs_msrs</a>(w, b, <span class="Identifier">last</span>(bmp)[<span class="Constant">1</span>], <span class="Identifier">last</span>(bmp)[<span class="Constant">2</span>], t_j<span class="Type">-</span><span class="Constant">1</span>) }
+<span id="L2191" class="LineNr">2191 </span>           <span class="Type">:</span> bmp <span class="Type">in</span> <span class="Identifier">last</span>(<a class="Identifier code-proc-link" href="#da-2183">bs_msr_paths</a>(w, b, bs1, t_j <span class="Type">-</span> <span class="Constant">1</span>))
+<span id="L2192" class="LineNr">2192 </span>         }];
+<span id="L2193" class="LineNr">2193 </span>    }
+<span id="L2194" class="LineNr">2194 </span>  };
 <span id="L2195" class="LineNr">2195 </span>
 <span id="L2196" class="LineNr">2196 </span>  <span class="Comment">/* Takes a brain, brain state, measure and prev t_i and returns the possible</span>
 <span id="L2197" class="LineNr">2197 </span><span class="Comment">     continuations in the next time step together with their measure </span>
@@ -2345,35 +2345,35 @@
 <span id="L2211" class="LineNr">2211 </span>    <span class="Comment">/* For each brain input state of each decision input state, map the total</span>
 <span id="L2212" class="LineNr">2212 </span><span class="Comment">       brain state including the response bs_j to its new measure. </span>
 <span id="L2213" class="LineNr">2213 </span>
-<span id="L2214" class="LineNr">2214 </span>       Ideally, the new measure would be proportional to the brain input
-<span id="L2215" class="LineNr">2215 </span>       state<span class="Constant">'s subjective probability. This was under development but doing it </span>
-<span id="L2216" class="LineNr">2216 </span><span class="Constant">       in a way that is biologically plausible presents a challenge. To avoid </span>
-<span id="L2217" class="LineNr">2217 </span><span class="Constant">       an implausible number of explicit probabilities, we'</span>d probably have to
-<span id="L2218" class="LineNr">2218 </span>       look at the closest coherent extensions of the current probability
-<span id="L2219" class="LineNr">2219 </span>       distribution <span class="Statement">as</span> well <span class="Statement">as</span> allow <span class="Statement">for</span> indirect reference, which introduces
-<span id="L2220" class="LineNr">2220 </span>       its own challenges <span class="Type">in</span> translating probabilities from direct to indirect.
-<span id="L2221" class="LineNr">2221 </span>
-<span id="L2222" class="LineNr">2222 </span>       Although I by no means think these challenges insurmountable, the
-<span id="L2223" class="LineNr">2223 </span>       technical complications involved seemed too great <span class="Statement">for</span> a first version
-<span id="L2224" class="LineNr">2224 </span>       and not worth delaying the initial release over. As a placeholder here,
-<span id="L2225" class="LineNr">2225 </span>       we simply assume each possible decision input state is equally probable
-<span id="L2226" class="LineNr">2226 </span>       and each brain state implementing a given decision input state is
-<span id="L2227" class="LineNr">2227 </span>       similarly equally probable to other such implementations.
+<span id="L2214" class="LineNr">2214 </span><span class="Comment">       Ideally, the new measure would be proportional to the brain input </span>
+<span id="L2215" class="LineNr">2215 </span><span class="Comment">       state's subjective probability. This was under development but doing it </span>
+<span id="L2216" class="LineNr">2216 </span><span class="Comment">       in a way that is biologically plausible presents a challenge. To avoid </span>
+<span id="L2217" class="LineNr">2217 </span><span class="Comment">       an implausible number of explicit probabilities, we'd probably have to </span>
+<span id="L2218" class="LineNr">2218 </span><span class="Comment">       look at the closest coherent extensions of the current probability </span>
+<span id="L2219" class="LineNr">2219 </span><span class="Comment">       distribution as well as allow for indirect reference, which introduces </span>
+<span id="L2220" class="LineNr">2220 </span><span class="Comment">       its own challenges in translating probabilities from direct to indirect.</span>
+<span id="L2221" class="LineNr">2221 </span><span class="Comment">       </span>
+<span id="L2222" class="LineNr">2222 </span><span class="Comment">       Although I by no means think these challenges insurmountable, the </span>
+<span id="L2223" class="LineNr">2223 </span><span class="Comment">       technical complications involved seemed too great for a first version</span>
+<span id="L2224" class="LineNr">2224 </span><span class="Comment">       and not worth delaying the initial release over. As a placeholder here,</span>
+<span id="L2225" class="LineNr">2225 </span><span class="Comment">       we simply assume each possible decision input state is equally probable</span>
+<span id="L2226" class="LineNr">2226 </span><span class="Comment">       and each brain state implementing a given decision input state is</span>
+<span id="L2227" class="LineNr">2227 </span><span class="Comment">       similarly equally probable to other such implementations.</span>
 <span id="L2228" class="LineNr">2228 </span>
-<span id="L2229" class="LineNr">2229 </span>       While incorporating the subjective probability seems preferable, it<span class="Constant">'s</span>
-<span id="L2230" class="LineNr">2230 </span><span class="Constant">       also worth mentioning that it may not actually be necessary. The main</span>
-<span id="L2231" class="LineNr">2231 </span><span class="Constant">       motivation is to make continuations of the agent under very weird </span>
-<span id="L2232" class="LineNr">2232 </span><span class="Constant">       scenarios matter less. But if the worry there is that those </span>
-<span id="L2233" class="LineNr">2233 </span><span class="Constant">       circumstances are distorting the agent'</span>s values, we already have the
-<span id="L2234" class="LineNr">2234 </span>       agential_identity measure to discount them. In other words, agential
-<span id="L2235" class="LineNr">2235 </span>       identity may screen off a circumstance<span class="Constant">'s weirdness from its relevance.</span>
-<span id="L2236" class="LineNr">2236 </span><span class="Constant">    */</span>
-<span id="L2237" class="LineNr">2237 </span><span class="Constant">    return +/ { </span>
-<span id="L2238" class="LineNr">2238 </span><span class="Constant">      { [ bi + bs_j, msr * (1 / #domain(bis)) * (1 / #bis[di]) ] </span>
-<span id="L2239" class="LineNr">2239 </span><span class="Constant">        : bi in bis[di] } </span>
-<span id="L2240" class="LineNr">2240 </span><span class="Constant">      : di in domain(bis) </span>
-<span id="L2241" class="LineNr">2241 </span><span class="Constant">    };</span>
-<span id="L2242" class="LineNr">2242 </span><span class="Constant">  };</span>
+<span id="L2229" class="LineNr">2229 </span><span class="Comment">       While incorporating the subjective probability seems preferable, it's</span>
+<span id="L2230" class="LineNr">2230 </span><span class="Comment">       also worth mentioning that it may not actually be necessary. The main</span>
+<span id="L2231" class="LineNr">2231 </span><span class="Comment">       motivation is to make continuations of the agent under very weird </span>
+<span id="L2232" class="LineNr">2232 </span><span class="Comment">       scenarios matter less. But if the worry there is that those </span>
+<span id="L2233" class="LineNr">2233 </span><span class="Comment">       circumstances are distorting the agent's values, we already have the </span>
+<span id="L2234" class="LineNr">2234 </span><span class="Comment">       agential_identity measure to discount them. In other words, agential</span>
+<span id="L2235" class="LineNr">2235 </span><span class="Comment">       identity may screen off a circumstance's weirdness from its relevance.</span>
+<span id="L2236" class="LineNr">2236 </span><span class="Comment">    */</span>
+<span id="L2237" class="LineNr">2237 </span>    <span class="Statement">return</span> <span class="Type">+/</span> {
+<span id="L2238" class="LineNr">2238 </span>      { [ bi <span class="Type">+</span> bs_j, msr <span class="Type">*</span> (<span class="Constant">1</span> <span class="Type">/</span> <span class="Type">#</span><span class="Identifier">domain</span>(bis)) <span class="Type">*</span> (<span class="Constant">1</span> <span class="Type">/</span> <span class="Type">#</span>bis[di]) ]
+<span id="L2239" class="LineNr">2239 </span>        <span class="Type">:</span> bi <span class="Type">in</span> bis[di] }
+<span id="L2240" class="LineNr">2240 </span>      <span class="Type">:</span> di <span class="Type">in</span> <span class="Identifier">domain</span>(bis)
+<span id="L2241" class="LineNr">2241 </span>    };
+<span id="L2242" class="LineNr">2242 </span>  };
 <span id="L2243" class="LineNr">2243 </span>
 <span id="L2244" class="LineNr">2244 </span>
 <span id="L2245" class="LineNr">2245 </span><span class="Comment Heading">// Class Methods</span>
@@ -2528,7 +2528,7 @@
 <span id="L2394" class="LineNr">2394 </span>    };
 <span id="L2395" class="LineNr">2395 </span>
 <span id="L2396" class="LineNr">2396 </span>      <span class="Identifier">expl_score</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, d_i) {
-<span id="L2397" class="LineNr">2397 </span>        <span class="Statement">return</span> d_i.<a class="Identifier code-proc-link" href="#da-1421">ambitiousness</a>(b) <span class="Type">-</span> d_i.<span class="Identifier">complexity</span>(b)
+<span id="L2397" class="LineNr">2397 </span>        <span class="Statement">return</span> d_i.<a class="Identifier code-proc-link" href="#da-1421">ambitiousness</a>(b) <span class="Type">-</span> d_i.<a class="Identifier code-proc-link" href="#da-1370">complexity</a>(b)
 <span id="L2398" class="LineNr">2398 </span>               <span class="Type">-</span> d_i.<a class="Identifier code-proc-link" href="#da-777">instr_irrat</a>(b) <span class="Type">-</span> d_i.<a class="Identifier code-proc-link" href="#da-854">incoherence</a>(b);
 <span id="L2399" class="LineNr">2399 </span>      };
 <span id="L2400" class="LineNr">2400 </span>
@@ -2549,7 +2549,7 @@
 <span id="L2415" class="LineNr">2415 </span><span class="Comment">// alias </span>
 <span id="L2416" class="LineNr">2416 </span><span class="Identifier">da</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() { <span class="Statement">return</span> decision_algorithm; };
 </pre>
-<pre class="vimCodeElement test_code" id="test_decision_algorithm"><span id="L1" class="LineNr">   1 </span><span class="Identifier">print</span>(<span class="Constant">"</span><span class="Special">\n</span><span class="Constant">Testing Decision Algorithm"</span>);
+<pre class="vimCodeElement test_code selected" id="test_decision_algorithm"><span id="L1" class="LineNr">   1 </span><span class="Identifier">print</span>(<span class="Constant">"</span><span class="Special">\n</span><span class="Constant">Testing Decision Algorithm"</span>);
 <span id="L2" class="LineNr">   2 </span><span class="Identifier">print</span>(  <span class="Constant">"=========================="</span>);
 <span id="L3" class="LineNr">   3 </span>
 <span id="L4" class="LineNr"><a href="#da-123" data-file="decision_algorithm" title="s" class="back_to_proc">&#8629;</a>   4 </span><span class="Identifier">test_s</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
@@ -2839,7 +2839,7 @@
 <span id="L288" class="LineNr"> 288 </span>};
 <span id="L289" class="LineNr"> 289 </span><span class="Identifier">test_poss_states</span>();
 <span id="L290" class="LineNr"> 290 </span>
-<span id="L291" class="LineNr"> 291 </span><span class="Identifier">test_commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L291" class="LineNr"><a href="#da-315" data-file="decision_algorithm" title="commutes" class="back_to_proc">&#8629;</a> 291 </span><span class="Identifier">test_commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L292" class="LineNr"> 292 </span>  <span class="Comment">// print('pf ' + pf1());  </span>
 <span id="L293" class="LineNr"> 293 </span>
 <span id="L294" class="LineNr"> 294 </span>  <span class="Comment">// This may take a while so it's commented out but it worked last time.</span>
@@ -3592,13 +3592,13 @@
 <span id="L1041" class="LineNr">1041 </span>};
 <span id="L1042" class="LineNr">1042 </span><span class="Identifier">test_add_p_distr</span>();
 <span id="L1043" class="LineNr">1043 </span>
-<span id="L1044" class="LineNr">1044 </span><span class="Identifier">test_prob_distance</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L1044" class="LineNr"><a href="#da-1262" data-file="decision_algorithm" title="prob_distance" class="back_to_proc">&#8629;</a>1044 </span><span class="Identifier">test_prob_distance</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L1045" class="LineNr">1045 </span>  d <span class="Statement">:=</span> decision_algorithm.<a class="Identifier code-proc-link" href="#da-2407">new</a>();
 <span id="L1046" class="LineNr">1046 </span>  d.p <span class="Statement">:=</span> { [<span class="Constant">'A'</span>, <span class="Constant">'P(A)'</span>], [<span class="Constant">'B'</span>, <span class="Constant">'P(B)'</span>] };
 <span id="L1047" class="LineNr">1047 </span>  d.cp <span class="Statement">:=</span> { [[<span class="Constant">'B'</span>, <span class="Constant">'A'</span>], <span class="Constant">'P(B|A)'</span>] };
 <span id="L1048" class="LineNr">1048 </span>  pp1 <span class="Statement">:=</span> { [<span class="Constant">'P(A)'</span>, <span class="Constant">0.4</span>], [<span class="Constant">'P(B)'</span>, <span class="Constant">0.5</span>], [<span class="Constant">'P(B|A)'</span>, <span class="Constant">0.6</span>] };
 <span id="L1049" class="LineNr">1049 </span>  pp2 <span class="Statement">:=</span> { [<span class="Constant">'P(A)'</span>, <span class="Constant">0.1</span>], [<span class="Constant">'P(B)'</span>, <span class="Constant">0.9</span>], [<span class="Constant">'P(B|A)'</span>, <span class="Constant">0.2</span>] };
-<span id="L1050" class="LineNr">1050 </span>  <span class="Statement">assert</span>(d.<span class="Identifier">prob_distance</span>(d.p, d.cp, pp1, pp2) <span class="Type">==</span> <span class="Constant">1.1</span>,
+<span id="L1050" class="LineNr">1050 </span>  <span class="Statement">assert</span>(d.<a class="Identifier code-proc-link" href="#da-1262">prob_distance</a>(d.p, d.cp, pp1, pp2) <span class="Type">==</span> <span class="Constant">1.1</span>,
 <span id="L1051" class="LineNr">1051 </span>         <span class="Constant">"Error: prob_distance is incorrect."</span>);
 <span id="L1052" class="LineNr">1052 </span>  <span class="Identifier">print</span>(<span class="Constant">'[ok] prob_distance'</span>);
 <span id="L1053" class="LineNr">1053 </span>};
@@ -4321,7 +4321,7 @@
 <span id="L60" class="LineNr">60 </span>  <span class="Identifier">print</span>(<span class="Constant">'[ok] response'</span>);
 <span id="L61" class="LineNr">61 </span>};
 </pre>
-<pre class="vimCodeElement selected" id="lib"><span id="L1" class="LineNr">  1 </span>dev <span class="Statement">:=</span> <span class="Constant">false</span>;
+<pre class="vimCodeElement" id="lib"><span id="L1" class="LineNr">  1 </span>dev <span class="Statement">:=</span> <span class="Constant">false</span>;
 <span id="L2" class="LineNr">  2 </span>
 <span id="L3" class="LineNr">  3 </span><span class="Identifier">tf</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() { <span class="Statement">return</span> { <span class="Constant">true</span>, <span class="Constant">false</span> }; };
 <span id="L4" class="LineNr">  4 </span>
@@ -5125,7 +5125,7 @@
 <span id="L802" class="LineNr">802 </span>  <span class="Statement">return</span> <span class="Type">#</span>strs[<span class="Constant">1</span>];
 <span id="L803" class="LineNr">803 </span>};
 </pre>
-<pre class="vimCodeElement test_code selected" id="test_lib"><span id="L1" class="LineNr">  1 </span><span class="Identifier">print</span>(<span class="Constant">'Testing Lib'</span>);
+<pre class="vimCodeElement test_code" id="test_lib"><span id="L1" class="LineNr">  1 </span><span class="Identifier">print</span>(<span class="Constant">'Testing Lib'</span>);
 <span id="L2" class="LineNr">  2 </span><span class="Identifier">print</span>(<span class="Constant">'==========='</span>);
 <span id="L3" class="LineNr">  3 </span>
 <span id="L4" class="LineNr"><a href="#l-6" data-file="lib" title="ne_pow" class="back_to_proc">&#8629;</a>  4 </span><span class="Identifier">test_ne_pow</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
@@ -5592,7 +5592,7 @@
 <span id="L1" class="LineNr">  1 </span><span class="Comment">/* SetlX 2.2.0 Cheat Sheet</span>
 <span id="L2" class="LineNr">  2 </span><span class="Comment">   Here I've compiled a short list of examples illustrating the setlX language.</span>
 <span id="L3" class="LineNr">  3 </span>
-<span id="L4" class="LineNr">  4 </span><span class="Comment">   There is also a slightly expanded <a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank">quick_ref.stlx</a> version which demonstrates </span>
+<span id="L4" class="LineNr">  4 </span><span class="Comment">   There is also a slightly expanded <a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank"></a><a class="quick_ref" target="_blank">quick_ref.stlx</a> version which demonstrates </span>
 <span id="L5" class="LineNr">  5 </span><span class="Comment">   nearly all the setlX needed in order to understand MetaEthical.AI. The main </span>
 <span id="L6" class="LineNr">  6 </span><span class="Comment">   difference is that this cheat sheet focuses on aspects that are more unique </span>
 <span id="L7" class="LineNr">  7 </span><span class="Comment">   to the setlX language and omits many commands that are more obvious or </span>
@@ -5897,7 +5897,7 @@
 <span id="L2" class="LineNr">  2 </span><span class="Comment">   This list of examples introduces much of the setlX language.</span>
 <span id="L3" class="LineNr">  3 </span>
 <span id="L4" class="LineNr">  4 </span><span class="Comment">   Nearly all of MetaEthical.AI is just a combination of the basic components</span>
-<span id="L5" class="LineNr">  5 </span><span class="Comment">   demonstrated here. There is also a slightly more compact <a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank">cheat_sheet.stlx</a></span>
+<span id="L5" class="LineNr">  5 </span><span class="Comment">   demonstrated here. There is also a slightly more compact <a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank"></a><a class="cheat_sheet" target="_blank">cheat_sheet.stlx</a></span>
 <span id="L6" class="LineNr">  6 </span><span class="Comment">   that focuses on just the aspects that are more unique to setlX and omits</span>
 <span id="L7" class="LineNr">  7 </span><span class="Comment">   many commands that are more obvious or self-explanatory, especially among</span>
 <span id="L8" class="LineNr">  8 </span><span class="Comment">   programmers.</span>
@@ -6316,10 +6316,10 @@
     <option value="v19-10-13" selected="">v19.10.13</option>
   </select>
   <a id="main_tab" class="file" data-file="main">main</a>
-  <a id="decision_algorithm_tab" class="file" data-file="decision_algorithm">decision_alg&hellip;</a>
+  <a id="decision_algorithm_tab" class="file selected" data-file="decision_algorithm">decision_alg&hellip;</a>
   <a id="causal_markov_model_tab" class="file" data-file="causal_markov_model">causal_markov&hellip;</a>
   <a id="causal_model_tab" class="file" data-file="causal_model">causal_model</a>
-  <a id="lib_tab" class="file selected" data-file="lib">lib</a>
+  <a id="lib_tab" class="file" data-file="lib">lib</a>
   <a id="setlx_tab" class="file" data-file="setlx">setlX</a>
   <span class="icons">
     <!--
@@ -6403,7 +6403,7 @@
             <ul>
               <li>
                 <i class="fas fa-caret-down"></i>
-                <a data-file="decision_algorithm" data-name="complexity">
+                <a data-file="decision_algorithm" data-name="complexity" href="#da-1370">
                   Minimum Description Length
                 </a>
                 <ul>
@@ -6424,7 +6424,7 @@
                     </a>
                   </li>
                   <li>
-                    <a data-file="decision_algorithm" data-name="prob_distance">
+                    <a data-file="decision_algorithm" data-name="prob_distance" href="#da-1262">
                       Probabilistic</a>
                     <a data-file="decision_algorithm" data-name="incoherence" href="#da-854">
                       Coherence
@@ -6445,7 +6445,7 @@
             </ul>
           </li><!-- end best intentional explanation -->
           <li>
-            <a data-file="decision_algorithm" data-name="commutes">
+            <a data-file="decision_algorithm" data-name="commutes" href="#da-315">
               Implementation Functor              
             </a>
           </li>
@@ -6478,9 +6478,9 @@
   </div>
 	<div id="glossary" class="links">
 		<div id="col1" class="col">
-		 <a href="#cmm-92" data-file="causal_markov_model" class="Identifier" title="actual_events">actual_events</a>  <a href="#da-738" data-file="decision_algorithm" class="Identifier" title="actual_p_events">actual_p_events</a>  <a href="#cmm-96" data-file="causal_markov_model" class="Identifier" title="actual_state">actual_state</a>  <a href="#cmm-102" data-file="causal_markov_model" class="Identifier" title="actual_sync_events">actual_sync_events</a>  <a href="#da-2308" data-file="decision_algorithm" class="Identifier" title="add_one">add_one</a>  <a href="#da-1071" data-file="decision_algorithm" class="Identifier" title="add_p_distr">add_p_distr</a>  <a href="#l-632" data-file="lib" class="Identifier" title="add_u_to_card_u">add_u_to_card_u</a>  <a href="#da-2317" data-file="decision_algorithm" class="Identifier" title="add_up_to">add_up_to</a>  <a href="#da-2144" data-file="decision_algorithm" class="Identifier" title="additive_to_ordinal">additive_to_ordinal</a>  <a href="#da-1895" data-file="decision_algorithm" class="Identifier" title="agential_connection">agential_connection</a>  <a href="#da-1890" data-file="decision_algorithm" class="Identifier" title="agential_continuity">agential_continuity</a>  <a href="#da-1884" data-file="decision_algorithm" class="Identifier" title="agential_identity">agential_identity</a>  <a href="#da-2268" data-file="decision_algorithm" class="Identifier" title="all">all</a>  <a href="#l-138" data-file="lib" class="Identifier" title="all_atomic_formulas">all_atomic_formulas</a>  <a href="#da-2274" data-file="decision_algorithm" class="Identifier" title="all_lte">all_lte</a>  <a href="#l-742" data-file="lib" class="Identifier" title="all_strs_lte">all_strs_lte</a>  <a href="#da-1421" data-file="decision_algorithm" class="Identifier" title="ambitiousness">ambitiousness</a>  <a href="#da-1459" data-file="decision_algorithm" class="Identifier" title="ambitiousness_with_hs">ambitiousness_with_hs</a>  <a href="#da-1578" data-file="decision_algorithm" class="Identifier" title="apply_fm_m">apply_fm_m</a>  <a href="#l-264" data-file="lib" class="Identifier" title="arity">arity</a>  <a href="#l-429" data-file="lib" class="Identifier" title="as_p2">as_p2</a>  <a href="#l-431" data-file="lib" class="Identifier" title="as_p3">as_p3</a>  <a href="#l-438" data-file="lib" class="Identifier" title="as_p4">as_p4</a>  <a href="#l-442" data-file="lib" class="Identifier" title="as_q5">as_q5</a>  <a href="#l-447" data-file="lib" class="Identifier" title="as_q6">as_q6</a>  <a href="#l-452" data-file="lib" class="Identifier" title="as_q7">as_q7</a>  <a href="#l-407" data-file="lib" class="Identifier" title="assign_time">assign_time</a>  <a href="#l-603" data-file="lib" class="Identifier" title="atom_u">atom_u</a>  <a href="#l-116" data-file="lib" class="Identifier" title="atomic_exprs">atomic_exprs</a>  <a href="#l-146" data-file="lib" class="Identifier" title="atomic_forms">atomic_forms</a>  <a href="#l-142" data-file="lib" class="Identifier" title="atomic_formulas">atomic_formulas</a>  <a href="#l-126" data-file="lib" class="Identifier" title="atomic_terms">atomic_terms</a>  <a href="#l-20" data-file="lib" class="Identifier" title="avg">avg</a>  <a href="#da-1299" data-file="decision_algorithm" class="Identifier" title="avg_p_class">avg_p_class</a>  <a href="#da-2390" data-file="decision_algorithm" class="Identifier" title="better_explanation">better_explanation</a>  <a href="#da-989" data-file="decision_algorithm" class="Identifier" title="calc_cond_prob">calc_cond_prob</a>  <a href="#l-615" data-file="lib" class="Identifier" title="card_u_to_ord_u">card_u_to_ord_u</a>  <a href="#l-288" data-file="lib" class="Identifier" title="cart_prod">cart_prod</a>  <a href="#da-218" data-file="decision_algorithm" class="Identifier" title="children">children</a>  <a href="#l-316" data-file="lib" class="Identifier" title="choices">choices</a>  <a href="#cmm-38" data-file="causal_markov_model" class="Identifier" title="cm">cm</a>  <a href="#cmm-67" data-file="causal_markov_model" class="Identifier" title="cm_f">cm_f</a>  <a href="#cmm-63" data-file="causal_markov_model" class="Identifier" title="cm_r">cm_r</a>  <a href="#cmm-49" data-file="causal_markov_model" class="Identifier" title="cm_u">cm_u</a>  <a href="#cmm-58" data-file="causal_markov_model" class="Identifier" title="cm_v">cm_v</a>  <a href="#da-1933" data-file="decision_algorithm" class="Identifier" title="cog_change">cog_change</a>  <a href="#da-1022" data-file="decision_algorithm" class="Identifier" title="coh_cm_ps">coh_cm_ps</a>  <a href="#da-918" data-file="decision_algorithm" class="Identifier" title="coh_pcms">coh_pcms</a>  <a href="#l-616" data-file="lib" class="Identifier" title="compare_sts">compare_sts</a>  <a href="#l-365" data-file="lib" class="Identifier" title="compat">compat</a>  <a href="#l-377" data-file="lib" class="Identifier" title="compat_compl_sts">compat_compl_sts</a>  <a href="#l-371" data-file="lib" class="Identifier" title="compatible_complete_states">compatible_complete_states</a>  <a href="#l-361" data-file="lib" class="Identifier" title="compatible_values">compatible_values</a>  <a href="#cmm-45" data-file="causal_markov_model" class="Identifier" title="compute_cm">compute_cm</a>  <a href="#da-269" data-file="decision_algorithm" class="Identifier" title="compute_f">compute_f</a>  <a href="#da-352" data-file="decision_algorithm" class="Identifier" title="compute_lf">compute_lf</a>  <a href="#cm-96" data-file="causal_model" class="Identifier" title="compute_poss_states">compute_poss_states</a>  <a href="#da-526" data-file="decision_algorithm" class="Identifier" title="compute_ref">compute_ref</a>  <a href="#da-985" data-file="decision_algorithm" class="Identifier" title="cond_probs">cond_probs</a>  <a href="#l-466" data-file="lib" class="Identifier" title="conj_elim">conj_elim</a>  <a href="#l-462" data-file="lib" class="Identifier" title="conj_intr">conj_intr</a>  <a href="#l-83" data-file="lib" class="Identifier" title="connectives">connectives</a>  <a href="#da-1481" data-file="decision_algorithm" class="Identifier" title="d_star_sim">d_star_sim</a>  <a href="#da-2416" data-file="decision_algorithm" class="Identifier" title="da">da</a>  <a href="#cm-109" data-file="causal_model" class="Identifier" title="depth">depth</a>  <a href="#l-520" data-file="lib" class="Identifier" title="derive">derive</a>  <a href="#l-506" data-file="lib" class="Identifier" title="derive_more">derive_more</a>  <a href="#da-1387" data-file="decision_algorithm" class="Identifier" title="df_to_str">df_to_str</a>  <a href="#l-477" data-file="lib" class="Identifier" title="disj_elim">disj_elim</a>  <a href="#l-472" data-file="lib" class="Identifier" title="disj_intr">disj_intr</a>  <a href="#da-2080" data-file="decision_algorithm" class="Identifier" title="da:dist_to">da:dist_to</a>  <a href="#l-571" data-file="lib" class="Identifier" title="dist_to_closest">dist_to_closest</a>  <a href="#da-1061" data-file="decision_algorithm" class="Identifier" title="distr_p_cm">distr_p_cm</a>  <a href="#da-337" data-file="decision_algorithm" class="Identifier" title="drop_i">drop_i</a>  <a href="#l-413" data-file="lib" class="Identifier" title="drop_time">drop_time</a>  <a href="#da-784" data-file="decision_algorithm" class="Identifier" title="e_dist">e_dist</a>  <a href="#da-2120" data-file="decision_algorithm" class="Identifier" title="e_func">e_func</a>  <a href="#da-792" data-file="decision_algorithm" class="Identifier" title="e_i_dist">e_i_dist</a>  <a href="#da-470" data-file="decision_algorithm" class="Identifier" title="e_in_u">e_in_u</a>  <a href="#da-1991" data-file="decision_algorithm" class="Identifier" title="e_vars">e_vars</a>  <a href="#cm-27" data-file="causal_model" class="Identifier" title="effect_of_do">effect_of_do</a>  <a href="#da-771" data-file="decision_algorithm" class="Identifier" title="eo">eo</a>  <a href="#l-32" data-file="lib" class="Identifier" title="equiv_expr">equiv_expr</a>  <a href="#da-1096" data-file="decision_algorithm" class="Identifier" title="equiv_p_expr">equiv_p_expr</a>  <a href="#l-163" data-file="lib" class="Identifier" title="ete">ete</a>  <a href="#da-1833" data-file="decision_algorithm" class="Identifier" title="eval_expr">eval_expr</a>  <a href="#l-793" data-file="lib" class="Identifier" title="eval_str">eval_str</a>  <a href="#l-488" data-file="lib" class="Identifier" title="ex_elim">ex_elim</a>  <a href="#l-484" data-file="lib" class="Identifier" title="ex_intr">ex_intr</a>  <a href="#da-809" data-file="decision_algorithm" class="Identifier" title="exp_u">exp_u</a>  <a href="#l-158" data-file="lib" class="Identifier" title="expand">expand</a>  <a href="#da-2396" data-file="decision_algorithm" class="Identifier" title="expl_score">expl_score</a>  <a href="#l-155" data-file="lib" class="Identifier" title="expr_to_events">expr_to_events</a>  <a href="#da-2325" data-file="decision_algorithm" class="Identifier" title="expr_to_ltr_var">expr_to_ltr_var</a>  <a href="#da-1010" data-file="decision_algorithm" class="Identifier" title="expr_to_p_funcs">expr_to_p_funcs</a>  <a href="#l-645" data-file="lib" class="Identifier" title="exprs_to_state_space">exprs_to_state_space</a>  <a href="#da-1844" data-file="decision_algorithm" class="Identifier" title="ext_ruf">ext_ruf</a>  <a href="#da-262" data-file="decision_algorithm" class="Identifier" title="f">f</a>  <a href="#da-1383" data-file="decision_algorithm" class="Identifier" title="f_to_s">f_to_s</a>  <a href="#l-243" data-file="lib" class="Identifier" title="fctize">fctize</a>  <a href="#cmm-71" data-file="causal_markov_model" class="Identifier" title="fix_time">fix_time</a>  <a href="#l-273" data-file="lib" class="Identifier" title="flatten">flatten</a>  <a href="#l-278" data-file="lib" class="Identifier" title="flatten_list">flatten_list</a>  <a href="#da-1583" data-file="decision_algorithm" class="Identifier" title="fm_commutes">fm_commutes</a>  <a href="#l-230" data-file="lib" class="Identifier" title="foldr">foldr</a>  <a href="#da-1157" data-file="decision_algorithm" class="Identifier" title="da:force_list">da:force_list</a>  <a href="#da-1238" data-file="decision_algorithm" class="Identifier" title="da:force_list">da:force_list</a>  <a href="#da-585" data-file="decision_algorithm" class="Identifier" title="full_ref">full_ref</a>  <a href="#l-133" data-file="lib" class="Identifier" title="func_to_expr">func_to_expr</a>  <a href="#l-338" data-file="lib" class="Identifier" title="function_space">function_space</a>  <a href="#da-1446" data-file="decision_algorithm" class="Identifier" title="h">h</a>  <a href="#da-1455" data-file="decision_algorithm" class="Identifier" title="h_complexity">h_complexity</a>  <a href="#l-570" data-file="lib" class="Identifier" title="hausdorff_dist">hausdorff_dist</a>  <a href="#da-1436" data-file="decision_algorithm" class="Identifier" title="hs_score">hs_score</a>  <a href="#da-1440" data-file="decision_algorithm" class="Identifier" title="hs_similarity">hs_similarity</a>  <a href="#cm-85" data-file="causal_model" class="Identifier" title="i_proc_to_func">i_proc_to_func</a>  <a href="#da-541" data-file="decision_algorithm" class="Identifier" title="i_ref">i_ref</a>  <a href="#da-1967" data-file="decision_algorithm" class="Identifier" title="id_expr">id_expr</a>  <a href="#da-1983" data-file="decision_algorithm" class="Identifier" title="id_var">id_var</a>  <a href="#da-2252" data-file="decision_algorithm" class="Identifier" title="implemented_by">implemented_by</a>  <a href="#da-854" data-file="decision_algorithm" class="Identifier" title="incoherence">incoherence</a>  <a href="#l-24" data-file="lib" class="Identifier" title="index_of">index_of</a>  <a href="#da-777" data-file="decision_algorithm" class="Identifier" title="instr_irrat">instr_irrat</a>  <a href="#da-483" data-file="decision_algorithm" class="Identifier" title="intension">intension</a>  <a href="#l-259" data-file="lib" class="Identifier" title="inv">inv</a>  <a href="#l-106" data-file="lib" class="Identifier" title="inv_maybe_not">inv_maybe_not</a>  <a href="#da-1201" data-file="decision_algorithm" class="Identifier" title="is_coherent">is_coherent</a>  <a href="#da-1541" data-file="decision_algorithm" class="Identifier" title="is_equal_to">is_equal_to</a>  <a href="#da-293" data-file="decision_algorithm" class="Identifier" title="is_implemented_by">is_implemented_by</a>  <a href="#da-1547" data-file="decision_algorithm" class="Identifier" title="is_isomorphic_to">is_isomorphic_to</a>  <a href="#l-420" data-file="lib" class="Identifier" title="is_logical_truth">is_logical_truth</a>  <a href="#cm-73" data-file="causal_model" class="Identifier" title="is_nec_parent_of">is_nec_parent_of</a>  <a href="#da-202" data-file="decision_algorithm" class="Identifier" title="is_necessary_parent_of">is_necessary_parent_of</a>  <a href="#da-1525" data-file="decision_algorithm" class="Identifier" title="is_simplest_version">is_simplest_version</a>  <a href="#da-1503" data-file="decision_algorithm" class="Identifier" title="is_subset_of">is_subset_of</a>  <a href="#da-951" data-file="decision_algorithm" class="Identifier" title="is_superset_of">is_superset_of</a>  <a href="#l-656" data-file="lib" class="Identifier" title="is_true_in">is_true_in</a>  <a href="#da-436" data-file="decision_algorithm" class="Identifier" title="is_valid">is_valid</a>  <a href="#l-253" data-file="lib" class="Identifier" title="iter_fct">iter_fct</a>  <a href="#l-306" data-file="lib" class="Identifier" title="iter_mult">iter_mult</a>  <a href="#l-298" data-file="lib" class="Identifier" title="iter_prod">iter_prod</a>  <a href="#da-188" data-file="decision_algorithm" class="Identifier" title="just_p_u_m2">just_p_u_m2</a>  <a href="#l-771" data-file="lib" class="Identifier" title="k">k</a>  <a href="#l-792" data-file="lib" class="Identifier" title="k_given">k_given</a>  <a href="#l-589" data-file="lib" class="Identifier" title="kendalls_tau_dist">kendalls_tau_dist</a>  <a href="#da-709" data-file="decision_algorithm" class="Identifier" title="less_sq_err">less_sq_err</a>  <a href="#da-345" data-file="decision_algorithm" class="Identifier" title="lf">lf</a>  <a href="#da-395" data-file="decision_algorithm" class="Identifier" title="lf_cm">lf_cm</a>  <a href="#da-411" data-file="decision_algorithm" class="Identifier" title="lf_cm_p_inv">lf_cm_p_inv</a>  <a href="#da-400" data-file="decision_algorithm" class="Identifier" title="lf_cm_vs">lf_cm_vs</a>  <a href="#da-367" data-file="decision_algorithm" class="Identifier" title="lf_commutes">lf_commutes</a> </div>
+		 <a href="#cmm-92" data-file="causal_markov_model" class="Identifier" title="actual_events">actual_events</a>  <a href="#da-738" data-file="decision_algorithm" class="Identifier" title="actual_p_events">actual_p_events</a>  <a href="#cmm-96" data-file="causal_markov_model" class="Identifier" title="actual_state">actual_state</a>  <a href="#cmm-102" data-file="causal_markov_model" class="Identifier" title="actual_sync_events">actual_sync_events</a>  <a href="#da-2308" data-file="decision_algorithm" class="Identifier" title="add_one">add_one</a>  <a href="#da-1071" data-file="decision_algorithm" class="Identifier" title="add_p_distr">add_p_distr</a>  <a href="#l-632" data-file="lib" class="Identifier" title="add_u_to_card_u">add_u_to_card_u</a>  <a href="#da-2317" data-file="decision_algorithm" class="Identifier" title="add_up_to">add_up_to</a>  <a href="#da-2144" data-file="decision_algorithm" class="Identifier" title="additive_to_ordinal">additive_to_ordinal</a>  <a href="#da-1895" data-file="decision_algorithm" class="Identifier" title="agential_connection">agential_connection</a>  <a href="#da-1890" data-file="decision_algorithm" class="Identifier" title="agential_continuity">agential_continuity</a>  <a href="#da-1884" data-file="decision_algorithm" class="Identifier" title="agential_identity">agential_identity</a>  <a href="#da-2268" data-file="decision_algorithm" class="Identifier" title="all">all</a>  <a href="#l-138" data-file="lib" class="Identifier" title="all_atomic_formulas">all_atomic_formulas</a>  <a href="#da-2274" data-file="decision_algorithm" class="Identifier" title="all_lte">all_lte</a>  <a href="#l-742" data-file="lib" class="Identifier" title="all_strs_lte">all_strs_lte</a>  <a href="#da-1421" data-file="decision_algorithm" class="Identifier" title="ambitiousness">ambitiousness</a>  <a href="#da-1459" data-file="decision_algorithm" class="Identifier" title="ambitiousness_with_hs">ambitiousness_with_hs</a>  <a href="#da-1578" data-file="decision_algorithm" class="Identifier" title="apply_fm_m">apply_fm_m</a>  <a href="#l-264" data-file="lib" class="Identifier" title="arity">arity</a>  <a href="#l-429" data-file="lib" class="Identifier" title="as_p2">as_p2</a>  <a href="#l-431" data-file="lib" class="Identifier" title="as_p3">as_p3</a>  <a href="#l-438" data-file="lib" class="Identifier" title="as_p4">as_p4</a>  <a href="#l-442" data-file="lib" class="Identifier" title="as_q5">as_q5</a>  <a href="#l-447" data-file="lib" class="Identifier" title="as_q6">as_q6</a>  <a href="#l-452" data-file="lib" class="Identifier" title="as_q7">as_q7</a>  <a href="#l-407" data-file="lib" class="Identifier" title="assign_time">assign_time</a>  <a href="#l-603" data-file="lib" class="Identifier" title="atom_u">atom_u</a>  <a href="#l-116" data-file="lib" class="Identifier" title="atomic_exprs">atomic_exprs</a>  <a href="#l-146" data-file="lib" class="Identifier" title="atomic_forms">atomic_forms</a>  <a href="#l-142" data-file="lib" class="Identifier" title="atomic_formulas">atomic_formulas</a>  <a href="#l-126" data-file="lib" class="Identifier" title="atomic_terms">atomic_terms</a>  <a href="#l-20" data-file="lib" class="Identifier" title="avg">avg</a>  <a href="#da-1299" data-file="decision_algorithm" class="Identifier" title="avg_p_class">avg_p_class</a>  <a href="#da-2390" data-file="decision_algorithm" class="Identifier" title="better_explanation">better_explanation</a>  <a href="#da-2183" data-file="decision_algorithm" class="Identifier" title="bs_msr_paths">bs_msr_paths</a>  <a href="#da-989" data-file="decision_algorithm" class="Identifier" title="calc_cond_prob">calc_cond_prob</a>  <a href="#l-615" data-file="lib" class="Identifier" title="card_u_to_ord_u">card_u_to_ord_u</a>  <a href="#l-288" data-file="lib" class="Identifier" title="cart_prod">cart_prod</a>  <a href="#da-218" data-file="decision_algorithm" class="Identifier" title="children">children</a>  <a href="#l-316" data-file="lib" class="Identifier" title="choices">choices</a>  <a href="#cmm-38" data-file="causal_markov_model" class="Identifier" title="cm">cm</a>  <a href="#cmm-67" data-file="causal_markov_model" class="Identifier" title="cm_f">cm_f</a>  <a href="#cmm-63" data-file="causal_markov_model" class="Identifier" title="cm_r">cm_r</a>  <a href="#cmm-49" data-file="causal_markov_model" class="Identifier" title="cm_u">cm_u</a>  <a href="#cmm-58" data-file="causal_markov_model" class="Identifier" title="cm_v">cm_v</a>  <a href="#da-1933" data-file="decision_algorithm" class="Identifier" title="cog_change">cog_change</a>  <a href="#da-1022" data-file="decision_algorithm" class="Identifier" title="coh_cm_ps">coh_cm_ps</a>  <a href="#da-918" data-file="decision_algorithm" class="Identifier" title="coh_pcms">coh_pcms</a>  <a href="#da-315" data-file="decision_algorithm" class="Identifier" title="commutes">commutes</a>  <a href="#l-616" data-file="lib" class="Identifier" title="compare_sts">compare_sts</a>  <a href="#l-365" data-file="lib" class="Identifier" title="compat">compat</a>  <a href="#l-377" data-file="lib" class="Identifier" title="compat_compl_sts">compat_compl_sts</a>  <a href="#l-371" data-file="lib" class="Identifier" title="compatible_complete_states">compatible_complete_states</a>  <a href="#l-361" data-file="lib" class="Identifier" title="compatible_values">compatible_values</a>  <a href="#da-1370" data-file="decision_algorithm" class="Identifier" title="complexity">complexity</a>  <a href="#cmm-45" data-file="causal_markov_model" class="Identifier" title="compute_cm">compute_cm</a>  <a href="#da-269" data-file="decision_algorithm" class="Identifier" title="compute_f">compute_f</a>  <a href="#da-352" data-file="decision_algorithm" class="Identifier" title="compute_lf">compute_lf</a>  <a href="#cm-96" data-file="causal_model" class="Identifier" title="compute_poss_states">compute_poss_states</a>  <a href="#da-526" data-file="decision_algorithm" class="Identifier" title="compute_ref">compute_ref</a>  <a href="#da-985" data-file="decision_algorithm" class="Identifier" title="cond_probs">cond_probs</a>  <a href="#l-466" data-file="lib" class="Identifier" title="conj_elim">conj_elim</a>  <a href="#l-462" data-file="lib" class="Identifier" title="conj_intr">conj_intr</a>  <a href="#l-83" data-file="lib" class="Identifier" title="connectives">connectives</a>  <a href="#da-1481" data-file="decision_algorithm" class="Identifier" title="d_star_sim">d_star_sim</a>  <a href="#da-2416" data-file="decision_algorithm" class="Identifier" title="da">da</a>  <a href="#cm-109" data-file="causal_model" class="Identifier" title="depth">depth</a>  <a href="#l-520" data-file="lib" class="Identifier" title="derive">derive</a>  <a href="#l-506" data-file="lib" class="Identifier" title="derive_more">derive_more</a>  <a href="#da-1387" data-file="decision_algorithm" class="Identifier" title="df_to_str">df_to_str</a>  <a href="#l-477" data-file="lib" class="Identifier" title="disj_elim">disj_elim</a>  <a href="#l-472" data-file="lib" class="Identifier" title="disj_intr">disj_intr</a>  <a href="#da-2080" data-file="decision_algorithm" class="Identifier" title="da:dist_to">da:dist_to</a>  <a href="#l-571" data-file="lib" class="Identifier" title="dist_to_closest">dist_to_closest</a>  <a href="#da-1061" data-file="decision_algorithm" class="Identifier" title="distr_p_cm">distr_p_cm</a>  <a href="#da-337" data-file="decision_algorithm" class="Identifier" title="drop_i">drop_i</a>  <a href="#l-413" data-file="lib" class="Identifier" title="drop_time">drop_time</a>  <a href="#da-784" data-file="decision_algorithm" class="Identifier" title="e_dist">e_dist</a>  <a href="#da-2120" data-file="decision_algorithm" class="Identifier" title="e_func">e_func</a>  <a href="#da-792" data-file="decision_algorithm" class="Identifier" title="e_i_dist">e_i_dist</a>  <a href="#da-470" data-file="decision_algorithm" class="Identifier" title="e_in_u">e_in_u</a>  <a href="#da-1991" data-file="decision_algorithm" class="Identifier" title="e_vars">e_vars</a>  <a href="#cm-27" data-file="causal_model" class="Identifier" title="effect_of_do">effect_of_do</a>  <a href="#da-771" data-file="decision_algorithm" class="Identifier" title="eo">eo</a>  <a href="#l-32" data-file="lib" class="Identifier" title="equiv_expr">equiv_expr</a>  <a href="#da-1096" data-file="decision_algorithm" class="Identifier" title="equiv_p_expr">equiv_p_expr</a>  <a href="#l-163" data-file="lib" class="Identifier" title="ete">ete</a>  <a href="#da-1833" data-file="decision_algorithm" class="Identifier" title="eval_expr">eval_expr</a>  <a href="#l-793" data-file="lib" class="Identifier" title="eval_str">eval_str</a>  <a href="#l-488" data-file="lib" class="Identifier" title="ex_elim">ex_elim</a>  <a href="#l-484" data-file="lib" class="Identifier" title="ex_intr">ex_intr</a>  <a href="#da-809" data-file="decision_algorithm" class="Identifier" title="exp_u">exp_u</a>  <a href="#l-158" data-file="lib" class="Identifier" title="expand">expand</a>  <a href="#da-2396" data-file="decision_algorithm" class="Identifier" title="expl_score">expl_score</a>  <a href="#l-155" data-file="lib" class="Identifier" title="expr_to_events">expr_to_events</a>  <a href="#da-2325" data-file="decision_algorithm" class="Identifier" title="expr_to_ltr_var">expr_to_ltr_var</a>  <a href="#da-1010" data-file="decision_algorithm" class="Identifier" title="expr_to_p_funcs">expr_to_p_funcs</a>  <a href="#l-645" data-file="lib" class="Identifier" title="exprs_to_state_space">exprs_to_state_space</a>  <a href="#da-1844" data-file="decision_algorithm" class="Identifier" title="ext_ruf">ext_ruf</a>  <a href="#da-262" data-file="decision_algorithm" class="Identifier" title="f">f</a>  <a href="#da-1383" data-file="decision_algorithm" class="Identifier" title="f_to_s">f_to_s</a>  <a href="#l-243" data-file="lib" class="Identifier" title="fctize">fctize</a>  <a href="#cmm-71" data-file="causal_markov_model" class="Identifier" title="fix_time">fix_time</a>  <a href="#l-273" data-file="lib" class="Identifier" title="flatten">flatten</a>  <a href="#l-278" data-file="lib" class="Identifier" title="flatten_list">flatten_list</a>  <a href="#da-1583" data-file="decision_algorithm" class="Identifier" title="fm_commutes">fm_commutes</a>  <a href="#l-230" data-file="lib" class="Identifier" title="foldr">foldr</a>  <a href="#da-1157" data-file="decision_algorithm" class="Identifier" title="da:force_list">da:force_list</a>  <a href="#da-1238" data-file="decision_algorithm" class="Identifier" title="da:force_list">da:force_list</a>  <a href="#da-585" data-file="decision_algorithm" class="Identifier" title="full_ref">full_ref</a>  <a href="#l-133" data-file="lib" class="Identifier" title="func_to_expr">func_to_expr</a>  <a href="#l-338" data-file="lib" class="Identifier" title="function_space">function_space</a>  <a href="#da-1446" data-file="decision_algorithm" class="Identifier" title="h">h</a>  <a href="#da-1455" data-file="decision_algorithm" class="Identifier" title="h_complexity">h_complexity</a>  <a href="#l-570" data-file="lib" class="Identifier" title="hausdorff_dist">hausdorff_dist</a>  <a href="#da-1436" data-file="decision_algorithm" class="Identifier" title="hs_score">hs_score</a>  <a href="#da-1440" data-file="decision_algorithm" class="Identifier" title="hs_similarity">hs_similarity</a>  <a href="#cm-85" data-file="causal_model" class="Identifier" title="i_proc_to_func">i_proc_to_func</a>  <a href="#da-541" data-file="decision_algorithm" class="Identifier" title="i_ref">i_ref</a>  <a href="#da-1967" data-file="decision_algorithm" class="Identifier" title="id_expr">id_expr</a>  <a href="#da-1983" data-file="decision_algorithm" class="Identifier" title="id_var">id_var</a>  <a href="#da-2252" data-file="decision_algorithm" class="Identifier" title="implemented_by">implemented_by</a>  <a href="#da-854" data-file="decision_algorithm" class="Identifier" title="incoherence">incoherence</a>  <a href="#l-24" data-file="lib" class="Identifier" title="index_of">index_of</a>  <a href="#da-777" data-file="decision_algorithm" class="Identifier" title="instr_irrat">instr_irrat</a>  <a href="#da-483" data-file="decision_algorithm" class="Identifier" title="intension">intension</a>  <a href="#l-259" data-file="lib" class="Identifier" title="inv">inv</a>  <a href="#l-106" data-file="lib" class="Identifier" title="inv_maybe_not">inv_maybe_not</a>  <a href="#da-1201" data-file="decision_algorithm" class="Identifier" title="is_coherent">is_coherent</a>  <a href="#da-1541" data-file="decision_algorithm" class="Identifier" title="is_equal_to">is_equal_to</a>  <a href="#da-293" data-file="decision_algorithm" class="Identifier" title="is_implemented_by">is_implemented_by</a>  <a href="#da-1547" data-file="decision_algorithm" class="Identifier" title="is_isomorphic_to">is_isomorphic_to</a>  <a href="#l-420" data-file="lib" class="Identifier" title="is_logical_truth">is_logical_truth</a>  <a href="#cm-73" data-file="causal_model" class="Identifier" title="is_nec_parent_of">is_nec_parent_of</a>  <a href="#da-202" data-file="decision_algorithm" class="Identifier" title="is_necessary_parent_of">is_necessary_parent_of</a>  <a href="#da-1525" data-file="decision_algorithm" class="Identifier" title="is_simplest_version">is_simplest_version</a>  <a href="#da-1503" data-file="decision_algorithm" class="Identifier" title="is_subset_of">is_subset_of</a>  <a href="#da-951" data-file="decision_algorithm" class="Identifier" title="is_superset_of">is_superset_of</a>  <a href="#l-656" data-file="lib" class="Identifier" title="is_true_in">is_true_in</a>  <a href="#da-436" data-file="decision_algorithm" class="Identifier" title="is_valid">is_valid</a>  <a href="#l-253" data-file="lib" class="Identifier" title="iter_fct">iter_fct</a>  <a href="#l-306" data-file="lib" class="Identifier" title="iter_mult">iter_mult</a>  <a href="#l-298" data-file="lib" class="Identifier" title="iter_prod">iter_prod</a>  <a href="#da-188" data-file="decision_algorithm" class="Identifier" title="just_p_u_m2">just_p_u_m2</a>  <a href="#l-771" data-file="lib" class="Identifier" title="k">k</a>  <a href="#l-792" data-file="lib" class="Identifier" title="k_given">k_given</a>  <a href="#l-589" data-file="lib" class="Identifier" title="kendalls_tau_dist">kendalls_tau_dist</a>  <a href="#da-709" data-file="decision_algorithm" class="Identifier" title="less_sq_err">less_sq_err</a>  <a href="#da-345" data-file="decision_algorithm" class="Identifier" title="lf">lf</a>  <a href="#da-395" data-file="decision_algorithm" class="Identifier" title="lf_cm">lf_cm</a>  <a href="#da-411" data-file="decision_algorithm" class="Identifier" title="lf_cm_p_inv">lf_cm_p_inv</a>  <a href="#da-400" data-file="decision_algorithm" class="Identifier" title="lf_cm_vs">lf_cm_vs</a> </div>
 		<div id="col2" class="col">
-		 <a href="#da-382" data-file="decision_algorithm" class="Identifier" title="lf_inv">lf_inv</a>  <a href="#da-388" data-file="decision_algorithm" class="Identifier" title="lf_inv_at">lf_inv_at</a>  <a href="#l-328" data-file="lib" class="Identifier" title="list_choices">list_choices</a>  <a href="#l-677" data-file="lib" class="Identifier" title="list_to_ord">list_to_ord</a>  <a href="#da-2300" data-file="decision_algorithm" class="Identifier" title="ltr_up_to">ltr_up_to</a>  <a href="#da-444" data-file="decision_algorithm" class="Identifier" title="m2s_are_valid">m2s_are_valid</a>  <a href="#l-15" data-file="lib" class="Identifier" title="max">max</a>  <a href="#da-871" data-file="decision_algorithm" class="Identifier" title="max_p_dist">max_p_dist</a>  <a href="#l-98" data-file="lib" class="Identifier" title="maybe_not">maybe_not</a>  <a href="#m-67" data-file="main" class="Identifier" title="meai_psc_dist">meai_psc_dist</a>  <a href="#l-722" data-file="lib" class="Identifier" title="merge">merge</a>  <a href="#m-47" data-file="main" class="Identifier" title="metaethical_ai_u">metaethical_ai_u</a>  <a href="#l-10" data-file="lib" class="Identifier" title="min">min</a>  <a href="#l-498" data-file="lib" class="Identifier" title="modus_ponens">modus_ponens</a>  <a href="#l-6" data-file="lib" class="Identifier" title="ne_pow">ne_pow</a>  <a href="#cmm-122" data-file="causal_markov_model" class="Identifier" title="cmm:new">cmm:new</a>  <a href="#cm-127" data-file="causal_model" class="Identifier" title="cm:new">cm:new</a>  <a href="#da-2407" data-file="decision_algorithm" class="Identifier" title="da:new">da:new</a>  <a href="#da-1711" data-file="decision_algorithm" class="Identifier" title="new_wb">new_wb</a>  <a href="#da-2199" data-file="decision_algorithm" class="Identifier" title="next_bs_msrs">next_bs_msrs</a>  <a href="#da-466" data-file="decision_algorithm" class="Identifier" title="no_e_in_u">no_e_in_u</a>  <a href="#da-225" data-file="decision_algorithm" class="Identifier" title="non_shared_ancestors">non_shared_ancestors</a>  <a href="#da-240" data-file="decision_algorithm" class="Identifier" title="non_shared_descendants">non_shared_descendants</a>  <a href="#da-170" data-file="decision_algorithm" class="Identifier" title="ns">ns</a>  <a href="#da-1165" data-file="decision_algorithm" class="Identifier" title="obeys_axiom_3">obeys_axiom_3</a>  <a href="#da-2047" data-file="decision_algorithm" class="Identifier" title="observed">observed</a>  <a href="#da-1154" data-file="decision_algorithm" class="Identifier" title="old_is_coherent">old_is_coherent</a>  <a href="#l-46" data-file="lib" class="Identifier" title="old_range_for_arity">old_range_for_arity</a>  <a href="#da-1731" data-file="decision_algorithm" class="Identifier" title="optimal_rxs">optimal_rxs</a>  <a href="#da-1737" data-file="decision_algorithm" class="Identifier" title="optimality">optimality</a>  <a href="#l-672" data-file="lib" class="Identifier" title="ord_u_dist">ord_u_dist</a>  <a href="#l-397" data-file="lib" class="Identifier" title="orig_var">orig_var</a>  <a href="#da-1909" data-file="decision_algorithm" class="Identifier" title="p_conn">p_conn</a>  <a href="#da-1901" data-file="decision_algorithm" class="Identifier" title="p_conn_continuity">p_conn_continuity</a>  <a href="#da-1133" data-file="decision_algorithm" class="Identifier" title="p_cp_inv">p_cp_inv</a>  <a href="#da-1104" data-file="decision_algorithm" class="Identifier" title="p_dist">p_dist</a>  <a href="#da-1283" data-file="decision_algorithm" class="Identifier" title="p_equiv_classes">p_equiv_classes</a>  <a href="#da-1927" data-file="decision_algorithm" class="Identifier" title="p_i_sim">p_i_sim</a>  <a href="#da-1124" data-file="decision_algorithm" class="Identifier" title="p_inv">p_inv</a>  <a href="#da-930" data-file="decision_algorithm" class="Identifier" title="p_range">p_range</a>  <a href="#da-939" data-file="decision_algorithm" class="Identifier" title="p_u_is_coherent">p_u_is_coherent</a>  <a href="#da-182" data-file="decision_algorithm" class="Identifier" title="p_u_vars">p_u_vars</a>  <a href="#da-1142" data-file="decision_algorithm" class="Identifier" title="p_var_inv">p_var_inv</a>  <a href="#da-178" data-file="decision_algorithm" class="Identifier" title="p_vars">p_vars</a>  <a href="#cm-66" data-file="causal_model" class="Identifier" title="cm:parents">cm:parents</a>  <a href="#da-197" data-file="decision_algorithm" class="Identifier" title="da:parents">da:parents</a>  <a href="#l-386" data-file="lib" class="Identifier" title="parse_var">parse_var</a>  <a href="#l-530" data-file="lib" class="Identifier" title="parse_vars">parse_vars</a>  <a href="#l-355" data-file="lib" class="Identifier" title="partial_functions">partial_functions</a>  <a href="#da-420" data-file="decision_algorithm" class="Identifier" title="plf_to_pf">plf_to_pf</a>  <a href="#da-561" data-file="decision_algorithm" class="Identifier" title="poss_base_expr_refs">poss_base_expr_refs</a>  <a href="#da-568" data-file="decision_algorithm" class="Identifier" title="poss_base_refs">poss_base_refs</a>  <a href="#da-883" data-file="decision_algorithm" class="Identifier" title="poss_cms">poss_cms</a>  <a href="#da-891" data-file="decision_algorithm" class="Identifier" title="poss_cms_from_l">poss_cms_from_l</a>  <a href="#da-904" data-file="decision_algorithm" class="Identifier" title="poss_cms_from_p_pars">poss_cms_from_p_pars</a>  <a href="#da-2371" data-file="decision_algorithm" class="Identifier" title="poss_ds">poss_ds</a>  <a href="#cmm-88" data-file="causal_markov_model" class="Identifier" title="cmm:poss_events">cmm:poss_events</a>  <a href="#cm-100" data-file="causal_model" class="Identifier" title="cm:poss_events">cm:poss_events</a>  <a href="#da-2329" data-file="decision_algorithm" class="Identifier" title="poss_expr_to_ltr">poss_expr_to_ltr</a>  <a href="#da-1987" data-file="decision_algorithm" class="Identifier" title="poss_i_events">poss_i_events</a>  <a href="#da-1331" data-file="decision_algorithm" class="Identifier" title="poss_i_states">poss_i_states</a>  <a href="#da-1311" data-file="decision_algorithm" class="Identifier" title="poss_io_states">poss_io_states</a>  <a href="#da-1335" data-file="decision_algorithm" class="Identifier" title="poss_is_states">poss_is_states</a>  <a href="#da-1323" data-file="decision_algorithm" class="Identifier" title="poss_m2_states">poss_m2_states</a>  <a href="#da-1319" data-file="decision_algorithm" class="Identifier" title="poss_m_states">poss_m_states</a>  <a href="#da-1327" data-file="decision_algorithm" class="Identifier" title="poss_ms_states">poss_ms_states</a>  <a href="#da-2334" data-file="decision_algorithm" class="Identifier" title="poss_nj">poss_nj</a>  <a href="#da-1339" data-file="decision_algorithm" class="Identifier" title="poss_o_states">poss_o_states</a>  <a href="#da-2000" data-file="decision_algorithm" class="Identifier" title="poss_p_i_events">poss_p_i_events</a>  <a href="#da-926" data-file="decision_algorithm" class="Identifier" title="poss_p_us">poss_p_us</a>  <a href="#da-2004" data-file="decision_algorithm" class="Identifier" title="poss_p_var_events">poss_p_var_events</a>  <a href="#da-2362" data-file="decision_algorithm" class="Identifier" title="poss_r_ue">poss_r_ue</a>  <a href="#da-2367" data-file="decision_algorithm" class="Identifier" title="poss_r_z">poss_r_z</a>  <a href="#da-2342" data-file="decision_algorithm" class="Identifier" title="poss_rs">poss_rs</a>  <a href="#da-2009" data-file="decision_algorithm" class="Identifier" title="poss_rx_states">poss_rx_states</a>  <a href="#da-2015" data-file="decision_algorithm" class="Identifier" title="poss_rxs">poss_rxs</a>  <a href="#da-1315" data-file="decision_algorithm" class="Identifier" title="poss_s_states">poss_s_states</a>  <a href="#cmm-84" data-file="causal_markov_model" class="Identifier" title="cmm:poss_states">cmm:poss_states</a>  <a href="#cm-89" data-file="causal_model" class="Identifier" title="cm:poss_states">cm:poss_states</a>  <a href="#da-289" data-file="decision_algorithm" class="Identifier" title="da:poss_states">da:poss_states</a>  <a href="#da-1343" data-file="decision_algorithm" class="Identifier" title="poss_u_states">poss_u_states</a>  <a href="#da-1995" data-file="decision_algorithm" class="Identifier" title="poss_ue_events">poss_ue_events</a>  <a href="#da-1558" data-file="decision_algorithm" class="Identifier" title="possible_fms">possible_fms</a>  <a href="#da-285" data-file="decision_algorithm" class="Identifier" title="possible_fs">possible_fs</a>  <a href="#l-347" data-file="lib" class="Identifier" title="possible_states">possible_states</a>  <a href="#da-1292" data-file="decision_algorithm" class="Identifier" title="pp_equiv">pp_equiv</a>  <a href="#da-554" data-file="decision_algorithm" class="Identifier" title="preds">preds</a>  <a href="#da-752" data-file="decision_algorithm" class="Identifier" title="prob_states">prob_states</a>  <a href="#da-760" data-file="decision_algorithm" class="Identifier" title="prob_states_t">prob_states_t</a>  <a href="#da-971" data-file="decision_algorithm" class="Identifier" title="probs">probs</a>  <a href="#l-381" data-file="lib" class="Identifier" title="proc2func">proc2func</a>  <a href="#cm-122" data-file="causal_model" class="Identifier" title="proc_to_func">proc_to_func</a>  <a href="#l-64" data-file="lib" class="Identifier" title="range_for_arity">range_for_arity</a>  <a href="#da-1705" data-file="decision_algorithm" class="Identifier" title="rat_psc_dist">rat_psc_dist</a>  <a href="#da-519" data-file="decision_algorithm" class="Identifier" title="ref">ref</a>  <a href="#da-729" data-file="decision_algorithm" class="Identifier" title="ref_expr">ref_expr</a>  <a href="#cmm-108" data-file="causal_markov_model" class="Identifier" title="cmm:response">cmm:response</a>  <a href="#cm-37" data-file="causal_model" class="Identifier" title="cm:response">cm:response</a>  <a href="#l-753" data-file="lib" class="Identifier" title="restrict_domain">restrict_domain</a>  <a href="#l-757" data-file="lib" class="Identifier" title="restricted_eq">restricted_eq</a>  <a href="#da-607" data-file="decision_algorithm" class="Identifier" title="rr">rr</a>  <a href="#da-1655" data-file="decision_algorithm" class="Identifier" title="ruf">ruf</a>  <a href="#da-2102" data-file="decision_algorithm" class="Identifier" title="rx_e_i_val">rx_e_i_val</a>  <a href="#da-2040" data-file="decision_algorithm" class="Identifier" title="rx_to_tuple">rx_to_tuple</a>  <a href="#da-123" data-file="decision_algorithm" class="Identifier" title="s">s</a>  <a href="#l-322" data-file="lib" class="Identifier" title="set_choices">set_choices</a>  <a href="#l-735" data-file="lib" class="Identifier" title="setlx_chars">setlx_chars</a>  <a href="#l-675" data-file="lib" class="Identifier" title="sharpenings">sharpenings</a>  <a href="#da-1922" data-file="decision_algorithm" class="Identifier" title="sim_cog_scores">sim_cog_scores</a>  <a href="#da-2401" data-file="decision_algorithm" class="Identifier" title="simpler">simpler</a>  <a href="#da-1534" data-file="decision_algorithm" class="Identifier" title="simplest_version">simplest_version</a>  <a href="#cm-46" data-file="causal_model" class="Identifier" title="solve_for">solve_for</a>  <a href="#l-710" data-file="lib" class="Identifier" title="sort_list">sort_list</a>  <a href="#l-718" data-file="lib" class="Identifier" title="sort_set">sort_set</a>  <a href="#da-1111" data-file="decision_algorithm" class="Identifier" title="sorted_rat">sorted_rat</a>  <a href="#cm-104" data-file="causal_model" class="Identifier" title="sorted_v">sorted_v</a>  <a href="#da-713" data-file="decision_algorithm" class="Identifier" title="sq_err">sq_err</a>  <a href="#da-935" data-file="decision_algorithm" class="Identifier" title="state_space">state_space</a>  <a href="#l-610" data-file="lib" class="Identifier" title="states_u">states_u</a>  <a href="#da-549" data-file="decision_algorithm" class="Identifier" title="str_exprs">str_exprs</a>  <a href="#l-544" data-file="lib" class="Identifier" title="sub">sub</a>  <a href="#l-556" data-file="lib" class="Identifier" title="subformulas">subformulas</a>  <a href="#da-1002" data-file="decision_algorithm" class="Identifier" title="subj_conds">subj_conds</a>  <a href="#da-1079" data-file="decision_algorithm" class="Identifier" title="sum_p">sum_p</a>  <a href="#da-1041" data-file="decision_algorithm" class="Identifier" title="sum_p_cms">sum_p_cms</a>  <a href="#da-956" data-file="decision_algorithm" class="Identifier" title="superset_is_coherent">superset_is_coherent</a>  <a href="#da-1497" data-file="decision_algorithm" class="Identifier" title="supersets_lte">supersets_lte</a>  <a href="#da-1774" data-file="decision_algorithm" class="Identifier" title="sync_psc_dist">sync_psc_dist</a>  <a href="#da-152" data-file="decision_algorithm" class="Identifier" title="t">t</a>  <a href="#cmm-116" data-file="causal_markov_model" class="Identifier" title="t_to_str">t_to_str</a>  <a href="#l-3" data-file="lib" class="Identifier" title="tf">tf</a>  <a href="#da-1688" data-file="decision_algorithm" class="Identifier" title="time_wt">time_wt</a>  <a href="#da-1379" data-file="decision_algorithm" class="Identifier" title="to_s">to_s</a>  <a href="#da-720" data-file="decision_algorithm" class="Identifier" title="true_p">true_p</a>  <a href="#da-2028" data-file="decision_algorithm" class="Identifier" title="u_conn">u_conn</a>  <a href="#cmm-28" data-file="causal_markov_model" class="Identifier" title="u_t">u_t</a>  <a href="#da-2128" data-file="decision_algorithm" class="Identifier" title="ue">ue</a>  <a href="#da-2136" data-file="decision_algorithm" class="Identifier" title="ue_base_exprs">ue_base_exprs</a>  <a href="#l-635" data-file="lib" class="Identifier" title="util">util</a>  <a href="#da-1822" data-file="decision_algorithm" class="Identifier" title="util_of_future">util_of_future</a>  <a href="#da-1779" data-file="decision_algorithm" class="Identifier" title="util_of_rxs">util_of_rxs</a>  <a href="#cmm-24" data-file="causal_markov_model" class="Identifier" title="cmm:uv">cmm:uv</a>  <a href="#cm-21" data-file="causal_model" class="Identifier" title="cm:uv">cm:uv</a>  <a href="#cmm-34" data-file="causal_markov_model" class="Identifier" title="uv_t">uv_t</a>  <a href="#cmm-31" data-file="causal_markov_model" class="Identifier" title="v_t">v_t</a>  <a href="#da-212" data-file="decision_algorithm" class="Identifier" title="vals_diff">vals_diff</a>  <a href="#cm-79" data-file="causal_model" class="Identifier" title="values_diff">values_diff</a>  <a href="#l-401" data-file="lib" class="Identifier" title="var_time">var_time</a>  <a href="#da-2304" data-file="decision_algorithm" class="Identifier" title="vars_up_to">vars_up_to</a>  <a href="#da-1690" data-file="decision_algorithm" class="Identifier" title="voter_weight">voter_weight</a>  <a href="#da-1853" data-file="decision_algorithm" class="Identifier" title="w_util">w_util</a> </div>
+		 <a href="#da-367" data-file="decision_algorithm" class="Identifier" title="lf_commutes">lf_commutes</a>  <a href="#da-382" data-file="decision_algorithm" class="Identifier" title="lf_inv">lf_inv</a>  <a href="#da-388" data-file="decision_algorithm" class="Identifier" title="lf_inv_at">lf_inv_at</a>  <a href="#l-328" data-file="lib" class="Identifier" title="list_choices">list_choices</a>  <a href="#l-677" data-file="lib" class="Identifier" title="list_to_ord">list_to_ord</a>  <a href="#da-2300" data-file="decision_algorithm" class="Identifier" title="ltr_up_to">ltr_up_to</a>  <a href="#da-444" data-file="decision_algorithm" class="Identifier" title="m2s_are_valid">m2s_are_valid</a>  <a href="#l-15" data-file="lib" class="Identifier" title="max">max</a>  <a href="#da-871" data-file="decision_algorithm" class="Identifier" title="max_p_dist">max_p_dist</a>  <a href="#l-98" data-file="lib" class="Identifier" title="maybe_not">maybe_not</a>  <a href="#m-67" data-file="main" class="Identifier" title="meai_psc_dist">meai_psc_dist</a>  <a href="#l-722" data-file="lib" class="Identifier" title="merge">merge</a>  <a href="#m-47" data-file="main" class="Identifier" title="metaethical_ai_u">metaethical_ai_u</a>  <a href="#l-10" data-file="lib" class="Identifier" title="min">min</a>  <a href="#l-498" data-file="lib" class="Identifier" title="modus_ponens">modus_ponens</a>  <a href="#l-6" data-file="lib" class="Identifier" title="ne_pow">ne_pow</a>  <a href="#cmm-122" data-file="causal_markov_model" class="Identifier" title="cmm:new">cmm:new</a>  <a href="#cm-127" data-file="causal_model" class="Identifier" title="cm:new">cm:new</a>  <a href="#da-2407" data-file="decision_algorithm" class="Identifier" title="da:new">da:new</a>  <a href="#da-1711" data-file="decision_algorithm" class="Identifier" title="new_wb">new_wb</a>  <a href="#da-2199" data-file="decision_algorithm" class="Identifier" title="next_bs_msrs">next_bs_msrs</a>  <a href="#da-466" data-file="decision_algorithm" class="Identifier" title="no_e_in_u">no_e_in_u</a>  <a href="#da-225" data-file="decision_algorithm" class="Identifier" title="non_shared_ancestors">non_shared_ancestors</a>  <a href="#da-240" data-file="decision_algorithm" class="Identifier" title="non_shared_descendants">non_shared_descendants</a>  <a href="#da-170" data-file="decision_algorithm" class="Identifier" title="ns">ns</a>  <a href="#da-1165" data-file="decision_algorithm" class="Identifier" title="obeys_axiom_3">obeys_axiom_3</a>  <a href="#da-2047" data-file="decision_algorithm" class="Identifier" title="observed">observed</a>  <a href="#da-1154" data-file="decision_algorithm" class="Identifier" title="old_is_coherent">old_is_coherent</a>  <a href="#l-46" data-file="lib" class="Identifier" title="old_range_for_arity">old_range_for_arity</a>  <a href="#da-1731" data-file="decision_algorithm" class="Identifier" title="optimal_rxs">optimal_rxs</a>  <a href="#da-1737" data-file="decision_algorithm" class="Identifier" title="optimality">optimality</a>  <a href="#l-672" data-file="lib" class="Identifier" title="ord_u_dist">ord_u_dist</a>  <a href="#l-397" data-file="lib" class="Identifier" title="orig_var">orig_var</a>  <a href="#da-1909" data-file="decision_algorithm" class="Identifier" title="p_conn">p_conn</a>  <a href="#da-1901" data-file="decision_algorithm" class="Identifier" title="p_conn_continuity">p_conn_continuity</a>  <a href="#da-1133" data-file="decision_algorithm" class="Identifier" title="p_cp_inv">p_cp_inv</a>  <a href="#da-1104" data-file="decision_algorithm" class="Identifier" title="p_dist">p_dist</a>  <a href="#da-1283" data-file="decision_algorithm" class="Identifier" title="p_equiv_classes">p_equiv_classes</a>  <a href="#da-1927" data-file="decision_algorithm" class="Identifier" title="p_i_sim">p_i_sim</a>  <a href="#da-1124" data-file="decision_algorithm" class="Identifier" title="p_inv">p_inv</a>  <a href="#da-930" data-file="decision_algorithm" class="Identifier" title="p_range">p_range</a>  <a href="#da-939" data-file="decision_algorithm" class="Identifier" title="p_u_is_coherent">p_u_is_coherent</a>  <a href="#da-182" data-file="decision_algorithm" class="Identifier" title="p_u_vars">p_u_vars</a>  <a href="#da-1142" data-file="decision_algorithm" class="Identifier" title="p_var_inv">p_var_inv</a>  <a href="#da-178" data-file="decision_algorithm" class="Identifier" title="p_vars">p_vars</a>  <a href="#cm-66" data-file="causal_model" class="Identifier" title="cm:parents">cm:parents</a>  <a href="#da-197" data-file="decision_algorithm" class="Identifier" title="da:parents">da:parents</a>  <a href="#l-386" data-file="lib" class="Identifier" title="parse_var">parse_var</a>  <a href="#l-530" data-file="lib" class="Identifier" title="parse_vars">parse_vars</a>  <a href="#l-355" data-file="lib" class="Identifier" title="partial_functions">partial_functions</a>  <a href="#da-420" data-file="decision_algorithm" class="Identifier" title="plf_to_pf">plf_to_pf</a>  <a href="#da-561" data-file="decision_algorithm" class="Identifier" title="poss_base_expr_refs">poss_base_expr_refs</a>  <a href="#da-568" data-file="decision_algorithm" class="Identifier" title="poss_base_refs">poss_base_refs</a>  <a href="#da-883" data-file="decision_algorithm" class="Identifier" title="poss_cms">poss_cms</a>  <a href="#da-891" data-file="decision_algorithm" class="Identifier" title="poss_cms_from_l">poss_cms_from_l</a>  <a href="#da-904" data-file="decision_algorithm" class="Identifier" title="poss_cms_from_p_pars">poss_cms_from_p_pars</a>  <a href="#da-2371" data-file="decision_algorithm" class="Identifier" title="poss_ds">poss_ds</a>  <a href="#cmm-88" data-file="causal_markov_model" class="Identifier" title="cmm:poss_events">cmm:poss_events</a>  <a href="#cm-100" data-file="causal_model" class="Identifier" title="cm:poss_events">cm:poss_events</a>  <a href="#da-2329" data-file="decision_algorithm" class="Identifier" title="poss_expr_to_ltr">poss_expr_to_ltr</a>  <a href="#da-1987" data-file="decision_algorithm" class="Identifier" title="poss_i_events">poss_i_events</a>  <a href="#da-1331" data-file="decision_algorithm" class="Identifier" title="poss_i_states">poss_i_states</a>  <a href="#da-1311" data-file="decision_algorithm" class="Identifier" title="poss_io_states">poss_io_states</a>  <a href="#da-1335" data-file="decision_algorithm" class="Identifier" title="poss_is_states">poss_is_states</a>  <a href="#da-1323" data-file="decision_algorithm" class="Identifier" title="poss_m2_states">poss_m2_states</a>  <a href="#da-1319" data-file="decision_algorithm" class="Identifier" title="poss_m_states">poss_m_states</a>  <a href="#da-1327" data-file="decision_algorithm" class="Identifier" title="poss_ms_states">poss_ms_states</a>  <a href="#da-2334" data-file="decision_algorithm" class="Identifier" title="poss_nj">poss_nj</a>  <a href="#da-1339" data-file="decision_algorithm" class="Identifier" title="poss_o_states">poss_o_states</a>  <a href="#da-2000" data-file="decision_algorithm" class="Identifier" title="poss_p_i_events">poss_p_i_events</a>  <a href="#da-926" data-file="decision_algorithm" class="Identifier" title="poss_p_us">poss_p_us</a>  <a href="#da-2004" data-file="decision_algorithm" class="Identifier" title="poss_p_var_events">poss_p_var_events</a>  <a href="#da-2362" data-file="decision_algorithm" class="Identifier" title="poss_r_ue">poss_r_ue</a>  <a href="#da-2367" data-file="decision_algorithm" class="Identifier" title="poss_r_z">poss_r_z</a>  <a href="#da-2342" data-file="decision_algorithm" class="Identifier" title="poss_rs">poss_rs</a>  <a href="#da-2009" data-file="decision_algorithm" class="Identifier" title="poss_rx_states">poss_rx_states</a>  <a href="#da-2015" data-file="decision_algorithm" class="Identifier" title="poss_rxs">poss_rxs</a>  <a href="#da-1315" data-file="decision_algorithm" class="Identifier" title="poss_s_states">poss_s_states</a>  <a href="#cmm-84" data-file="causal_markov_model" class="Identifier" title="cmm:poss_states">cmm:poss_states</a>  <a href="#cm-89" data-file="causal_model" class="Identifier" title="cm:poss_states">cm:poss_states</a>  <a href="#da-289" data-file="decision_algorithm" class="Identifier" title="da:poss_states">da:poss_states</a>  <a href="#da-1343" data-file="decision_algorithm" class="Identifier" title="poss_u_states">poss_u_states</a>  <a href="#da-1995" data-file="decision_algorithm" class="Identifier" title="poss_ue_events">poss_ue_events</a>  <a href="#da-1558" data-file="decision_algorithm" class="Identifier" title="possible_fms">possible_fms</a>  <a href="#da-285" data-file="decision_algorithm" class="Identifier" title="possible_fs">possible_fs</a>  <a href="#l-347" data-file="lib" class="Identifier" title="possible_states">possible_states</a>  <a href="#da-1292" data-file="decision_algorithm" class="Identifier" title="pp_equiv">pp_equiv</a>  <a href="#da-554" data-file="decision_algorithm" class="Identifier" title="preds">preds</a>  <a href="#da-1262" data-file="decision_algorithm" class="Identifier" title="prob_distance">prob_distance</a>  <a href="#da-752" data-file="decision_algorithm" class="Identifier" title="prob_states">prob_states</a>  <a href="#da-760" data-file="decision_algorithm" class="Identifier" title="prob_states_t">prob_states_t</a>  <a href="#da-971" data-file="decision_algorithm" class="Identifier" title="probs">probs</a>  <a href="#l-381" data-file="lib" class="Identifier" title="proc2func">proc2func</a>  <a href="#cm-122" data-file="causal_model" class="Identifier" title="proc_to_func">proc_to_func</a>  <a href="#l-64" data-file="lib" class="Identifier" title="range_for_arity">range_for_arity</a>  <a href="#da-1705" data-file="decision_algorithm" class="Identifier" title="rat_psc_dist">rat_psc_dist</a>  <a href="#da-519" data-file="decision_algorithm" class="Identifier" title="ref">ref</a>  <a href="#da-729" data-file="decision_algorithm" class="Identifier" title="ref_expr">ref_expr</a>  <a href="#cmm-108" data-file="causal_markov_model" class="Identifier" title="cmm:response">cmm:response</a>  <a href="#cm-37" data-file="causal_model" class="Identifier" title="cm:response">cm:response</a>  <a href="#l-753" data-file="lib" class="Identifier" title="restrict_domain">restrict_domain</a>  <a href="#l-757" data-file="lib" class="Identifier" title="restricted_eq">restricted_eq</a>  <a href="#da-607" data-file="decision_algorithm" class="Identifier" title="rr">rr</a>  <a href="#da-1655" data-file="decision_algorithm" class="Identifier" title="ruf">ruf</a>  <a href="#da-2102" data-file="decision_algorithm" class="Identifier" title="rx_e_i_val">rx_e_i_val</a>  <a href="#da-2040" data-file="decision_algorithm" class="Identifier" title="rx_to_tuple">rx_to_tuple</a>  <a href="#da-123" data-file="decision_algorithm" class="Identifier" title="s">s</a>  <a href="#l-322" data-file="lib" class="Identifier" title="set_choices">set_choices</a>  <a href="#l-735" data-file="lib" class="Identifier" title="setlx_chars">setlx_chars</a>  <a href="#l-675" data-file="lib" class="Identifier" title="sharpenings">sharpenings</a>  <a href="#da-1922" data-file="decision_algorithm" class="Identifier" title="sim_cog_scores">sim_cog_scores</a>  <a href="#da-2401" data-file="decision_algorithm" class="Identifier" title="simpler">simpler</a>  <a href="#da-1534" data-file="decision_algorithm" class="Identifier" title="simplest_version">simplest_version</a>  <a href="#cm-46" data-file="causal_model" class="Identifier" title="solve_for">solve_for</a>  <a href="#l-710" data-file="lib" class="Identifier" title="sort_list">sort_list</a>  <a href="#l-718" data-file="lib" class="Identifier" title="sort_set">sort_set</a>  <a href="#da-1111" data-file="decision_algorithm" class="Identifier" title="sorted_rat">sorted_rat</a>  <a href="#cm-104" data-file="causal_model" class="Identifier" title="sorted_v">sorted_v</a>  <a href="#da-713" data-file="decision_algorithm" class="Identifier" title="sq_err">sq_err</a>  <a href="#da-935" data-file="decision_algorithm" class="Identifier" title="state_space">state_space</a>  <a href="#l-610" data-file="lib" class="Identifier" title="states_u">states_u</a>  <a href="#da-549" data-file="decision_algorithm" class="Identifier" title="str_exprs">str_exprs</a>  <a href="#l-544" data-file="lib" class="Identifier" title="sub">sub</a>  <a href="#l-556" data-file="lib" class="Identifier" title="subformulas">subformulas</a>  <a href="#da-1002" data-file="decision_algorithm" class="Identifier" title="subj_conds">subj_conds</a>  <a href="#da-1079" data-file="decision_algorithm" class="Identifier" title="sum_p">sum_p</a>  <a href="#da-1041" data-file="decision_algorithm" class="Identifier" title="sum_p_cms">sum_p_cms</a>  <a href="#da-956" data-file="decision_algorithm" class="Identifier" title="superset_is_coherent">superset_is_coherent</a>  <a href="#da-1497" data-file="decision_algorithm" class="Identifier" title="supersets_lte">supersets_lte</a>  <a href="#da-1774" data-file="decision_algorithm" class="Identifier" title="sync_psc_dist">sync_psc_dist</a>  <a href="#da-152" data-file="decision_algorithm" class="Identifier" title="t">t</a>  <a href="#cmm-116" data-file="causal_markov_model" class="Identifier" title="t_to_str">t_to_str</a>  <a href="#l-3" data-file="lib" class="Identifier" title="tf">tf</a>  <a href="#da-1688" data-file="decision_algorithm" class="Identifier" title="time_wt">time_wt</a>  <a href="#da-1379" data-file="decision_algorithm" class="Identifier" title="to_s">to_s</a>  <a href="#da-720" data-file="decision_algorithm" class="Identifier" title="true_p">true_p</a>  <a href="#da-2028" data-file="decision_algorithm" class="Identifier" title="u_conn">u_conn</a>  <a href="#cmm-28" data-file="causal_markov_model" class="Identifier" title="u_t">u_t</a>  <a href="#da-2128" data-file="decision_algorithm" class="Identifier" title="ue">ue</a>  <a href="#da-2136" data-file="decision_algorithm" class="Identifier" title="ue_base_exprs">ue_base_exprs</a>  <a href="#l-635" data-file="lib" class="Identifier" title="util">util</a>  <a href="#da-1822" data-file="decision_algorithm" class="Identifier" title="util_of_future">util_of_future</a>  <a href="#da-1779" data-file="decision_algorithm" class="Identifier" title="util_of_rxs">util_of_rxs</a>  <a href="#cmm-24" data-file="causal_markov_model" class="Identifier" title="cmm:uv">cmm:uv</a>  <a href="#cm-21" data-file="causal_model" class="Identifier" title="cm:uv">cm:uv</a>  <a href="#cmm-34" data-file="causal_markov_model" class="Identifier" title="uv_t">uv_t</a>  <a href="#cmm-31" data-file="causal_markov_model" class="Identifier" title="v_t">v_t</a>  <a href="#da-212" data-file="decision_algorithm" class="Identifier" title="vals_diff">vals_diff</a>  <a href="#cm-79" data-file="causal_model" class="Identifier" title="values_diff">values_diff</a>  <a href="#l-401" data-file="lib" class="Identifier" title="var_time">var_time</a>  <a href="#da-2304" data-file="decision_algorithm" class="Identifier" title="vars_up_to">vars_up_to</a>  <a href="#da-1690" data-file="decision_algorithm" class="Identifier" title="voter_weight">voter_weight</a>  <a href="#da-1853" data-file="decision_algorithm" class="Identifier" title="w_util">w_util</a> </div>
 	</div>
   <div class="ribbon">
     <div id="about-heading" class="heading"><i class="fas fa-address-card"></i> About Me<i class="fas fa-chevron-right"></i></div>
@@ -6491,7 +6491,7 @@
     <p>
       <img id="june" src="http://www.metaethical.ai/images/june-rocks.png">    
       June Ku earned a graduate degree in philosophy from the top-ranked metaethics program. Now working as a software developer, she has continued pursuing her philosophical research interests and unified them with software engineering. She hopes her work can help bring about safe and beneficial smarter-than-human artificial intelligence. She lives in Berkeley, California.
-    </p>    
+		</p>    
   </div>
   <div id="sidebar-footer">
 

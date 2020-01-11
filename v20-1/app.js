@@ -379,7 +379,7 @@ $(document).ready(function() {
 	});
 
   // Select Tab
-  window.select_tab = function(file) {
+  window.select_tab = function(file, do_scroll = true) {
     window.active_tab = file;
     if (file.slice(0,5) == 'test_') {
       file = file.replace(/test_/, '');
@@ -391,7 +391,9 @@ $(document).ready(function() {
     $('#' + file).addClass('selected');
     $('#test_' + file).addClass('selected');
     // $('html, body').scrollTop(window.scrollTops[file]);
-    $(window).scrollTop(window.scrollTops[file]);
+		if (do_scroll) {
+ 	   	$(window).scrollTop(window.scrollTops[file]);
+		}
   }
 
   $(window).scroll(function() {
@@ -412,7 +414,7 @@ $(document).ready(function() {
     var line_no = $('#' + file + ' #L' + num);
     if (line_no.length) {
       if (!$('#' + file).hasClass('selected')) {
-        window.select_tab(file);
+        window.select_tab(file, false);
       }
       var scroll_top = line_no.offset()['top'];
       scroll_top = scroll_top - 200;
@@ -444,7 +446,7 @@ $(document).ready(function() {
 					// console && console.log(bullet);
 					if (bullet.length) {
 						if (!$('#' + file).hasClass('selected')) {
-							window.select_tab(file);
+							window.select_tab(file, false);
 						}
 						window.expand_ancestors(bullet);
 						var scroll_top = bullet.offset()['top'];
@@ -506,7 +508,7 @@ $(document).ready(function() {
   // Scroll to proc
   window.scroll_to_proc = function(file, name) {
     if (!$('#' + file).hasClass('selected')) {
-      window.select_tab(file);
+      window.select_tab(file, false);
     }
     // console && console.log(file + ':' + name);
     var num = window.procs[file][name];

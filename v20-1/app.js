@@ -19,6 +19,7 @@ $(document).ready(function() {
 	$('.arrow.down').html('&#9660;');
 	$('.arrow.right').html('&#9654;');
 	$('.bullet').html('&#9679;');
+	$('.to-code').html('{&hellip;}');
   abbr = { 'decision_algorithm': 'da', 'causal_model': 'cm', 
            'causal_markov_model': 'cmm', 'main': 'm', 'lib': 'l',
            'test_decision_algorithm': 'tda', 'test_causal_model': 'tcm',

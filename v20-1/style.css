@@ -783,7 +783,7 @@ pre {
 
 @media only screen and (max-device-width: 815px) {
   .vimCodeElement, #tract.vimCodeElement {
-    padding-left: 20px !important;
+    padding-left: 40px !important;
   }
 
   #files {

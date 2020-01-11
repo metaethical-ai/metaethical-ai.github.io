@@ -566,6 +566,7 @@ $(document).ready(function() {
 
   // Key Concepts
   $('#concepts a').click(function() {
+		/*
     var name = $(this).data('name');
     var file = $(this).data('file');
     var num  = $(this).data('num');
@@ -574,6 +575,7 @@ $(document).ready(function() {
     } else {			
       window.scroll_to_proc(file, name);
     }
+		*/
   });
 
   // Menu

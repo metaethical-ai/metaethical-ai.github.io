@@ -380,6 +380,7 @@ $(document).ready(function() {
 
   // Select Tab
   window.select_tab = function(file, do_scroll = true) {
+		// console && console.log(do_scroll);
     window.active_tab = file;
     if (file.slice(0,5) == 'test_') {
       file = file.replace(/test_/, '');
@@ -529,6 +530,7 @@ $(document).ready(function() {
 
   // Glossary and code
   $('.Identifier').click(function() {
+		/*
     var name = $(this).html().replace(/^\w+:/, '');
     var file = $(this).data('file');
     if (file) {
@@ -559,6 +561,7 @@ $(document).ready(function() {
         window.scroll_to_proc(file, name);
       }
     } 
+		*/
   });
 
   // Key Concepts

@@ -692,7 +692,7 @@
 <span id="L120" class="LineNr"> 120 </span>  n <span class="Statement">:=</span> n;
 <span id="L121" class="LineNr"> 121 </span>
 <span id="L122" class="LineNr"> 122 </span>  <span class="Comment">// Internal states</span>
-<span id="L123" class="LineNr"><a href="#tda-4" data-file="test_decision_algorithm" title="test_s" class="checkmark">&10004;</a> 123 <a title="1.2.1.1.10.2" class="back_to_li" href="#t-1-2-1-1-10-2"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">s</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L123" class="LineNr"><a href="#tda-4" data-file="test_decision_algorithm" title="test_s" class="checkmark">&#10004;</a> 123 <a title="1.2.1.1.10.2" class="back_to_li" href="#t-1-2-1-1-10-2"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">s</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L124" class="LineNr"> 124 </span>    <span class="Statement">if</span> (n <span class="Type">==</span> {} <span class="Type">||</span> n <span class="Type">==</span> [] <span class="Type">||</span> n <span class="Type">==</span> <span class="Constant">om</span>) {
 <span id="L125" class="LineNr"> 125 </span>      n_vs <span class="Statement">:=</span> {};
 <span id="L126" class="LineNr"> 126 </span>    } <span class="Statement">else</span> {
@@ -721,7 +721,7 @@
 <span id="L149" class="LineNr"> 149 </span><span class="Comment">     Returns a higher-order function from functions assigning values to i + s </span>
 <span id="L150" class="LineNr"> 150 </span><span class="Comment">     to functions assigning values to s + o. This is the intuitive combination</span>
 <span id="L151" class="LineNr"> 151 </span><span class="Comment">     of t_s and t_o. */</span>
-<span id="L152" class="LineNr"><a href="#tda-16" data-file="test_decision_algorithm" title="test_t" class="checkmark">&10004;</a> 152 </span>  <span class="Identifier">t</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L152" class="LineNr"><a href="#tda-16" data-file="test_decision_algorithm" title="test_t" class="checkmark">&#10004;</a> 152 </span>  <span class="Identifier">t</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L153" class="LineNr"> 153 </span>    <span class="Statement">return</span> { [    <span class="Comment">// a higher-order function which takes </span>
 <span id="L154" class="LineNr"> 154 </span>              is, <span class="Comment">// a function assigning values to i + s and returns a function</span>
 <span id="L155" class="LineNr"> 155 </span>              t_s[is] <span class="Type">+</span> t_o[<a class="Identifier code-proc-link" href="#da-188">just_p_u_m2</a>(is)]
@@ -739,7 +739,7 @@
 <span id="L167" class="LineNr"> 167 </span>  <span class="Comment">/* ns as in the plural of n. </span>
 <span id="L168" class="LineNr"> 168 </span><span class="Comment">     Takes 'e', 'm2' or 'o' and returns the corresponding variables from all n.</span>
 <span id="L169" class="LineNr"> 169 </span><span class="Comment">     e.g. ns('e') would return all e_n_i */</span>
-<span id="L170" class="LineNr"><a href="#tda-43" data-file="test_decision_algorithm" title="test_ns" class="checkmark">&10004;</a> 170 </span>  <span class="Identifier">ns</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(str) {
+<span id="L170" class="LineNr"><a href="#tda-43" data-file="test_decision_algorithm" title="test_ns" class="checkmark">&#10004;</a> 170 </span>  <span class="Identifier">ns</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(str) {
 <span id="L171" class="LineNr"> 171 </span>    <span class="Statement">if</span> (str <span class="Type">==</span> <span class="Constant">'e'</span>) {
 <span id="L172" class="LineNr"> 172 </span>      <span class="Statement">return</span> <span class="Type">+/</span> { <span class="Identifier">range</span>(n_i[str]) <span class="Type">:</span> n_i <span class="Type">in</span> n };
 <span id="L173" class="LineNr"> 173 </span>    } <span class="Statement">else</span> {
@@ -747,17 +747,17 @@
 <span id="L175" class="LineNr"> 175 </span>    }
 <span id="L176" class="LineNr"> 176 </span>  };
 <span id="L177" class="LineNr"> 177 </span>
-<span id="L178" class="LineNr"><a href="#tda-72" data-file="test_decision_algorithm" title="test_p_vars" class="checkmark">&10004;</a> 178 </span>  <span class="Identifier">p_vars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L178" class="LineNr"><a href="#tda-72" data-file="test_decision_algorithm" title="test_p_vars" class="checkmark">&#10004;</a> 178 </span>  <span class="Identifier">p_vars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L179" class="LineNr"> 179 </span>    <span class="Statement">return</span> <span class="Identifier">range</span>(p) <span class="Type">+</span> <span class="Identifier">range</span>(cp);
 <span id="L180" class="LineNr"> 180 </span>  };
 <span id="L181" class="LineNr"> 181 </span>
-<span id="L182" class="LineNr"><a href="#tda-62" data-file="test_decision_algorithm" title="test_p_u_vars" class="checkmark">&10004;</a> 182 </span>  <span class="Identifier">p_u_vars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L182" class="LineNr"><a href="#tda-62" data-file="test_decision_algorithm" title="test_p_u_vars" class="checkmark">&#10004;</a> 182 </span>  <span class="Identifier">p_u_vars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L183" class="LineNr"> 183 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-178">p_vars</a>() <span class="Type">+</span> <span class="Identifier">range</span>(u);
 <span id="L184" class="LineNr"> 184 </span>  };
 <span id="L185" class="LineNr"> 185 </span>
 <span id="L186" class="LineNr"> 186 </span>  <span class="Comment">/* Takes a function (is) assigning values to input and internal state vars</span>
 <span id="L187" class="LineNr"> 187 </span><span class="Comment">     and returns its partial function with only vars in p, u and m2  */</span>
-<span id="L188" class="LineNr"><a href="#tda-74" data-file="test_decision_algorithm" title="test_just_p_u_m2" class="checkmark">&10004;</a> 188 </span>  <span class="Identifier">just_p_u_m2</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(is) {
+<span id="L188" class="LineNr"><a href="#tda-74" data-file="test_decision_algorithm" title="test_just_p_u_m2" class="checkmark">&#10004;</a> 188 </span>  <span class="Identifier">just_p_u_m2</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(is) {
 <span id="L189" class="LineNr"> 189 </span>    <span class="Statement">return</span> { [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> is <span class="Type">|</span> var <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-182">p_u_vars</a>() <span class="Type">+</span> m2 };
 <span id="L190" class="LineNr"> 190 </span>  };
 <span id="L191" class="LineNr"> 191 </span>
@@ -766,12 +766,12 @@
 <span id="L194" class="LineNr"> 194 </span>
 <span id="L195" class="LineNr"> 195 </span>  <span class="Comment">/* Takes a variable and returns its parents, i.e. the variables that </span>
 <span id="L196" class="LineNr"> 196 </span><span class="Comment">     are necessary to determine its next state in the state transition t(). */</span>
-<span id="L197" class="LineNr"><a href="#tda-88" data-file="test_decision_algorithm" title="test_parents" class="checkmark">&10004;</a> 197 <a title="1.2.1.1.12.2" class="back_to_li" href="#t-1-2-1-1-12-2"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">parents</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(y) {
+<span id="L197" class="LineNr"><a href="#tda-88" data-file="test_decision_algorithm" title="test_parents" class="checkmark">&#10004;</a> 197 <a title="1.2.1.1.12.2" class="back_to_li" href="#t-1-2-1-1-12-2"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">parents</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(y) {
 <span id="L198" class="LineNr"> 198 </span>    result <span class="Statement">:=</span> { z <span class="Type">:</span> z <span class="Type">in</span> (i <span class="Type">+</span> <a class="Identifier code-proc-link" href="#da-123">s</a>()) <span class="Type">|</span> <a class="Identifier code-proc-link" href="#da-202">is_necessary_parent_of</a>(z, y) };
 <span id="L199" class="LineNr"> 199 </span>    <span class="Statement">return</span> result;
 <span id="L200" class="LineNr"> 200 </span>  };
 <span id="L201" class="LineNr"> 201 </span>
-<span id="L202" class="LineNr"><a href="#tda-106" data-file="test_decision_algorithm" title="test_is_necessary_parent_of" class="checkmark">&10004;</a> 202 </span>    <span class="Identifier">is_necessary_parent_of</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(z, y) {
+<span id="L202" class="LineNr"><a href="#tda-106" data-file="test_decision_algorithm" title="test_is_necessary_parent_of" class="checkmark">&#10004;</a> 202 </span>    <span class="Identifier">is_necessary_parent_of</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(z, y) {
 <span id="L203" class="LineNr"> 203 </span>      vs <span class="Statement">:=</span> {v <span class="Type">:</span> v <span class="Type">in</span> i <span class="Type">+</span> <a class="Identifier code-proc-link" href="#da-123">s</a>() <span class="Type">|</span> v <span class="Type">!=</span> z}; <span class="Comment">// all other variables but z</span>
 <span id="L204" class="LineNr"> 204 </span>      f_vs <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(vs, r);
 <span id="L205" class="LineNr"> 205 </span>      bool <span class="Statement">:=</span> <span class="Type">exists</span>(f_v <span class="Type">in</span> f_vs <span class="Type">|</span> <a class="Identifier code-proc-link" href="#da-212">vals_diff</a>(f_v, y, z));
@@ -781,20 +781,20 @@
 <span id="L209" class="LineNr"> 209 </span>    <span class="Comment">/* Check whether there exists an assignment of values to the other </span>
 <span id="L210" class="LineNr"> 210 </span><span class="Comment">       variables such that there are still different values of y depending </span>
 <span id="L211" class="LineNr"> 211 </span><span class="Comment">       on values of z.  */</span>
-<span id="L212" class="LineNr"><a href="#tda-107" data-file="test_decision_algorithm" title="test_vals_diff" class="checkmark">&10004;</a> 212 </span>    <span class="Identifier">vals_diff</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(f_v, y, z) {
+<span id="L212" class="LineNr"><a href="#tda-107" data-file="test_decision_algorithm" title="test_vals_diff" class="checkmark">&#10004;</a> 212 </span>    <span class="Identifier">vals_diff</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(f_v, y, z) {
 <span id="L213" class="LineNr"> 213 </span>      vals <span class="Statement">:=</span> { t_s[ f_v <span class="Type">+</span> {[z,r_i]} ][y] <span class="Type">:</span> r_i <span class="Type">in</span> r[z] };
 <span id="L214" class="LineNr"> 214 </span>      <span class="Statement">return</span> <span class="Type">#</span>vals <span class="Type">&gt;</span> <span class="Constant">1</span>;
 <span id="L215" class="LineNr"> 215 </span>    };
 <span id="L216" class="LineNr"> 216 </span>
 <span id="L217" class="LineNr"> 217 </span>  <span class="Comment">// Takes a variable and returns its children</span>
-<span id="L218" class="LineNr"><a href="#tda-105" data-file="test_decision_algorithm" title="test_children" class="checkmark">&10004;</a> 218 </span>  <span class="Identifier">children</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(y) {
+<span id="L218" class="LineNr"><a href="#tda-105" data-file="test_decision_algorithm" title="test_children" class="checkmark">&#10004;</a> 218 </span>  <span class="Identifier">children</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(y) {
 <span id="L219" class="LineNr"> 219 </span>    <span class="Statement">return</span> { v <span class="Type">:</span> v <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-123">s</a>() <span class="Type">+</span> o <span class="Type">|</span> y <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-197">parents</a>(v) };
 <span id="L220" class="LineNr"> 220 </span>  };
 <span id="L221" class="LineNr"> 221 </span>
 <span id="L222" class="LineNr"> 222 </span>  <span class="Comment">/* Takes a variable v and a set of variables vs (with v usually in vs)</span>
 <span id="L223" class="LineNr"> 223 </span><span class="Comment">     and returns the first ancestors within any given branch of v's ancestors </span>
 <span id="L224" class="LineNr"> 224 </span><span class="Comment">     that are not in vs */</span>
-<span id="L225" class="LineNr"><a href="#tda-115" data-file="test_decision_algorithm" title="test_non_shared_ancestors" class="checkmark">&10004;</a> 225 </span>  <span class="Identifier">non_shared_ancestors</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v, vs) {
+<span id="L225" class="LineNr"><a href="#tda-115" data-file="test_decision_algorithm" title="test_non_shared_ancestors" class="checkmark">&#10004;</a> 225 </span>  <span class="Identifier">non_shared_ancestors</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v, vs) {
 <span id="L226" class="LineNr"> 226 </span>    result <span class="Statement">:=</span> {};
 <span id="L227" class="LineNr"> 227 </span>    <span class="Statement">for</span> (parent <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-197">parents</a>(v)) {
 <span id="L228" class="LineNr"> 228 </span>      <span class="Statement">if</span> (parent <span class="Type">in</span> vs) {
@@ -809,7 +809,7 @@
 <span id="L237" class="LineNr"> 237 </span>  <span class="Comment">/* Takes a variable v and a set of variables vs (with v usually in vs)</span>
 <span id="L238" class="LineNr"> 238 </span><span class="Comment">     and returns the first descendants within any given branch of v's </span>
 <span id="L239" class="LineNr"> 239 </span><span class="Comment">     descendants that are not in vs */</span>
-<span id="L240" class="LineNr"><a href="#tda-172" data-file="test_decision_algorithm" title="test_non_shared_descendants" class="checkmark">&10004;</a> 240 </span>  <span class="Identifier">non_shared_descendants</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v, vs) {
+<span id="L240" class="LineNr"><a href="#tda-172" data-file="test_decision_algorithm" title="test_non_shared_descendants" class="checkmark">&#10004;</a> 240 </span>  <span class="Identifier">non_shared_descendants</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v, vs) {
 <span id="L241" class="LineNr"> 241 </span>    result <span class="Statement">:=</span> {};
 <span id="L242" class="LineNr"> 242 </span>    <span class="Statement">for</span> (child <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-218">children</a>(v)) {
 <span id="L243" class="LineNr"> 243 </span>      <span class="Statement">if</span> (child <span class="Type">in</span> vs) {
@@ -858,11 +858,11 @@
 <span id="L286" class="LineNr"> 286 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-319">function_space</a>( b.<a class="Identifier code-proc-link" href="#da-289">poss_states</a>(), <a class="Identifier code-proc-link" href="#da-289">poss_states</a>() );
 <span id="L287" class="LineNr"> 287 </span>  };
 <span id="L288" class="LineNr"> 288 </span>
-<span id="L289" class="LineNr"><a href="#tda-276" data-file="test_decision_algorithm" title="test_poss_states" class="checkmark">&10004;</a> 289 </span>  <span class="Identifier">poss_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
+<span id="L289" class="LineNr"><a href="#tda-276" data-file="test_decision_algorithm" title="test_poss_states" class="checkmark">&#10004;</a> 289 </span>  <span class="Identifier">poss_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L290" class="LineNr"> 290 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(i <span class="Type">+</span> <a class="Identifier code-proc-link" href="#da-123">s</a>() <span class="Type">+</span> o, r);
 <span id="L291" class="LineNr"> 291 </span>  };
 <span id="L292" class="LineNr"> 292 </span>
-<span id="L293" class="LineNr"><a href="#tda-323" data-file="test_decision_algorithm" title="test_is_implemented_by" class="checkmark">&10004;</a> 293 </span>  <span class="Identifier">is_implemented_by</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b) {
+<span id="L293" class="LineNr"><a href="#tda-323" data-file="test_decision_algorithm" title="test_is_implemented_by" class="checkmark">&#10004;</a> 293 </span>  <span class="Identifier">is_implemented_by</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b) {
 <span id="L294" class="LineNr"> 294 </span>    <span class="Statement">return</span> <span class="Type">!</span>(<a class="Identifier code-proc-link" href="#da-262">f</a>(b) <span class="Type">==</span> {});
 <span id="L295" class="LineNr"> 295 </span>  };
 <span id="L296" class="LineNr"> 296 </span>
@@ -884,7 +884,7 @@
 <span id="L312" class="LineNr"> 312 </span><span class="Comment">     and then to the next decision state this decision algorithm transitions to.</span>
 <span id="L313" class="LineNr"> 313 </span><span class="Comment">     Either way, you would end up at the same final decision state. </span>
 <span id="L314" class="LineNr"> 314 </span><span class="Comment">  */</span>
-<span id="L315" class="LineNr"><a href="#tda-291" data-file="test_decision_algorithm" title="test_commutes" class="checkmark">&10004;</a> 315 <a title="1.2.1.2" class="back_to_li" href="#t-1-2-1-2"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(pf, b) {
+<span id="L315" class="LineNr"><a href="#tda-291" data-file="test_decision_algorithm" title="test_commutes" class="checkmark">&#10004;</a> 315 <a title="1.2.1.2" class="back_to_li" href="#t-1-2-1-2"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(pf, b) {
 <span id="L316" class="LineNr"> 316 </span>    <span class="Comment Heading">/*                 pf</span>
 <span id="L317" class="LineNr"> 317 </span><span class="Comment Heading">      bs_{b.uv_t_i-1} ------&gt; ds_iso_t_i-1</span>
 <span id="L318" class="LineNr"> 318 </span><span class="Comment">       |                       |</span>
@@ -925,7 +925,7 @@
 <span id="L353" class="LineNr"> 353 </span>
 <span id="L354" class="LineNr"> 354 </span>  <span class="Comment">/* Takes a decision state assigning values to i + s() + o and returns a</span>
 <span id="L355" class="LineNr"> 355 </span><span class="Comment">     function assigning values to just s() + o  */</span>
-<span id="L356" class="LineNr"><a href="#tda-391" data-file="test_decision_algorithm" title="test_drop_i" class="checkmark">&10004;</a> 356 </span>  <span class="Identifier">drop_i</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ds) {
+<span id="L356" class="LineNr"><a href="#tda-391" data-file="test_decision_algorithm" title="test_drop_i" class="checkmark">&#10004;</a> 356 </span>  <span class="Identifier">drop_i</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ds) {
 <span id="L357" class="LineNr"> 357 </span>    <span class="Statement">return</span> { [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> ds <span class="Type">|</span> <span class="Type">!</span>(var <span class="Type">in</span> i) };
 <span id="L358" class="LineNr"> 358 </span>  };
 <span id="L359" class="LineNr"> 359 </span>
@@ -955,7 +955,7 @@
 <span id="L383" class="LineNr"> 383 </span>
 <span id="L384" class="LineNr"> 384 </span>  <span class="Comment">/* Function from possible local function plf and a causal model of brain b </span>
 <span id="L385" class="LineNr"> 385 </span><span class="Comment">     to boolean value whether it commutes. */</span>
-<span id="L386" class="LineNr"><a href="#tda-301" data-file="test_decision_algorithm" title="test_lf_commutes" class="checkmark">&10004;</a> 386 <a title="1.3.2.2.1.2.1" class="back_to_li" href="#t-1-3-2-2-1-2-1"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">lf_commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(plf, b) {
+<span id="L386" class="LineNr"><a href="#tda-301" data-file="test_decision_algorithm" title="test_lf_commutes" class="checkmark">&#10004;</a> 386 <a title="1.3.2.2.1.2.1" class="back_to_li" href="#t-1-3-2-2-1-2-1"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">lf_commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(plf, b) {
 <span id="L387" class="LineNr"> 387 </span>    <span class="Statement">return</span> <span class="Type">forall</span>(pcs <span class="Type">in</span> <span class="Identifier">domain</span>(plf) <span class="Type">|</span>  <span class="Comment">// pcs = partial causal state</span>
 <span id="L388" class="LineNr"> 388 </span>      <span class="Comment">/* The set of complete decision states that is mapped by f from each </span>
 <span id="L389" class="LineNr"> 389 </span><span class="Comment">         complete causal state compatible with the partial causal state is </span>
@@ -970,25 +970,25 @@
 <span id="L398" class="LineNr"> 398 </span>  <span class="Comment">/* Local / partial f inverse</span>
 <span id="L399" class="LineNr"> 399 </span><span class="Comment">  /* Returns a "function" from local / partial decision states to a set of </span>
 <span id="L400" class="LineNr"> 400 </span><span class="Comment">     local / partial causal states, namely the inverse of lf.  */</span>
-<span id="L401" class="LineNr"><a href="#tda-330" data-file="test_decision_algorithm" title="test_lf_inv" class="checkmark">&10004;</a> 401 </span>  <span class="Identifier">lf_inv</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(b) {
+<span id="L401" class="LineNr"><a href="#tda-330" data-file="test_decision_algorithm" title="test_lf_inv" class="checkmark">&#10004;</a> 401 </span>  <span class="Identifier">lf_inv</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(b) {
 <span id="L402" class="LineNr"> 402 </span>    <span class="Statement">return</span> { [ds, { cs <span class="Type">:</span> cs <span class="Type">in</span> <span class="Identifier">domain</span>(<a class="Identifier code-proc-link" href="#da-364">lf</a>(b)) <span class="Type">|</span> <a class="Identifier code-proc-link" href="#da-364">lf</a>(b)[cs] <span class="Type">==</span> ds} ] <span class="Type">:</span>
 <span id="L403" class="LineNr"> 403 </span>             ds <span class="Type">in</span> <span class="Identifier">range</span>(<a class="Identifier code-proc-link" href="#da-364">lf</a>(b)) };
 <span id="L404" class="LineNr"> 404 </span>  };
 <span id="L405" class="LineNr"> 405 </span>
 <span id="L406" class="LineNr"> 406 </span>  <span class="Comment">// Helper function. Same as lf_inv but time subscripts are added to the b vars</span>
-<span id="L407" class="LineNr"><a href="#tda-340" data-file="test_decision_algorithm" title="test_lf_inv_at" class="checkmark">&10004;</a> 407 </span>  <span class="Identifier">lf_inv_at</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, t_i) {
+<span id="L407" class="LineNr"><a href="#tda-340" data-file="test_decision_algorithm" title="test_lf_inv_at" class="checkmark">&#10004;</a> 407 </span>  <span class="Identifier">lf_inv_at</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, t_i) {
 <span id="L408" class="LineNr"> 408 </span>    <span class="Statement">return</span> { [ds, { <a class="Identifier code-proc-link" href="#l-403">assign_time</a>(cs, t_i) <span class="Type">:</span> cs <span class="Type">in</span> css }]
 <span id="L409" class="LineNr"> 409 </span>             <span class="Type">:</span> [ds, css] <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-401">lf_inv</a>(b) };
 <span id="L410" class="LineNr"> 410 </span>  };
 <span id="L411" class="LineNr"> 411 </span>
 <span id="L412" class="LineNr"> 412 </span>  <span class="Comment">/* Takes an event in b.cm() and returns the local decision state that the </span>
 <span id="L413" class="LineNr"> 413 </span><span class="Comment">     brain state implements.  */</span>
-<span id="L414" class="LineNr"><a href="#tda-349" data-file="test_decision_algorithm" title="test_lf_cm" class="checkmark">&10004;</a> 414 </span>  <span class="Identifier">lf_cm</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, b_event) {
+<span id="L414" class="LineNr"><a href="#tda-349" data-file="test_decision_algorithm" title="test_lf_cm" class="checkmark">&#10004;</a> 414 </span>  <span class="Identifier">lf_cm</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, b_event) {
 <span id="L415" class="LineNr"> 415 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-364">lf</a>(b)[<a class="Identifier code-proc-link" href="#l-409">drop_time</a>(b_event)];
 <span id="L416" class="LineNr"> 416 </span>  };
 <span id="L417" class="LineNr"> 417 </span>
 <span id="L418" class="LineNr"> 418 </span>  <span class="Comment">// Returns the decision state variables implemented by a local brain state.</span>
-<span id="L419" class="LineNr"><a href="#tda-356" data-file="test_decision_algorithm" title="test_lf_cm_vs" class="checkmark">&10004;</a> 419 </span>  <span class="Identifier">lf_cm_vs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, b_event) {
+<span id="L419" class="LineNr"><a href="#tda-356" data-file="test_decision_algorithm" title="test_lf_cm_vs" class="checkmark">&#10004;</a> 419 </span>  <span class="Identifier">lf_cm_vs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, b_event) {
 <span id="L420" class="LineNr"> 420 </span>    d_event <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-414">lf_cm</a>(b, b_event);
 <span id="L421" class="LineNr"> 421 </span>    <span class="Statement">if</span> (d_event <span class="Type">==</span> <span class="Constant">om</span>) {
 <span id="L422" class="LineNr"> 422 </span>      <span class="Statement">return</span> {};
@@ -999,7 +999,7 @@
 <span id="L427" class="LineNr"> 427 </span>
 <span id="L428" class="LineNr"> 428 </span>  <span class="Comment">/* Similar to above but returns the formula in the domain(p) that gets </span>
 <span id="L429" class="LineNr"> 429 </span><span class="Comment">     mapped to the p var.  */</span>
-<span id="L430" class="LineNr"><a href="#tda-363" data-file="test_decision_algorithm" title="test_lf_cm_p_inv" class="checkmark">&10004;</a> 430 </span>  <span class="Identifier">lf_cm_p_inv</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, b_event) {
+<span id="L430" class="LineNr"><a href="#tda-363" data-file="test_decision_algorithm" title="test_lf_cm_p_inv" class="checkmark">&#10004;</a> 430 </span>  <span class="Identifier">lf_cm_p_inv</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, b_event) {
 <span id="L431" class="LineNr"> 431 </span>    vs <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-419">lf_cm_vs</a>(b, b_event);
 <span id="L432" class="LineNr"> 432 </span>    <span class="Statement">if</span> (<span class="Type">#</span>vs <span class="Type">==</span> <span class="Constant">1</span>) {
 <span id="L433" class="LineNr"> 433 </span>      <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-1137">p_inv</a>(<span class="Identifier">first</span>(vs));
@@ -1008,7 +1008,7 @@
 <span id="L436" class="LineNr"> 436 </span>    }
 <span id="L437" class="LineNr"> 437 </span>  };
 <span id="L438" class="LineNr"> 438 </span>
-<span id="L439" class="LineNr"><a href="#tda-338" data-file="test_decision_algorithm" title="test_plf_to_pf" class="checkmark">&10004;</a> 439 </span>  <span class="Identifier">plf_to_pf</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, plf) {
+<span id="L439" class="LineNr"><a href="#tda-338" data-file="test_decision_algorithm" title="test_plf_to_pf" class="checkmark">&#10004;</a> 439 </span>  <span class="Identifier">plf_to_pf</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, plf) {
 <span id="L440" class="LineNr"> 440 </span>    <span class="Comment">/* For each decision state var, construct the function from complete </span>
 <span id="L441" class="LineNr"> 441 </span><span class="Comment">       causal states to the state of that variable. */</span>
 <span id="L442" class="LineNr"> 442 </span>    pf_var <span class="Statement">:=</span> {
@@ -1032,7 +1032,7 @@
 <span id="L460" class="LineNr"> 460 </span><span class="Comment">     I'm no longer sure if this is necessary since we measure and punish </span>
 <span id="L461" class="LineNr"> 461 </span><span class="Comment">     attributing irrationality but it also doesn't seem too bad of a </span>
 <span id="L462" class="LineNr"> 462 </span><span class="Comment">     simplifying assumption for now.  */</span>
-<span id="L463" class="LineNr"><a href="#tda-406" data-file="test_decision_algorithm" title="test_m2s_are_valid" class="checkmark">&10004;</a> 463 </span>  <span class="Identifier">m2s_are_valid</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L463" class="LineNr"><a href="#tda-406" data-file="test_decision_algorithm" title="test_m2s_are_valid" class="checkmark">&#10004;</a> 463 </span>  <span class="Identifier">m2s_are_valid</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L464" class="LineNr"> 464 </span>    <span class="Statement">return</span> <span class="Type">forall</span> (m2_i <span class="Type">in</span> m2 <span class="Type">|</span>
 <span id="L465" class="LineNr"> 465 </span>      <span class="Type">forall</span> (v <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-225">non_shared_ancestors</a>(m2_i, m2) <span class="Type">|</span> v <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-182">p_u_vars</a>()) <span class="Type">&amp;&amp;</span>
 <span id="L466" class="LineNr"> 466 </span>      <span class="Type">forall</span> (v <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-240">non_shared_descendants</a>(m2_i, m2) <span class="Type">|</span> v <span class="Type">in</span> o)
@@ -1137,19 +1137,19 @@
 <span id="L565" class="LineNr"> 565 </span>      };
 <span id="L566" class="LineNr"> 566 </span>    };
 <span id="L567" class="LineNr"> 567 </span>
-<span id="L568" class="LineNr"><a href="#tda-475" data-file="test_decision_algorithm" title="test_str_exprs" class="checkmark">&10004;</a> 568 </span>    <span class="Identifier">str_exprs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L568" class="LineNr"><a href="#tda-475" data-file="test_decision_algorithm" title="test_str_exprs" class="checkmark">&#10004;</a> 568 </span>    <span class="Identifier">str_exprs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L569" class="LineNr"> 569 </span>      <span class="Statement">return</span> { [expr, <span class="Constant">0</span>] <span class="Type">:</span> expr <span class="Type">in</span> <span class="Identifier">domain</span>(p)
 <span id="L570" class="LineNr"> 570 </span>                         <span class="Type">|</span> <span class="Type">!</span>(p[expr] <span class="Type">in</span> i) <span class="Type">&amp;&amp;</span> <span class="Identifier">isString</span>(expr) };
 <span id="L571" class="LineNr"> 571 </span>    };
 <span id="L572" class="LineNr"> 572 </span>
-<span id="L573" class="LineNr"><a href="#tda-487" data-file="test_decision_algorithm" title="test_preds" class="checkmark">&10004;</a> 573 </span>    <span class="Identifier">preds</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L573" class="LineNr"><a href="#tda-487" data-file="test_decision_algorithm" title="test_preds" class="checkmark">&#10004;</a> 573 </span>    <span class="Identifier">preds</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L574" class="LineNr"> 574 </span>      <span class="Statement">return</span> { [<span class="Identifier">fct</span>(expr), <a class="Identifier code-proc-link" href="#l-245">arity</a>(expr)]
 <span id="L575" class="LineNr"> 575 </span>               <span class="Type">:</span> expr <span class="Type">in</span> <span class="Identifier">domain</span>(p)
 <span id="L576" class="LineNr"> 576 </span>               <span class="Type">|</span> <span class="Identifier">isTerm</span>(expr) <span class="Type">&amp;&amp;</span> <span class="Type">!</span>(<span class="Identifier">fct</span>(expr) <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-72">connectives</a>()) };
 <span id="L577" class="LineNr"> 577 </span>    };
 <span id="L578" class="LineNr"> 578 </span>
 <span id="L579" class="LineNr"> 579 </span>    <span class="Comment">// Set of choices of poss assignments of world w states/sets/tuples to expr</span>
-<span id="L580" class="LineNr"><a href="#tda-519" data-file="test_decision_algorithm" title="test_poss_base_expr_refs" class="checkmark">&10004;</a> 580 <a title="1.3.2.2" class="back_to_li" href="#t-1-3-2-2"><i class="fas fa-list-ol"></i></a><a title="1.3.2.2.2" class="back_to_li" href="#t-1-3-2-2-2"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">poss_base_expr_refs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, base_exprs) {
+<span id="L580" class="LineNr"><a href="#tda-519" data-file="test_decision_algorithm" title="test_poss_base_expr_refs" class="checkmark">&#10004;</a> 580 <a title="1.3.2.2" class="back_to_li" href="#t-1-3-2-2"><i class="fas fa-list-ol"></i></a><a title="1.3.2.2.2" class="back_to_li" href="#t-1-3-2-2-2"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">poss_base_expr_refs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, base_exprs) {
 <span id="L581" class="LineNr"> 581 </span>      <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-297">choices</a>({ {expr} <span class="Type">&gt;&lt;</span> <a class="Identifier code-proc-link" href="#l-55">range_for_arity</a>(e_arity, w.<a class="Identifier code-proc-link" href="#cmm-38">cm</a>().<a class="Identifier code-proc-link" href="#da-289">poss_states</a>())
 <span id="L582" class="LineNr"> 582 </span>                       <span class="Type">:</span> [expr, e_arity] <span class="Type">in</span> base_exprs });
 <span id="L583" class="LineNr"> 583 </span>    };
@@ -1195,7 +1195,7 @@
 <span id="L623" class="LineNr"> 623 </span><span class="Comment">         to vars into a map acts as conjunction. It may seem counterintuitive </span>
 <span id="L624" class="LineNr"> 624 </span><span class="Comment">         and take some getting used to but we use this canonical form even when</span>
 <span id="L625" class="LineNr"> 625 </span><span class="Comment">         there there is only one disjunct. */</span>
-<span id="L626" class="LineNr"><a href="#tda-553" data-file="test_decision_algorithm" title="test_rr" class="checkmark">&10004;</a> 626 </span>      <span class="Identifier">rr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, arr) {
+<span id="L626" class="LineNr"><a href="#tda-553" data-file="test_decision_algorithm" title="test_rr" class="checkmark">&#10004;</a> 626 </span>      <span class="Identifier">rr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, arr) {
 <span id="L627" class="LineNr"> 627 </span>        w <span class="Statement">:=</span> arr[<span class="Constant">1</span>]; b <span class="Statement">:=</span> arr[<span class="Constant">2</span>]; atom_ref <span class="Statement">:=</span> arr[<span class="Constant">3</span>]; ti <span class="Statement">:=</span> arr[<span class="Constant">4</span>];
 <span id="L628" class="LineNr"> 628 </span>        context <span class="Statement">:=</span> arr[<span class="Constant">5</span>];  <span class="Comment">// context is for binding of variables, see Exists</span>
 <span id="L629" class="LineNr"> 629 </span>        <span class="Statement">if</span> (<span class="Identifier">isTerm</span>(expr)) {
@@ -1294,14 +1294,14 @@
 <span id="L722" class="LineNr"> 722 </span>      <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-725">sq_err</a>(w, b, ref_1) <span class="Type">&lt;</span> <a class="Identifier code-proc-link" href="#da-725">sq_err</a>(w, b, ref_2);
 <span id="L723" class="LineNr"> 723 </span>    };
 <span id="L724" class="LineNr"> 724 </span>
-<span id="L725" class="LineNr"><a href="#tda-652" data-file="test_decision_algorithm" title="test_sq_err" class="checkmark">&10004;</a> 725 </span>    <span class="Identifier">sq_err</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b, ref_i) {
+<span id="L725" class="LineNr"><a href="#tda-652" data-file="test_decision_algorithm" title="test_sq_err" class="checkmark">&#10004;</a> 725 </span>    <span class="Identifier">sq_err</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b, ref_i) {
 <span id="L726" class="LineNr"> 726 </span>      <span class="Statement">return</span> <span class="Type">+/</span> {
 <span id="L727" class="LineNr"> 727 </span>        ( <span class="Identifier">true_p</span>(w, ref_i, b_event) <span class="Type">-</span> <span class="Identifier">first</span>(<span class="Identifier">range</span>(<a class="Identifier code-proc-link" href="#da-414">lf_cm</a>(b, b_event))) ) <span class="Type">**</span> <span class="Constant">2</span>
 <span id="L728" class="LineNr"> 728 </span>        <span class="Type">:</span> b_event <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-750">actual_p_events</a>(b)
 <span id="L729" class="LineNr"> 729 </span>      };
 <span id="L730" class="LineNr"> 730 </span>    };
 <span id="L731" class="LineNr"> 731 </span>
-<span id="L732" class="LineNr"><a href="#tda-631" data-file="test_decision_algorithm" title="test_true_p" class="checkmark">&10004;</a> 732 </span>    <span class="Identifier">true_p</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, ref_i, b_event) {
+<span id="L732" class="LineNr"><a href="#tda-631" data-file="test_decision_algorithm" title="test_true_p" class="checkmark">&#10004;</a> 732 </span>    <span class="Identifier">true_p</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, ref_i, b_event) {
 <span id="L733" class="LineNr"> 733 </span>      <span class="Statement">if</span> (w.<a class="Identifier code-proc-link" href="#cmm-96">actual_state</a>() <span class="Type">in</span> ref_i[b_event]) {
 <span id="L734" class="LineNr"> 734 </span>        <span class="Statement">return</span> <span class="Constant">1</span>;
 <span id="L735" class="LineNr"> 735 </span>      } <span class="Statement">else</span> {
@@ -1310,7 +1310,7 @@
 <span id="L738" class="LineNr"> 738 </span>    };
 <span id="L739" class="LineNr"> 739 </span>
 <span id="L740" class="LineNr"> 740 </span>  <span class="Comment">// Takes an expression (in a world, brain and time) and returns its referent.</span>
-<span id="L741" class="LineNr"><a href="#tda-681" data-file="test_decision_algorithm" title="test_ref_expr" class="checkmark">&10004;</a> 741 </span>  <span class="Identifier">ref_expr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b, t_i, expr) {
+<span id="L741" class="LineNr"><a href="#tda-681" data-file="test_decision_algorithm" title="test_ref_expr" class="checkmark">&#10004;</a> 741 </span>  <span class="Identifier">ref_expr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b, t_i, expr) {
 <span id="L742" class="LineNr"> 742 </span>    p_var <span class="Statement">:=</span> p[expr];
 <span id="L743" class="LineNr"> 743 </span>    ds <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-262">f</a>(b)[<a class="Identifier code-proc-link" href="#l-409">drop_time</a>(b.a[t_i])]; <span class="Comment">// decision state</span>
 <span id="L744" class="LineNr"> 744 </span>    p_event <span class="Statement">:=</span> { [p_var, ds[p_var]] };
@@ -1319,7 +1319,7 @@
 <span id="L747" class="LineNr"> 747 </span>  };
 <span id="L748" class="LineNr"> 748 </span>
 <span id="L749" class="LineNr"> 749 </span>  <span class="Comment">// Returns the brain events that implement a placement of probabibility.</span>
-<span id="L750" class="LineNr"><a href="#tda-694" data-file="test_decision_algorithm" title="test_actual_p_events" class="checkmark">&10004;</a> 750 </span>  <span class="Identifier">actual_p_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b) {
+<span id="L750" class="LineNr"><a href="#tda-694" data-file="test_decision_algorithm" title="test_actual_p_events" class="checkmark">&#10004;</a> 750 </span>  <span class="Identifier">actual_p_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b) {
 <span id="L751" class="LineNr"> 751 </span>    <span class="Statement">return</span> { b_event <span class="Type">:</span> b_event <span class="Type">in</span> b.<a class="Identifier code-proc-link" href="#cmm-102">actual_sync_events</a>()
 <span id="L752" class="LineNr"> 752 </span>             <span class="Type">|</span>      <span class="Type">#</span><a class="Identifier code-proc-link" href="#da-419">lf_cm_vs</a>(b, b_event) <span class="Type">==</span> <span class="Constant">1</span> <span class="Type">&amp;&amp;</span>         <span class="Comment">// just one var</span>
 <span id="L753" class="LineNr"> 753 </span>               <span class="Identifier">first</span>(<a class="Identifier code-proc-link" href="#da-419">lf_cm_vs</a>(b, b_event)) <span class="Type">in</span> <span class="Identifier">range</span>(p) }; <span class="Comment">// and it's a p_var</span>
@@ -1333,7 +1333,7 @@
 <span id="L761" class="LineNr"> 761 </span><span class="Comment">     Actual world b.a is a function from times to assignments of values to </span>
 <span id="L762" class="LineNr"> 762 </span><span class="Comment">     variables at that time.</span>
 <span id="L763" class="LineNr"> 763 </span><span class="Comment">        e.g. b.a := { [1, assign_time({ [y, true] : y in b.uv() }, 1)], ...} */</span>
-<span id="L764" class="LineNr"><a href="#tda-704" data-file="test_decision_algorithm" title="test_prob_states" class="checkmark">&10004;</a> 764 </span>  <span class="Identifier">prob_states</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b) {
+<span id="L764" class="LineNr"><a href="#tda-704" data-file="test_decision_algorithm" title="test_prob_states" class="checkmark">&#10004;</a> 764 </span>  <span class="Identifier">prob_states</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b) {
 <span id="L765" class="LineNr"> 765 </span>    <span class="Statement">return</span> { [ti, <a class="Identifier code-proc-link" href="#da-772">prob_states_t</a>(b, ti) ] <span class="Type">:</span> ti <span class="Type">in</span> [<span class="Constant">1</span><span class="Statement">..</span>b.n] };
 <span id="L766" class="LineNr"> 766 </span>  };
 <span id="L767" class="LineNr"> 767 </span>
@@ -1341,7 +1341,7 @@
 <span id="L769" class="LineNr"> 769 </span><span class="Comment">     Takes a brain b at a time ti and returns the decision state that is </span>
 <span id="L770" class="LineNr"> 770 </span><span class="Comment">     implemented by that brain state but restricted to just the probability </span>
 <span id="L771" class="LineNr"> 771 </span><span class="Comment">     variables.  */</span>
-<span id="L772" class="LineNr"><a href="#tda-711" data-file="test_decision_algorithm" title="test_prob_states_t" class="checkmark">&10004;</a> 772 </span>  <span class="Identifier">prob_states_t</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, ti) {
+<span id="L772" class="LineNr"><a href="#tda-711" data-file="test_decision_algorithm" title="test_prob_states_t" class="checkmark">&#10004;</a> 772 </span>  <span class="Identifier">prob_states_t</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, ti) {
 <span id="L773" class="LineNr"> 773 </span>    bs <span class="Statement">:=</span> { [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-409">drop_time</a>(b.a[ti]) <span class="Type">|</span> var <span class="Type">in</span> b.<a class="Identifier code-proc-link" href="#cmm-24">uv</a>() };
 <span id="L774" class="LineNr"> 774 </span>    ds <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-262">f</a>(b)[bs];
 <span id="L775" class="LineNr"> 775 </span>    <span class="Statement">return</span> { [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> ds <span class="Type">|</span> var <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-178">p_vars</a>() };
@@ -1352,13 +1352,13 @@
 <span id="L780" class="LineNr"> 780 </span><span class="Comment Heading">// ==============================</span>
 <span id="L781" class="LineNr"> 781 </span>
 <span id="L782" class="LineNr"> 782 </span>  <span class="Comment">// Collect all utility/evaluation function vars with their output vars</span>
-<span id="L783" class="LineNr"><a href="#tda-722" data-file="test_decision_algorithm" title="test_eo" class="checkmark">&10004;</a> 783 </span>  <span class="Identifier">eo</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L783" class="LineNr"><a href="#tda-722" data-file="test_decision_algorithm" title="test_eo" class="checkmark">&#10004;</a> 783 </span>  <span class="Identifier">eo</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L784" class="LineNr"> 784 </span>    <span class="Statement">return</span> {[u, o]} <span class="Type">+</span> { [n_i[<span class="Constant">'e'</span>], n_i[<span class="Constant">'o'</span>]] <span class="Type">:</span> n_i <span class="Type">in</span> n };
 <span id="L785" class="LineNr"> 785 </span>  };
 <span id="L786" class="LineNr"> 786 </span>
 <span id="L787" class="LineNr"> 787 </span>  <span class="Comment">/* Instrumental irrationality, including of evaluation as well as utility </span>
 <span id="L788" class="LineNr"> 788 </span><span class="Comment">     functions. */</span>
-<span id="L789" class="LineNr"><a href="#tda-731" data-file="test_decision_algorithm" title="test_instr_irrat" class="checkmark">&10004;</a> 789 <a title="1.2.1.5" class="back_to_li" href="#t-1-2-1-5"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">instr_irrat</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b) {
+<span id="L789" class="LineNr"><a href="#tda-731" data-file="test_decision_algorithm" title="test_instr_irrat" class="checkmark">&#10004;</a> 789 <a title="1.2.1.5" class="back_to_li" href="#t-1-2-1-5"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">instr_irrat</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(w, b) {
 <span id="L790" class="LineNr"> 790 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#da-796">e_dist</a>(w, b, ti) <span class="Type">:</span> ti <span class="Type">in</span> [<span class="Constant">1</span><span class="Statement">..</span>(b.n <span class="Type">-</span> <span class="Constant">1</span>)] } <span class="Type">/</span> (b.n <span class="Type">-</span> <span class="Constant">1</span>);
 <span id="L791" class="LineNr"> 791 </span>  };
 <span id="L792" class="LineNr"> 792 </span>
@@ -1452,7 +1452,7 @@
 <span id="L880" class="LineNr"> 880 </span><span class="Comment">     Find the probability distribution that is the farthest distance from the </span>
 <span id="L881" class="LineNr"> 881 </span><span class="Comment">     given brain's probability distribution and return that distance.</span>
 <span id="L882" class="LineNr"> 882 </span><span class="Comment">     This is used to normalize probability distance scores.  */</span>
-<span id="L883" class="LineNr"><a href="#tda-819" data-file="test_decision_algorithm" title="test_max_p_dist" class="checkmark">&10004;</a> 883 </span>  <span class="Identifier">max_p_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, ti) {
+<span id="L883" class="LineNr"><a href="#tda-819" data-file="test_decision_algorithm" title="test_max_p_dist" class="checkmark">&#10004;</a> 883 </span>  <span class="Identifier">max_p_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(b, ti) {
 <span id="L884" class="LineNr"> 884 </span>    poss_p_states <span class="Statement">:=</span> [poss_p <span class="Type">:</span> poss_p <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(<a class="Identifier code-proc-link" href="#da-178">p_vars</a>(), r)];
 <span id="L885" class="LineNr"> 885 </span>    p_states <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#da-772">prob_states_t</a>(b, ti);
 <span id="L886" class="LineNr"> 886 </span>    farthest_pp <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-708">sort_list</a>(poss_p_states, <span class="Type">procedure</span>(pp1,pp2) {
@@ -1464,7 +1464,7 @@
 <span id="L892" class="LineNr"> 892 </span>
 <span id="L893" class="LineNr"> 893 </span>  <span class="Comment">/* Returns the set of possible causal models formed from the base variables</span>
 <span id="L894" class="LineNr"> 894 </span><span class="Comment">     in the domain of p. */</span>
-<span id="L895" class="LineNr"><a href="#tda-853" data-file="test_decision_algorithm" title="test_poss_cms" class="checkmark">&10004;</a> 895 </span>  <span class="Identifier">poss_cms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L895" class="LineNr"><a href="#tda-853" data-file="test_decision_algorithm" title="test_poss_cms" class="checkmark">&#10004;</a> 895 </span>  <span class="Identifier">poss_cms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L896" class="LineNr"> 896 </span>    base_vars <span class="Statement">:=</span> [ p[expr] <span class="Type">:</span> expr <span class="Type">in</span> <span class="Identifier">domain</span>(p) <span class="Type">|</span>
 <span id="L897" class="LineNr"> 897 </span>                   <span class="Identifier">isString</span>(expr) <span class="Type">||</span> (<span class="Identifier">isTerm</span>(expr) <span class="Type">&amp;&amp;</span> <span class="Identifier">fct</span>(expr) <span class="Type">==</span> <span class="Constant">'At_t'</span>) ];
 <span id="L898" class="LineNr"> 898 </span>    vs <span class="Statement">:=</span> { v <span class="Type">:</span> v <span class="Type">in</span> base_vars };
@@ -1472,7 +1472,7 @@
 <span id="L900" class="LineNr"> 900 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#da-903">poss_cms_from_l</a>(l, vs) <span class="Type">:</span> l <span class="Type">in</span> orderings };
 <span id="L901" class="LineNr"> 901 </span>  };
 <span id="L902" class="LineNr"> 902 </span>
-<span id="L903" class="LineNr"><a href="#tda-875" data-file="test_decision_algorithm" title="test_poss_cms_from_l" class="checkmark">&10004;</a> 903 </span>    <span class="Identifier">poss_cms_from_l</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l, vs) { <span class="Comment">// l is an ordering (list)</span>
+<span id="L903" class="LineNr"><a href="#tda-875" data-file="test_decision_algorithm" title="test_poss_cms_from_l" class="checkmark">&#10004;</a> 903 </span>    <span class="Identifier">poss_cms_from_l</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l, vs) { <span class="Comment">// l is an ordering (list)</span>
 <span id="L904" class="LineNr"> 904 </span>      <span class="Comment">// Each var's poss parents are sets containing the preceding vars in l.</span>
 <span id="L905" class="LineNr"> 905 </span>      poss_v_parents <span class="Statement">:=</span> { [l[j], <span class="Identifier">pow</span>({ v <span class="Type">:</span> v <span class="Type">in</span> l[<span class="Constant">1</span><span class="Statement">..</span>j<span class="Type">-</span><span class="Constant">1</span>] })] <span class="Type">:</span> j <span class="Type">in</span> [<span class="Constant">2</span><span class="Statement">..</span><span class="Type">#</span>l] };
 <span id="L906" class="LineNr"> 906 </span>      poss_v_parents[l[<span class="Constant">1</span>]] <span class="Statement">:=</span> {{}};
@@ -1485,7 +1485,7 @@
 <span id="L913" class="LineNr"> 913 </span>    <span class="Comment">/* Given a set of parenthood relations, construct its set of possible </span>
 <span id="L914" class="LineNr"> 914 </span><span class="Comment">       causal models. For each variable, construct the set of possible </span>
 <span id="L915" class="LineNr"> 915 </span><span class="Comment">       functions from its parents. */</span>
-<span id="L916" class="LineNr"><a href="#tda-876" data-file="test_decision_algorithm" title="test_poss_cms_from_p_pars" class="checkmark">&10004;</a> 916 </span>    <span class="Identifier">poss_cms_from_p_pars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(vs, poss_parents, p_pars) {
+<span id="L916" class="LineNr"><a href="#tda-876" data-file="test_decision_algorithm" title="test_poss_cms_from_p_pars" class="checkmark">&#10004;</a> 916 </span>    <span class="Identifier">poss_cms_from_p_pars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(vs, poss_parents, p_pars) {
 <span id="L917" class="LineNr"> 917 </span>      cm_u <span class="Statement">:=</span> { v <span class="Type">:</span> v <span class="Type">in</span> vs <span class="Type">|</span> p_pars[v] <span class="Type">==</span> {} };
 <span id="L918" class="LineNr"> 918 </span>      cm_v <span class="Statement">:=</span> vs <span class="Type">-</span> cm_u;
 <span id="L919" class="LineNr"> 919 </span>      cm_r <span class="Statement">:=</span> { [v, {<span class="Constant">true</span>, <span class="Constant">false</span>}] <span class="Type">:</span> v <span class="Type">in</span> vs };
@@ -1499,7 +1499,7 @@
 <span id="L927" class="LineNr"> 927 </span>  <span class="Comment">/* Takes a causal_model and returns a set of coherent probability </span>
 <span id="L928" class="LineNr"> 928 </span><span class="Comment">     distributions compatible with the cm. Each distribution is given by</span>
 <span id="L929" class="LineNr"> 929 </span><span class="Comment">     a pair of assignments of values to p and cp.  */</span>
-<span id="L930" class="LineNr"><a href="#tda-972" data-file="test_decision_algorithm" title="test_coh_pcms" class="checkmark">&10004;</a> 930 </span>  <span class="Identifier">coh_pcms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(cm) {
+<span id="L930" class="LineNr"><a href="#tda-972" data-file="test_decision_algorithm" title="test_coh_pcms" class="checkmark">&#10004;</a> 930 </span>  <span class="Identifier">coh_pcms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(cm) {
 <span id="L931" class="LineNr"> 931 </span>    <span class="Comment">// Coherent probability distributions for exogenous variables u</span>
 <span id="L932" class="LineNr"> 932 </span>    coh_u_probs <span class="Statement">:=</span> { p_u <span class="Type">:</span> p_u <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-938">poss_p_us</a>(cm.u)
 <span id="L933" class="LineNr"> 933 </span>                         <span class="Type">|</span> <a class="Identifier code-proc-link" href="#da-951">p_u_is_coherent</a>(p_u, cm.u) };
@@ -1591,7 +1591,7 @@
 <span id="L1019" class="LineNr">1019 </span>
 <span id="L1020" class="LineNr">1020 </span>  <span class="Comment">// Note that the function it returns assigns true/false to prob vars and not</span>
 <span id="L1021" class="LineNr">1021 </span>  <span class="Comment">// atomic expressions. You may want expr_to_events instead.</span>
-<span id="L1022" class="LineNr"><a href="#tda-1001" data-file="test_decision_algorithm" title="test_expr_to_p_funcs" class="checkmark">&10004;</a>1022 </span>  <span class="Identifier">expr_to_p_funcs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, dom) {
+<span id="L1022" class="LineNr"><a href="#tda-1001" data-file="test_decision_algorithm" title="test_expr_to_p_funcs" class="checkmark">&#10004;</a>1022 </span>  <span class="Identifier">expr_to_p_funcs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, dom) {
 <span id="L1023" class="LineNr">1023 </span>    <span class="Statement">return</span> { { [p[term], bool] <span class="Type">:</span> [term, bool] <span class="Type">in</span> event }
 <span id="L1024" class="LineNr">1024 </span>             <span class="Type">:</span> event <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-134">expr_to_events</a>(expr, dom) };
 <span id="L1025" class="LineNr">1025 </span>  };
@@ -1652,7 +1652,7 @@
 <span id="L1080" class="LineNr">1080 </span>
 <span id="L1081" class="LineNr">1081 </span>      <span class="Comment">/* Given two pairs of probability distributions over p_vars</span>
 <span id="L1082" class="LineNr">1082 </span><span class="Comment">         add up the probabilities of expressions. */</span>
-<span id="L1083" class="LineNr"><a href="#tda-1030" data-file="test_decision_algorithm" title="test_add_p_distr" class="checkmark">&10004;</a>1083 </span>      <span class="Identifier">add_p_distr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p_cp1, p_cp2) {
+<span id="L1083" class="LineNr"><a href="#tda-1030" data-file="test_decision_algorithm" title="test_add_p_distr" class="checkmark">&#10004;</a>1083 </span>      <span class="Identifier">add_p_distr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p_cp1, p_cp2) {
 <span id="L1084" class="LineNr">1084 </span>        p1  <span class="Statement">:=</span> p_cp1[<span class="Constant">1</span>];
 <span id="L1085" class="LineNr">1085 </span>        cp1 <span class="Statement">:=</span> p_cp1[<span class="Constant">2</span>];
 <span id="L1086" class="LineNr">1086 </span>        p2  <span class="Statement">:=</span> p_cp2[<span class="Constant">1</span>];
@@ -1660,7 +1660,7 @@
 <span id="L1088" class="LineNr">1088 </span>        <span class="Statement">return</span> [<a class="Identifier code-proc-link" href="#da-1091">sum_p</a>(p1, p2), <a class="Identifier code-proc-link" href="#da-1091">sum_p</a>(cp1, cp2)];
 <span id="L1089" class="LineNr">1089 </span>      };
 <span id="L1090" class="LineNr">1090 </span>
-<span id="L1091" class="LineNr"><a href="#tda-1019" data-file="test_decision_algorithm" title="test_sum_p" class="checkmark">&10004;</a>1091 </span>        <span class="Identifier">sum_p</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p1, p2) {
+<span id="L1091" class="LineNr"><a href="#tda-1019" data-file="test_decision_algorithm" title="test_sum_p" class="checkmark">&#10004;</a>1091 </span>        <span class="Identifier">sum_p</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p1, p2) {
 <span id="L1092" class="LineNr">1092 </span>          <span class="Comment">/* If one has a variable where the other does not have any variable</span>
 <span id="L1093" class="LineNr">1093 </span><span class="Comment">             with an equivalent expression, just go with the probability </span>
 <span id="L1094" class="LineNr">1094 </span><span class="Comment">             defined by the one. */</span>
@@ -1706,7 +1706,7 @@
 <span id="L1134" class="LineNr">1134 </span>
 <span id="L1135" class="LineNr">1135 </span>  <span class="Comment">/* Takes a p or cp var in range(p) + range(cp) and returns its preimage </span>
 <span id="L1136" class="LineNr">1136 </span><span class="Comment">     formula(s) */</span>
-<span id="L1137" class="LineNr"><a href="#tda-370" data-file="test_decision_algorithm" title="test_p_inv" class="checkmark">&10004;</a>1137 </span>  <span class="Identifier">p_inv</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v) {
+<span id="L1137" class="LineNr"><a href="#tda-370" data-file="test_decision_algorithm" title="test_p_inv" class="checkmark">&#10004;</a>1137 </span>  <span class="Identifier">p_inv</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v) {
 <span id="L1138" class="LineNr">1138 </span>    <span class="Statement">if</span> (v <span class="Type">in</span> <span class="Identifier">range</span>(p)) {
 <span id="L1139" class="LineNr">1139 </span>      <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-239">inv</a>(p)[v];
 <span id="L1140" class="LineNr">1140 </span>    } <span class="Statement">else</span> {
@@ -1739,7 +1739,7 @@
 <span id="L1167" class="LineNr">1167 </span>  <span class="Identifier">old_is_coherent</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(pp) {
 <span id="L1168" class="LineNr">1168 </span>    <span class="Comment">/* For easier handling, turn domain(p) into a datatype like domain(cp) </span>
 <span id="L1169" class="LineNr">1169 </span><span class="Comment">       so that e.g. P(A) looks more like P(A|om) */</span>
-<span id="L1170" class="LineNr"><a href="#tda-1123" data-file="test_decision_algorithm" title="test_force_list" class="checkmark">&10004;</a>1170 </span>    <span class="Identifier">force_list</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v) {
+<span id="L1170" class="LineNr"><a href="#tda-1123" data-file="test_decision_algorithm" title="test_force_list" class="checkmark">&#10004;</a>1170 </span>    <span class="Identifier">force_list</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v) {
 <span id="L1171" class="LineNr">1171 </span>      <span class="Statement">if</span> (<span class="Identifier">isList</span>(<a class="Identifier code-proc-link" href="#da-1137">p_inv</a>(v))) {
 <span id="L1172" class="LineNr">1172 </span>        <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-1137">p_inv</a>(v);
 <span id="L1173" class="LineNr">1173 </span>      } <span class="Statement">else</span> {
@@ -1820,7 +1820,7 @@
 <span id="L1248" class="LineNr">1248 </span>
 <span id="L1249" class="LineNr">1249 </span>    <span class="Comment">/* For easier handling, turn domain(p) into a datatype like domain(cp) </span>
 <span id="L1250" class="LineNr">1250 </span><span class="Comment">       so that e.g. P(A) looks more like P(A|om) */</span>
-<span id="L1251" class="LineNr"><a href="#tda-1123" data-file="test_decision_algorithm" title="test_force_list" class="checkmark">&10004;</a>1251 </span>    <span class="Identifier">force_list</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v) {
+<span id="L1251" class="LineNr"><a href="#tda-1123" data-file="test_decision_algorithm" title="test_force_list" class="checkmark">&#10004;</a>1251 </span>    <span class="Identifier">force_list</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(v) {
 <span id="L1252" class="LineNr">1252 </span>      <span class="Statement">if</span> (<span class="Identifier">isList</span>(<a class="Identifier code-proc-link" href="#da-1137">p_inv</a>(v))) {
 <span id="L1253" class="LineNr">1253 </span>        <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#da-1137">p_inv</a>(v);
 <span id="L1254" class="LineNr">1254 </span>      } <span class="Statement">else</span> {
@@ -1844,7 +1844,7 @@
 <span id="L1272" class="LineNr">1272 </span><span class="Comment">     than their implicit and buggy this. The result may be likened to Python's</span>
 <span id="L1273" class="LineNr">1273 </span><span class="Comment">     way of handling instance methods.</span>
 <span id="L1274" class="LineNr">1274 </span><span class="Comment">  */</span>
-<span id="L1275" class="LineNr"><a href="#tda-1044" data-file="test_decision_algorithm" title="test_prob_distance" class="checkmark">&10004;</a>1275 <a title="1.2.1.4.2" class="back_to_li" href="#t-1-2-1-4-2"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">prob_distance</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p, cp, pp1, pp2) {
+<span id="L1275" class="LineNr"><a href="#tda-1044" data-file="test_decision_algorithm" title="test_prob_distance" class="checkmark">&#10004;</a>1275 <a title="1.2.1.4.2" class="back_to_li" href="#t-1-2-1-4-2"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">prob_distance</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p, cp, pp1, pp2) {
 <span id="L1276" class="LineNr">1276 </span>    <span class="Comment">/* First pass: (but doesn't handle undefineds and logical equivalents)</span>
 <span id="L1277" class="LineNr">1277 </span><span class="Comment">    return +/ { abs(pp1[v] - pp2[v]) : v in domain(pp1) | v in domain(pp2) };</span>
 <span id="L1278" class="LineNr">1278 </span><span class="Comment">    // Second pass: (but doesn't handle double-counting)</span>
@@ -1893,15 +1893,15 @@
 <span id="L1321" class="LineNr">1321 </span><span class="Comment Heading">// Helpers </span>
 <span id="L1322" class="LineNr">1322 </span><span class="Comment Heading">// -------</span>
 <span id="L1323" class="LineNr">1323 </span>
-<span id="L1324" class="LineNr"><a href="#tda-1056" data-file="test_decision_algorithm" title="test_poss_io_states" class="checkmark">&10004;</a>1324 </span>  <span class="Identifier">poss_io_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
+<span id="L1324" class="LineNr"><a href="#tda-1056" data-file="test_decision_algorithm" title="test_poss_io_states" class="checkmark">&#10004;</a>1324 </span>  <span class="Identifier">poss_io_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L1325" class="LineNr">1325 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(i <span class="Type">+</span> o, r);
 <span id="L1326" class="LineNr">1326 </span>  };
 <span id="L1327" class="LineNr">1327 </span>
-<span id="L1328" class="LineNr"><a href="#tda-163" data-file="test_decision_algorithm" title="test_poss_s_states" class="checkmark">&10004;</a>1328 </span>  <span class="Identifier">poss_s_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
+<span id="L1328" class="LineNr"><a href="#tda-163" data-file="test_decision_algorithm" title="test_poss_s_states" class="checkmark">&#10004;</a>1328 </span>  <span class="Identifier">poss_s_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L1329" class="LineNr">1329 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(<a class="Identifier code-proc-link" href="#da-123">s</a>(), r);
 <span id="L1330" class="LineNr">1330 </span>  };
 <span id="L1331" class="LineNr">1331 </span>
-<span id="L1332" class="LineNr"><a href="#tda-1072" data-file="test_decision_algorithm" title="test_poss_m_states" class="checkmark">&10004;</a>1332 </span>  <span class="Identifier">poss_m_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
+<span id="L1332" class="LineNr"><a href="#tda-1072" data-file="test_decision_algorithm" title="test_poss_m_states" class="checkmark">&#10004;</a>1332 </span>  <span class="Identifier">poss_m_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L1333" class="LineNr">1333 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(m, r);
 <span id="L1334" class="LineNr">1334 </span>  };
 <span id="L1335" class="LineNr">1335 </span>
@@ -1913,19 +1913,19 @@
 <span id="L1341" class="LineNr">1341 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(m <span class="Type">+</span> m2, r);
 <span id="L1342" class="LineNr">1342 </span>  };
 <span id="L1343" class="LineNr">1343 </span>
-<span id="L1344" class="LineNr"><a href="#tda-162" data-file="test_decision_algorithm" title="test_poss_i_states" class="checkmark">&10004;</a>1344 </span>  <span class="Identifier">poss_i_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
+<span id="L1344" class="LineNr"><a href="#tda-162" data-file="test_decision_algorithm" title="test_poss_i_states" class="checkmark">&#10004;</a>1344 </span>  <span class="Identifier">poss_i_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L1345" class="LineNr">1345 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(i, r);
 <span id="L1346" class="LineNr">1346 </span>  };
 <span id="L1347" class="LineNr">1347 </span>
-<span id="L1348" class="LineNr"><a href="#tda-161" data-file="test_decision_algorithm" title="test_poss_is_states" class="checkmark">&10004;</a>1348 </span>  <span class="Identifier">poss_is_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
+<span id="L1348" class="LineNr"><a href="#tda-161" data-file="test_decision_algorithm" title="test_poss_is_states" class="checkmark">&#10004;</a>1348 </span>  <span class="Identifier">poss_is_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L1349" class="LineNr">1349 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(i <span class="Type">+</span> <a class="Identifier code-proc-link" href="#da-123">s</a>(), r);
 <span id="L1350" class="LineNr">1350 </span>  };
 <span id="L1351" class="LineNr">1351 </span>
-<span id="L1352" class="LineNr"><a href="#tda-1087" data-file="test_decision_algorithm" title="test_poss_o_states" class="checkmark">&10004;</a>1352 </span>  <span class="Identifier">poss_o_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
+<span id="L1352" class="LineNr"><a href="#tda-1087" data-file="test_decision_algorithm" title="test_poss_o_states" class="checkmark">&#10004;</a>1352 </span>  <span class="Identifier">poss_o_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L1353" class="LineNr">1353 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(o, r);
 <span id="L1354" class="LineNr">1354 </span>  };
 <span id="L1355" class="LineNr">1355 </span>
-<span id="L1356" class="LineNr"><a href="#tda-164" data-file="test_decision_algorithm" title="test_poss_u_states" class="checkmark">&10004;</a>1356 </span>  <span class="Identifier">poss_u_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
+<span id="L1356" class="LineNr"><a href="#tda-164" data-file="test_decision_algorithm" title="test_poss_u_states" class="checkmark">&#10004;</a>1356 </span>  <span class="Identifier">poss_u_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>() {
 <span id="L1357" class="LineNr">1357 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(<span class="Identifier">range</span>(u), r);
 <span id="L1358" class="LineNr">1358 </span>  };
 <span id="L1359" class="LineNr">1359 </span>
@@ -2124,7 +2124,7 @@
 <span id="L1552" class="LineNr">1552 </span>    <span class="Statement">return</span> alt_ds[<span class="Constant">1</span>];
 <span id="L1553" class="LineNr">1553 </span>  };
 <span id="L1554" class="LineNr">1554 </span>
-<span id="L1555" class="LineNr"><a href="#tda-165" data-file="test_decision_algorithm" title="test_is_equal_to" class="checkmark">&10004;</a>1555 </span>  <span class="Identifier">is_equal_to</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(d) {
+<span id="L1555" class="LineNr"><a href="#tda-165" data-file="test_decision_algorithm" title="test_is_equal_to" class="checkmark">&#10004;</a>1555 </span>  <span class="Identifier">is_equal_to</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(d) {
 <span id="L1556" class="LineNr">1556 </span>    l1 <span class="Statement">:=</span> [  i,   o,   p,   cp,   u,   m,   m2,   n,   r,   t_s,   t_o];
 <span id="L1557" class="LineNr">1557 </span>    l2 <span class="Statement">:=</span> [d.i, d.o, d.p, d.cp, d.u, d.m, d.m2, d.n, d.r, d.t_s, d.t_o];
 <span id="L1558" class="LineNr">1558 </span>    <span class="Statement">return</span> l1 <span class="Type">==</span> l2;
@@ -2141,7 +2141,7 @@
 <span id="L1569" class="LineNr">1569 </span>  };
 <span id="L1570" class="LineNr">1570 </span>
 <span id="L1571" class="LineNr">1571 </span>    <span class="Comment">// Todo: Also do higher-order m2s</span>
-<span id="L1572" class="LineNr"><a href="#tda-1102" data-file="test_decision_algorithm" title="test_possible_fms" class="checkmark">&10004;</a>1572 </span>    <span class="Identifier">possible_fms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(d) {
+<span id="L1572" class="LineNr"><a href="#tda-1102" data-file="test_decision_algorithm" title="test_possible_fms" class="checkmark">&#10004;</a>1572 </span>    <span class="Identifier">possible_fms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(d) {
 <span id="L1573" class="LineNr">1573 </span>      <span class="Comment">/* Construct the space of functions from states of m+m2 to d.m+d.m2,</span>
 <span id="L1574" class="LineNr">1574 </span><span class="Comment">         respecting the m / m2 boundary */</span>
 <span id="L1575" class="LineNr">1575 </span>      fm_ms  <span class="Statement">:=</span> {
@@ -2161,12 +2161,12 @@
 <span id="L1589" class="LineNr">1589 </span>    };
 <span id="L1590" class="LineNr">1590 </span>
 <span id="L1591" class="LineNr">1591 </span>      <span class="Comment">// Todo: Also do higher-order m2s.</span>
-<span id="L1592" class="LineNr"><a href="#tda-1120" data-file="test_decision_algorithm" title="test_apply_fm_m" class="checkmark">&10004;</a>1592 </span>      <span class="Identifier">apply_fm_m</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(fm_m, iso) {
+<span id="L1592" class="LineNr"><a href="#tda-1120" data-file="test_decision_algorithm" title="test_apply_fm_m" class="checkmark">&#10004;</a>1592 </span>      <span class="Identifier">apply_fm_m</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(fm_m, iso) {
 <span id="L1593" class="LineNr">1593 </span>        iso_m <span class="Statement">:=</span> { [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> iso <span class="Type">|</span> var <span class="Type">in</span> m <span class="Type">||</span> var <span class="Type">in</span> m2 };
 <span id="L1594" class="LineNr">1594 </span>        <span class="Statement">return</span> { [v, iso[v]] <span class="Type">:</span> v <span class="Type">in</span> i <span class="Type">+</span> <a class="Identifier code-proc-link" href="#da-123">s</a>() <span class="Type">+</span> o <span class="Type">-</span> m <span class="Type">-</span> m2 } <span class="Type">+</span> fm_m[iso_m];
 <span id="L1595" class="LineNr">1595 </span>      };
 <span id="L1596" class="LineNr">1596 </span>
-<span id="L1597" class="LineNr"><a href="#tda-1121" data-file="test_decision_algorithm" title="test_fm_commutes" class="checkmark">&10004;</a>1597 </span>    <span class="Identifier">fm_commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(fm, d) {
+<span id="L1597" class="LineNr"><a href="#tda-1121" data-file="test_decision_algorithm" title="test_fm_commutes" class="checkmark">&#10004;</a>1597 </span>    <span class="Identifier">fm_commutes</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(fm, d) {
 <span id="L1598" class="LineNr">1598 </span>      <span class="Comment">// Restrict fm to just i + s() variables</span>
 <span id="L1599" class="LineNr">1599 </span>      fm_is <span class="Statement">:=</span> { [{ [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> iso1 <span class="Type">|</span> var <span class="Type">in</span> i <span class="Type">+</span> <a class="Identifier code-proc-link" href="#da-123">s</a>() },
 <span id="L1600" class="LineNr">1600 </span>                  { [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> iso2 <span class="Type">|</span> var <span class="Type">in</span> d.i <span class="Type">+</span> d.<a class="Identifier code-proc-link" href="#da-123">s</a>() }]
@@ -2518,7 +2518,7 @@
 <span id="L1946" class="LineNr">1946 </span>    };
 <span id="L1947" class="LineNr">1947 </span>
 <span id="L1948" class="LineNr">1948 </span>    <span class="Comment">// Similarity / closeness. Returns 0-1.</span>
-<span id="L1949" class="LineNr"><a href="#tda-1134" data-file="test_decision_algorithm" title="test_p_i_sim" class="checkmark">&10004;</a>1949 </span>    <span class="Identifier">p_i_sim</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ds1, ds2, p_i) {
+<span id="L1949" class="LineNr"><a href="#tda-1134" data-file="test_decision_algorithm" title="test_p_i_sim" class="checkmark">&#10004;</a>1949 </span>    <span class="Identifier">p_i_sim</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ds1, ds2, p_i) {
 <span id="L1950" class="LineNr">1950 </span>      max_dist <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-15">max</a>({ <span class="Identifier">abs</span>(ds1[p_i] <span class="Type">-</span> r_i) <span class="Type">:</span> r_i <span class="Type">in</span> r[p_i] });
 <span id="L1951" class="LineNr">1951 </span>      <span class="Statement">return</span> <span class="Constant">1</span> <span class="Type">-</span> <span class="Identifier">abs</span>(ds1[p_i] <span class="Type">-</span> ds2[<a class="Identifier code-proc-link" href="#da-2005">id_var</a>(p_i)]) <span class="Type">/</span> max_dist;
 <span id="L1952" class="LineNr">1952 </span>    };
@@ -2558,7 +2558,7 @@
 <span id="L1986" class="LineNr">1986 </span><span class="Comment">     introduce a new term At(expr, -1) which at that time step, would refer to </span>
 <span id="L1987" class="LineNr">1987 </span><span class="Comment">     the same as this time's expr.  </span>
 <span id="L1988" class="LineNr">1988 </span><span class="Comment">  */</span>
-<span id="L1989" class="LineNr"><a href="#tda-1146" data-file="test_decision_algorithm" title="test_id_expr" class="checkmark">&10004;</a>1989 </span>  <span class="Identifier">id_expr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
+<span id="L1989" class="LineNr"><a href="#tda-1146" data-file="test_decision_algorithm" title="test_id_expr" class="checkmark">&#10004;</a>1989 </span>  <span class="Identifier">id_expr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
 <span id="L1990" class="LineNr">1990 </span>    <span class="Statement">if</span> (<span class="Identifier">isList</span>(expr)) { <span class="Comment">// in case it's called on p_inv of cp var</span>
 <span id="L1991" class="LineNr">1991 </span>      <span class="Statement">return</span> [ <a class="Identifier code-proc-link" href="#da-1989">id_expr</a>(expr_i) <span class="Type">:</span> expr_i <span class="Type">in</span> expr ];
 <span id="L1992" class="LineNr">1992 </span>    } <span class="Statement">else</span> {
@@ -2574,24 +2574,24 @@
 <span id="L2002" class="LineNr">2002 </span>
 <span id="L2003" class="LineNr">2003 </span>  <span class="Comment">/* Takes a prob variable and finds its expr preimage, then finds the expr that</span>
 <span id="L2004" class="LineNr">2004 </span><span class="Comment">     in the next time would be identical to this expr. Returns that expr var. */</span>
-<span id="L2005" class="LineNr"><a href="#tda-1164" data-file="test_decision_algorithm" title="test_id_var" class="checkmark">&10004;</a>2005 </span>  <span class="Identifier">id_var</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p_var) {
+<span id="L2005" class="LineNr"><a href="#tda-1164" data-file="test_decision_algorithm" title="test_id_var" class="checkmark">&#10004;</a>2005 </span>  <span class="Identifier">id_var</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p_var) {
 <span id="L2006" class="LineNr">2006 </span>    <span class="Statement">return</span> p[<a class="Identifier code-proc-link" href="#da-1989">id_expr</a>(<a class="Identifier code-proc-link" href="#da-1137">p_inv</a>(p_var))];
 <span id="L2007" class="LineNr">2007 </span>  };
 <span id="L2008" class="LineNr">2008 </span>
-<span id="L2009" class="LineNr"><a href="#tda-1166" data-file="test_decision_algorithm" title="test_poss_i_events" class="checkmark">&10004;</a>2009 </span>  <span class="Identifier">poss_i_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L2009" class="LineNr"><a href="#tda-1166" data-file="test_decision_algorithm" title="test_poss_i_events" class="checkmark">&#10004;</a>2009 </span>  <span class="Identifier">poss_i_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L2010" class="LineNr">2010 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(isub, r) <span class="Type">:</span> isub <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-6">ne_pow</a>(i) };
 <span id="L2011" class="LineNr">2011 </span>  };
 <span id="L2012" class="LineNr">2012 </span>
-<span id="L2013" class="LineNr"><a href="#tda-1182" data-file="test_decision_algorithm" title="test_e_vars" class="checkmark">&10004;</a>2013 </span>  <span class="Identifier">e_vars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L2013" class="LineNr"><a href="#tda-1182" data-file="test_decision_algorithm" title="test_e_vars" class="checkmark">&#10004;</a>2013 </span>  <span class="Identifier">e_vars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L2014" class="LineNr">2014 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <span class="Identifier">range</span>(n_i[<span class="Constant">'e'</span>]) <span class="Type">:</span> n_i <span class="Type">in</span> n };
 <span id="L2015" class="LineNr">2015 </span>  };
 <span id="L2016" class="LineNr">2016 </span>
-<span id="L2017" class="LineNr"><a href="#tda-1192" data-file="test_decision_algorithm" title="test_poss_ue_events" class="checkmark">&10004;</a>2017 </span>  <span class="Identifier">poss_ue_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L2017" class="LineNr"><a href="#tda-1192" data-file="test_decision_algorithm" title="test_poss_ue_events" class="checkmark">&#10004;</a>2017 </span>  <span class="Identifier">poss_ue_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L2018" class="LineNr">2018 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(ue_sub, r)
 <span id="L2019" class="LineNr">2019 </span>                <span class="Type">:</span> ue_sub <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-6">ne_pow</a>(<span class="Identifier">range</span>(u) <span class="Type">+</span> <a class="Identifier code-proc-link" href="#da-2013">e_vars</a>()) };
 <span id="L2020" class="LineNr">2020 </span>  };
 <span id="L2021" class="LineNr">2021 </span>
-<span id="L2022" class="LineNr"><a href="#tda-1205" data-file="test_decision_algorithm" title="test_poss_p_i_events" class="checkmark">&10004;</a>2022 </span>  <span class="Identifier">poss_p_i_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L2022" class="LineNr"><a href="#tda-1205" data-file="test_decision_algorithm" title="test_poss_p_i_events" class="checkmark">&#10004;</a>2022 </span>  <span class="Identifier">poss_p_i_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L2023" class="LineNr">2023 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { { [p_i, r_i] <span class="Type">:</span> r_i <span class="Type">in</span> r[p_i] } <span class="Type">:</span> p_i <span class="Type">in</span> <span class="Identifier">range</span>(p) };
 <span id="L2024" class="LineNr">2024 </span>  };
 <span id="L2025" class="LineNr">2025 </span>
@@ -2600,13 +2600,13 @@
 <span id="L2028" class="LineNr">2028 </span>  };
 <span id="L2029" class="LineNr">2029 </span>
 <span id="L2030" class="LineNr">2030 </span>  <span class="Comment">// Possible states of all prescription vars</span>
-<span id="L2031" class="LineNr"><a href="#tda-1215" data-file="test_decision_algorithm" title="test_poss_rx_states" class="checkmark">&10004;</a>2031 </span>  <span class="Identifier">poss_rx_states</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L2031" class="LineNr"><a href="#tda-1215" data-file="test_decision_algorithm" title="test_poss_rx_states" class="checkmark">&#10004;</a>2031 </span>  <span class="Identifier">poss_rx_states</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L2032" class="LineNr">2032 </span>    n_o_vars <span class="Statement">:=</span> <span class="Type">+/</span> { n_i[<span class="Constant">'o'</span>] <span class="Type">:</span> n_i <span class="Type">in</span> n };
 <span id="L2033" class="LineNr">2033 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(n_o_vars, r);
 <span id="L2034" class="LineNr">2034 </span>  };
 <span id="L2035" class="LineNr">2035 </span>
 <span id="L2036" class="LineNr">2036 </span>  <span class="Comment">// Possible single prescriptions for some higher-order utility</span>
-<span id="L2037" class="LineNr"><a href="#tda-1229" data-file="test_decision_algorithm" title="test_poss_rxs" class="checkmark">&10004;</a>2037 </span>  <span class="Identifier">poss_rxs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L2037" class="LineNr"><a href="#tda-1229" data-file="test_decision_algorithm" title="test_poss_rxs" class="checkmark">&#10004;</a>2037 </span>  <span class="Identifier">poss_rxs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L2038" class="LineNr">2038 </span>    n_os <span class="Statement">:=</span> { n_i[<span class="Constant">'o'</span>] <span class="Type">:</span> n_i <span class="Type">in</span> n };
 <span id="L2039" class="LineNr">2039 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(n_o, r) <span class="Type">:</span> n_o <span class="Type">in</span> n_os };
 <span id="L2040" class="LineNr">2040 </span>  };
@@ -2713,7 +2713,7 @@
 <span id="L2141" class="LineNr">2141 </span>      };
 <span id="L2142" class="LineNr">2142 </span>
 <span id="L2143" class="LineNr">2143 </span>  <span class="Comment">// Utility / Evaluation Function implemented in a given decision state ds</span>
-<span id="L2144" class="LineNr"><a href="#tda-878" data-file="test_decision_algorithm" title="test_e_func" class="checkmark">&10004;</a>2144 </span>  <span class="Identifier">e_func</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ds, j) {
+<span id="L2144" class="LineNr"><a href="#tda-878" data-file="test_decision_algorithm" title="test_e_func" class="checkmark">&#10004;</a>2144 </span>  <span class="Identifier">e_func</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ds, j) {
 <span id="L2145" class="LineNr">2145 </span>    <span class="Statement">if</span> (j <span class="Type">==</span> <span class="Constant">0</span>) {
 <span id="L2146" class="LineNr">2146 </span>      <span class="Statement">return</span> { [u_i, ds[u_i]] <span class="Type">:</span>  u_i <span class="Type">in</span> <span class="Identifier">range</span>(u) };
 <span id="L2147" class="LineNr">2147 </span>    } <span class="Statement">else</span> {
@@ -2721,7 +2721,7 @@
 <span id="L2149" class="LineNr">2149 </span>    }
 <span id="L2150" class="LineNr">2150 </span>  };
 <span id="L2151" class="LineNr">2151 </span>
-<span id="L2152" class="LineNr"><a href="#tda-889" data-file="test_decision_algorithm" title="test_ue" class="checkmark">&10004;</a>2152 </span>  <span class="Identifier">ue</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(j) {
+<span id="L2152" class="LineNr"><a href="#tda-889" data-file="test_decision_algorithm" title="test_ue" class="checkmark">&#10004;</a>2152 </span>  <span class="Identifier">ue</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(j) {
 <span id="L2153" class="LineNr">2153 </span>    <span class="Statement">if</span> (j <span class="Type">==</span> <span class="Constant">0</span>) {
 <span id="L2154" class="LineNr">2154 </span>      <span class="Statement">return</span> u;
 <span id="L2155" class="LineNr">2155 </span>    } <span class="Statement">else</span> {
@@ -2729,7 +2729,7 @@
 <span id="L2157" class="LineNr">2157 </span>    }
 <span id="L2158" class="LineNr">2158 </span>  };
 <span id="L2159" class="LineNr">2159 </span>
-<span id="L2160" class="LineNr"><a href="#tda-897" data-file="test_decision_algorithm" title="test_ue_base_exprs" class="checkmark">&10004;</a>2160 </span>  <span class="Identifier">ue_base_exprs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(j) {
+<span id="L2160" class="LineNr"><a href="#tda-897" data-file="test_decision_algorithm" title="test_ue_base_exprs" class="checkmark">&#10004;</a>2160 </span>  <span class="Identifier">ue_base_exprs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(j) {
 <span id="L2161" class="LineNr">2161 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-552">subformulas</a>(x_i) <span class="Type">:</span> x_i <span class="Type">in</span> <span class="Identifier">domain</span>(<a class="Identifier code-proc-link" href="#da-2152">ue</a>(j)) };
 <span id="L2162" class="LineNr">2162 </span>  };
 <span id="L2163" class="LineNr">2163 </span>
@@ -2894,11 +2894,11 @@
 <span id="L2322" class="LineNr">2322 </span>      };
 <span id="L2323" class="LineNr">2323 </span>    }; <span class="Comment">// end all_lte</span>
 <span id="L2324" class="LineNr">2324 </span>
-<span id="L2325" class="LineNr"><a href="#tda-1272" data-file="test_decision_algorithm" title="test_ltr_up_to" class="checkmark">&10004;</a>2325 </span>      <span class="Identifier">ltr_up_to</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ltr, j) {
+<span id="L2325" class="LineNr"><a href="#tda-1272" data-file="test_decision_algorithm" title="test_ltr_up_to" class="checkmark">&#10004;</a>2325 </span>      <span class="Identifier">ltr_up_to</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ltr, j) {
 <span id="L2326" class="LineNr">2326 </span>        <span class="Statement">return</span> { ltr <span class="Type">+</span> <span class="Constant">'_'</span> <span class="Type">+</span> y <span class="Type">:</span> y <span class="Type">in</span> [<span class="Constant">1</span><span class="Statement">..</span>j] };
 <span id="L2327" class="LineNr">2327 </span>      };
 <span id="L2328" class="LineNr">2328 </span>
-<span id="L2329" class="LineNr"><a href="#tda-1279" data-file="test_decision_algorithm" title="test_vars_up_to" class="checkmark">&10004;</a>2329 </span>      <span class="Identifier">vars_up_to</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ltrs, j) {
+<span id="L2329" class="LineNr"><a href="#tda-1279" data-file="test_decision_algorithm" title="test_vars_up_to" class="checkmark">&#10004;</a>2329 </span>      <span class="Identifier">vars_up_to</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ltrs, j) {
 <span id="L2330" class="LineNr">2330 </span>        <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#da-2441">da</a>().<a class="Identifier code-proc-link" href="#da-2325">ltr_up_to</a>(ltr, j) <span class="Type">:</span> ltr <span class="Type">in</span> ltrs };
 <span id="L2331" class="LineNr">2331 </span>      };
 <span id="L2332" class="LineNr">2332 </span>
@@ -2919,7 +2919,7 @@
 <span id="L2347" class="LineNr">2347 </span>        }
 <span id="L2348" class="LineNr">2348 </span>      };
 <span id="L2349" class="LineNr">2349 </span>
-<span id="L2350" class="LineNr"><a href="#tda-1287" data-file="test_decision_algorithm" title="test_expr_to_ltr_var" class="checkmark">&10004;</a>2350 </span>      <span class="Identifier">expr_to_ltr_var</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, ltr) {
+<span id="L2350" class="LineNr"><a href="#tda-1287" data-file="test_decision_algorithm" title="test_expr_to_ltr_var" class="checkmark">&#10004;</a>2350 </span>      <span class="Identifier">expr_to_ltr_var</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, ltr) {
 <span id="L2351" class="LineNr">2351 </span>        <span class="Statement">return</span> ltr <span class="Type">+</span> <span class="Constant">'('</span> <span class="Type">+</span> <span class="Identifier">replace</span>(<span class="Identifier">str</span>(expr), <span class="Constant">'"'</span>, <span class="Constant">''</span>) <span class="Type">+</span> <span class="Constant">')'</span>;
 <span id="L2352" class="LineNr">2352 </span>      };
 <span id="L2353" class="LineNr">2353 </span>
@@ -2956,12 +2956,12 @@
 <span id="L2384" class="LineNr">2384 </span>        );
 <span id="L2385" class="LineNr">2385 </span>      }; <span class="Comment">// end poss_rs</span>
 <span id="L2386" class="LineNr">2386 </span>
-<span id="L2387" class="LineNr"><a href="#tda-1311" data-file="test_decision_algorithm" title="test_poss_r_ue" class="checkmark">&10004;</a>2387 </span>        <span class="Identifier">poss_r_ue</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(poss_ue_vals, ue) {
+<span id="L2387" class="LineNr"><a href="#tda-1311" data-file="test_decision_algorithm" title="test_poss_r_ue" class="checkmark">&#10004;</a>2387 </span>        <span class="Identifier">poss_r_ue</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(poss_ue_vals, ue) {
 <span id="L2388" class="LineNr">2388 </span>          <span class="Statement">return</span> { { [ue_var, ue_vals] <span class="Type">:</span> ue_var <span class="Type">in</span> <span class="Identifier">range</span>(ue) }
 <span id="L2389" class="LineNr">2389 </span>                   <span class="Type">:</span> ue_vals <span class="Type">in</span> poss_ue_vals };
 <span id="L2390" class="LineNr">2390 </span>        };
 <span id="L2391" class="LineNr">2391 </span>
-<span id="L2392" class="LineNr"><a href="#tda-1294" data-file="test_decision_algorithm" title="test_poss_r_z" class="checkmark">&10004;</a>2392 </span>        <span class="Identifier">poss_r_z</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(poss_z_vals, d_z) {
+<span id="L2392" class="LineNr"><a href="#tda-1294" data-file="test_decision_algorithm" title="test_poss_r_z" class="checkmark">&#10004;</a>2392 </span>        <span class="Identifier">poss_r_z</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(poss_z_vals, d_z) {
 <span id="L2393" class="LineNr">2393 </span>          <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-297">choices</a>({ {z_var} <span class="Type">&gt;&lt;</span> poss_z_vals <span class="Type">:</span> z_var <span class="Type">in</span> d_z });
 <span id="L2394" class="LineNr">2394 </span>        };
 <span id="L2395" class="LineNr">2395 </span>
@@ -3001,7 +3001,7 @@
 <span id="L2429" class="LineNr">2429 </span>             };
 <span id="L2430" class="LineNr">2430 </span>    };
 <span id="L2431" class="LineNr">2431 </span>
-<span id="L2432" class="LineNr"><a href="#tda-55" data-file="test_decision_algorithm" title="test_new" class="checkmark">&10004;</a>2432 </span>    <span class="Identifier">new</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L2432" class="LineNr"><a href="#tda-55" data-file="test_decision_algorithm" title="test_new" class="checkmark">&#10004;</a>2432 </span>    <span class="Identifier">new</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L2433" class="LineNr">2433 </span>      <span class="Statement">return</span> <span class="Identifier">decision_algorithm</span>({}, {}, {}, {}, {}, {}, {}, [], {}, {}, {},
 <span id="L2434" class="LineNr">2434 </span>                                <span class="Constant">om</span>, <span class="Constant">om</span>, <span class="Constant">om</span>);
 <span id="L2435" class="LineNr">2435 </span>    };
@@ -4381,7 +4381,7 @@
 <span id="L46" class="LineNr"> 46 </span>      <span class="Statement">return</span> <span class="Identifier">causal_model</span>(<a class="Identifier code-proc-link" href="#cmm-49">cm_u</a>(), <a class="Identifier code-proc-link" href="#cmm-58">cm_v</a>(), <a class="Identifier code-proc-link" href="#cmm-63">cm_r</a>(), <a class="Identifier code-proc-link" href="#cmm-67">cm_f</a>(), <span class="Constant">om</span>);
 <span id="L47" class="LineNr"> 47 </span>    };
 <span id="L48" class="LineNr"> 48 </span>
-<span id="L49" class="LineNr"><a href="#tcmm-25" data-file="test_causal_markov_model" title="test_cm_u" class="checkmark">&10004;</a> 49 <a title="1.1.1.3.2" class="back_to_li" href="#t-1-1-1-3-2"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">cm_u</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L49" class="LineNr"><a href="#tcmm-25" data-file="test_causal_markov_model" title="test_cm_u" class="checkmark">&#10004;</a> 49 <a title="1.1.1.3.2" class="back_to_li" href="#t-1-1-1-3-2"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">cm_u</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L50" class="LineNr"> 50 </span>      u_ts <span class="Statement">:=</span> { <a class="Identifier code-proc-link" href="#cmm-28">u_t</a>(t) <span class="Type">:</span> t <span class="Type">in</span> [<span class="Constant">1</span><span class="Statement">..</span>n] };
 <span id="L51" class="LineNr"> 51 </span>      <span class="Statement">if</span> (u_ts <span class="Type">==</span> {}) {
 <span id="L52" class="LineNr"> 52 </span>        u_ts <span class="Statement">:=</span> {{}};
@@ -4390,16 +4390,16 @@
 <span id="L55" class="LineNr"> 55 </span>      <span class="Comment">// Includes the first v_t since there's no previous time parents</span>
 <span id="L56" class="LineNr"> 56 </span>    };
 <span id="L57" class="LineNr"> 57 </span>
-<span id="L58" class="LineNr"><a href="#tcmm-32" data-file="test_causal_markov_model" title="test_cm_v" class="checkmark">&10004;</a> 58 <a title="1.1.1.3.3" class="back_to_li" href="#t-1-1-1-3-3"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">cm_v</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L58" class="LineNr"><a href="#tcmm-32" data-file="test_causal_markov_model" title="test_cm_v" class="checkmark">&#10004;</a> 58 <a title="1.1.1.3.3" class="back_to_li" href="#t-1-1-1-3-3"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">cm_v</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L59" class="LineNr"> 59 </span>      <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#cmm-31">v_t</a>(t) <span class="Type">:</span> t <span class="Type">in</span> [<span class="Constant">2</span><span class="Statement">..</span>n] };
 <span id="L60" class="LineNr"> 60 </span>      <span class="Comment">// Starts at 2 because the first, parentless v_t is counted in cm_u</span>
 <span id="L61" class="LineNr"> 61 </span>    };
 <span id="L62" class="LineNr"> 62 </span>
-<span id="L63" class="LineNr"><a href="#tcmm-39" data-file="test_causal_markov_model" title="test_cm_r" class="checkmark">&10004;</a> 63 <a title="1.1.1.3.4" class="back_to_li" href="#t-1-1-1-3-4"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">cm_r</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L63" class="LineNr"><a href="#tcmm-39" data-file="test_causal_markov_model" title="test_cm_r" class="checkmark">&#10004;</a> 63 <a title="1.1.1.3.4" class="back_to_li" href="#t-1-1-1-3-4"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">cm_r</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L64" class="LineNr"> 64 </span>      <span class="Statement">return</span> { [x, r[<a class="Identifier code-proc-link" href="#l-393">orig_var</a>(x)]] <span class="Type">:</span> x <span class="Type">in</span> <a class="Identifier code-proc-link" href="#cmm-49">cm_u</a>() <span class="Type">+</span> <a class="Identifier code-proc-link" href="#cmm-58">cm_v</a>() };
 <span id="L65" class="LineNr"> 65 </span>    };
 <span id="L66" class="LineNr"> 66 </span>
-<span id="L67" class="LineNr"><a href="#tcmm-47" data-file="test_causal_markov_model" title="test_cm_f" class="checkmark">&10004;</a> 67 <a title="1.1.1.3.5.2" class="back_to_li" href="#t-1-1-1-3-5-2"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">cm_f</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L67" class="LineNr"><a href="#tcmm-47" data-file="test_causal_markov_model" title="test_cm_f" class="checkmark">&#10004;</a> 67 <a title="1.1.1.3.5.2" class="back_to_li" href="#t-1-1-1-3-5-2"><i class="fas fa-list-ol"></i></a></span>    <span class="Identifier">cm_f</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L68" class="LineNr"> 68 </span>      <span class="Statement">return</span> { [x, <a class="Identifier code-proc-link" href="#cmm-71">fix_time</a>(x, f[<a class="Identifier code-proc-link" href="#l-393">orig_var</a>(x)], <a class="Identifier code-proc-link" href="#l-397">var_time</a>(x) <span class="Type">-</span> <span class="Constant">1</span>)] <span class="Type">:</span> x <span class="Type">in</span> <a class="Identifier code-proc-link" href="#cmm-58">cm_v</a>() };
 <span id="L69" class="LineNr"> 69 </span>    };
 <span id="L70" class="LineNr"> 70 </span>
@@ -4416,31 +4416,31 @@
 <span id="L81" class="LineNr"> 81 </span>                  };
 <span id="L82" class="LineNr"> 82 </span>      };
 <span id="L83" class="LineNr"> 83 </span>
-<span id="L84" class="LineNr"><a href="#tcmm-58" data-file="test_causal_markov_model" title="test_poss_states" class="checkmark">&10004;</a> 84 </span>  <span class="Identifier">poss_states</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L84" class="LineNr"><a href="#tcmm-58" data-file="test_causal_markov_model" title="test_poss_states" class="checkmark">&#10004;</a> 84 </span>  <span class="Identifier">poss_states</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L85" class="LineNr"> 85 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>(u <span class="Type">+</span> v, r);
 <span id="L86" class="LineNr"> 86 </span>  };
 <span id="L87" class="LineNr"> 87 </span>
-<span id="L88" class="LineNr"><a href="#tcmm-70" data-file="test_causal_markov_model" title="test_poss_events" class="checkmark">&10004;</a> 88 </span>  <span class="Identifier">poss_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L88" class="LineNr"><a href="#tcmm-70" data-file="test_causal_markov_model" title="test_poss_events" class="checkmark">&#10004;</a> 88 </span>  <span class="Identifier">poss_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L89" class="LineNr"> 89 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <span class="Constant">2</span> <span class="Type">**</span> ps <span class="Type">:</span> ps <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-289">poss_states</a>() };
 <span id="L90" class="LineNr"> 90 </span>  };
 <span id="L91" class="LineNr"> 91 </span>
-<span id="L92" class="LineNr"><a href="#tcmm-83" data-file="test_causal_markov_model" title="test_actual_events" class="checkmark">&10004;</a> 92 </span>  <span class="Identifier">actual_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L92" class="LineNr"><a href="#tcmm-83" data-file="test_causal_markov_model" title="test_actual_events" class="checkmark">&#10004;</a> 92 </span>  <span class="Identifier">actual_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L93" class="LineNr"> 93 </span>    <span class="Statement">return</span> <span class="Identifier">pow</span>(<a class="Identifier code-proc-link" href="#cmm-96">actual_state</a>()) <span class="Type">-</span> {{}};
 <span id="L94" class="LineNr"> 94 </span>  };
 <span id="L95" class="LineNr"> 95 </span>
-<span id="L96" class="LineNr"><a href="#tcmm-92" data-file="test_causal_markov_model" title="test_actual_state" class="checkmark">&10004;</a> 96 </span>  <span class="Identifier">actual_state</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L96" class="LineNr"><a href="#tcmm-92" data-file="test_causal_markov_model" title="test_actual_state" class="checkmark">&#10004;</a> 96 </span>  <span class="Identifier">actual_state</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L97" class="LineNr"> 97 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { actual_state <span class="Type">:</span> actual_state <span class="Type">in</span> a };
 <span id="L98" class="LineNr"> 98 </span>  };
 <span id="L99" class="LineNr"> 99 </span>
 <span id="L100" class="LineNr">100 </span>  <span class="Comment">/* Set of all actual synchronic events, </span>
 <span id="L101" class="LineNr">101 </span><span class="Comment">     i.e. those taking place at a single time. */</span>
-<span id="L102" class="LineNr"><a href="#tcmm-94" data-file="test_causal_markov_model" title="test_actual_sync_events" class="checkmark">&10004;</a>102 </span>  <span class="Identifier">actual_sync_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L102" class="LineNr"><a href="#tcmm-94" data-file="test_causal_markov_model" title="test_actual_sync_events" class="checkmark">&#10004;</a>102 </span>  <span class="Identifier">actual_sync_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L103" class="LineNr">103 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <span class="Identifier">pow</span>(actual_state) <span class="Type">:</span> actual_state <span class="Type">in</span> a } <span class="Type">-</span> {{}};
 <span id="L104" class="LineNr">104 </span>  };
 <span id="L105" class="LineNr">105 </span>
 <span id="L106" class="LineNr">106 </span>  <span class="Comment">/* Use the causal model on the first two times */</span>
 <span id="L107" class="LineNr">107 </span>  <span class="Comment">// g needs to be full state?</span>
-<span id="L108" class="LineNr"><a href="#tcmm-106" data-file="test_causal_markov_model" title="test_response" class="checkmark">&10004;</a>108 </span>  <span class="Identifier">response</span> <span class="Statement">:=</span>  <span class="Type">procedure</span>(ys, g) {
+<span id="L108" class="LineNr"><a href="#tcmm-106" data-file="test_causal_markov_model" title="test_response" class="checkmark">&#10004;</a>108 </span>  <span class="Identifier">response</span> <span class="Statement">:=</span>  <span class="Type">procedure</span>(ys, g) {
 <span id="L109" class="LineNr">109 </span>    g1 <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-403">assign_time</a>(g, <span class="Constant">1</span>);
 <span id="L110" class="LineNr">110 </span>    ys2 <span class="Statement">:=</span> { y <span class="Type">+</span> <span class="Constant">'_t'</span> <span class="Type">+</span> <span class="Constant">2</span> <span class="Type">:</span> y <span class="Type">in</span> ys };
 <span id="L111" class="LineNr">111 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-409">drop_time</a>(<a class="Identifier code-proc-link" href="#cmm-38">cm</a>().<a class="Identifier code-proc-link" href="#cmm-108">response</a>(ys2, g1));
@@ -4448,7 +4448,7 @@
 <span id="L113" class="LineNr">113 </span>
 <span id="L114" class="LineNr">114 </span>  <span class="Comment">/* Form the full state transition table and convert it to a string along with</span>
 <span id="L115" class="LineNr">115 </span><span class="Comment">     the vars and ranges. */</span>
-<span id="L116" class="LineNr"><a href="#tcmm-114" data-file="test_causal_markov_model" title="test_t_to_str" class="checkmark">&10004;</a>116 <a title="1.2.1.3.1" class="back_to_li" href="#t-1-2-1-3-1"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">t_to_str</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
+<span id="L116" class="LineNr"><a href="#tcmm-114" data-file="test_causal_markov_model" title="test_t_to_str" class="checkmark">&#10004;</a>116 <a title="1.2.1.3.1" class="back_to_li" href="#t-1-2-1-3-1"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">t_to_str</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() {
 <span id="L117" class="LineNr">117 </span>    tt <span class="Statement">:=</span> { [ps, <a class="Identifier code-proc-link" href="#cmm-108">response</a>(v, ps)] <span class="Type">:</span> ps <span class="Type">in</span> <a class="Identifier code-proc-link" href="#da-289">poss_states</a>() };
 <span id="L118" class="LineNr">118 </span>    <span class="Statement">return</span> <span class="Identifier">str</span>([tt, n, u, v, r]);
 <span id="L119" class="LineNr">119 </span>  };
@@ -4616,7 +4616,7 @@
 <span id="L24" class="LineNr"> 24 </span>
 <span id="L25" class="LineNr"> 25 </span>  <span class="Comment">/* Takes an assignment of values to endogenous variables and returns a </span>
 <span id="L26" class="LineNr"> 26 </span><span class="Comment">     causal submodel. See 7.12 Pearl's Causality book.  */</span>
-<span id="L27" class="LineNr"><a href="#tcm-39" data-file="test_causal_model" title="test_effect_of_do" class="checkmark">&10004;</a> 27 <a title="1.1.1.1.1.5.1" class="back_to_li" href="#t-1-1-1-1-1-5-1"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">effect_of_do</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(g) {
+<span id="L27" class="LineNr"><a href="#tcm-39" data-file="test_causal_model" title="test_effect_of_do" class="checkmark">&#10004;</a> 27 <a title="1.1.1.1.1.5.1" class="back_to_li" href="#t-1-1-1-1-1-5-1"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">effect_of_do</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(g) {
 <span id="L28" class="LineNr"> 28 </span>    h <span class="Statement">:=</span> { [y, f[y]] <span class="Type">:</span> y <span class="Type">in</span> v <span class="Type">|</span> <span class="Type">!</span>(y <span class="Type">in</span> <span class="Identifier">domain</span>(g)) } <span class="Type">+</span>
 <span id="L29" class="LineNr"> 29 </span>         { [x, <span class="Identifier">i_proc_to_func</span>(x, <span class="Type">procedure</span>(h) {
 <span id="L30" class="LineNr"> 30 </span>                                   <span class="Statement">return</span> g[x];
@@ -4626,7 +4626,7 @@
 <span id="L34" class="LineNr"> 34 </span>
 <span id="L35" class="LineNr"> 35 </span>  <span class="Comment">/* Takes a set of variables ys and an assignment of values g to endogenous </span>
 <span id="L36" class="LineNr"> 36 </span><span class="Comment">     and exogenous variables and returns an assignment of values to ys */</span>
-<span id="L37" class="LineNr"><a href="#tcm-55" data-file="test_causal_model" title="test_response" class="checkmark">&10004;</a> 37 <a title="1.1.1.1.1.5" class="back_to_li" href="#t-1-1-1-1-1-5"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">response</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ys, g) {
+<span id="L37" class="LineNr"><a href="#tcm-55" data-file="test_causal_model" title="test_response" class="checkmark">&#10004;</a> 37 <a title="1.1.1.1.1.5" class="back_to_li" href="#t-1-1-1-1-1-5"><i class="fas fa-list-ol"></i></a></span>  <span class="Identifier">response</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(ys, g) {
 <span id="L38" class="LineNr"> 38 </span>    sm <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#cm-27">effect_of_do</a>(g);
 <span id="L39" class="LineNr"> 39 </span>    result <span class="Statement">:=</span> { [y, sm.<a class="Identifier code-proc-link" href="#cm-45">solve_for</a>(y, g)] <span class="Type">:</span> y <span class="Type">in</span> ys };
 <span id="L40" class="LineNr"> 40 </span>    <span class="Statement">return</span> result;
@@ -4654,7 +4654,7 @@
 <span id="L62" class="LineNr"> 62 </span>  };
 <span id="L63" class="LineNr"> 63 </span>
 <span id="L64" class="LineNr"> 64 </span>  <span class="Comment">// Takes a variable and returns its parents</span>
-<span id="L65" class="LineNr"><a href="#tcm-50" data-file="test_causal_model" title="test_parents" class="checkmark">&10004;</a> 65 </span>  <span class="Identifier">parents</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(y) {
+<span id="L65" class="LineNr"><a href="#tcm-50" data-file="test_causal_model" title="test_parents" class="checkmark">&#10004;</a> 65 </span>  <span class="Identifier">parents</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(y) {
 <span id="L66" class="LineNr"> 66 </span>    <span class="Statement">return</span> { z <span class="Type">:</span> z <span class="Type">in</span> u <span class="Type">+</span> v <span class="Type">|</span> z <span class="Type">!=</span> y <span class="Type">&amp;&amp;</span> <a class="Identifier code-proc-link" href="#cm-72">is_nec_parent_of</a>(z, y) };
 <span id="L67" class="LineNr"> 67 </span>  };
 <span id="L68" class="LineNr"> 68 </span>
@@ -4710,7 +4710,7 @@
 <span id="L118" class="LineNr">118 </span><span class="Comment">       procedure and returns a function. The procedure should take an </span>
 <span id="L119" class="LineNr">119 </span><span class="Comment">       assignment of values to exogenous variables and other endogenous </span>
 <span id="L120" class="LineNr">120 </span><span class="Comment">       variables and return y's value. */</span>
-<span id="L121" class="LineNr"><a href="#tcm-37" data-file="test_causal_model" title="test_proc_to_func" class="checkmark">&10004;</a>121 </span>    <span class="Identifier">proc_to_func</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(y, u, v, r, p) {
+<span id="L121" class="LineNr"><a href="#tcm-37" data-file="test_causal_model" title="test_proc_to_func" class="checkmark">&#10004;</a>121 </span>    <span class="Identifier">proc_to_func</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(y, u, v, r, p) {
 <span id="L122" class="LineNr">122 </span>      dom <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-328">possible_states</a>({ x <span class="Type">:</span> x <span class="Type">in</span> u <span class="Type">+</span> v <span class="Type">|</span> x <span class="Type">!=</span> y }, r);
 <span id="L123" class="LineNr">123 </span>      <span class="Statement">return</span> { [g, <span class="Identifier">p</span>(g)] <span class="Type">:</span> g <span class="Type">in</span> dom };
 <span id="L124" class="LineNr">124 </span>    };
@@ -4788,25 +4788,25 @@
 <span id="L3" class="LineNr">  3 </span><span class="Identifier">tf</span> <span class="Statement">:=</span> <span class="Type">procedure</span>() { <span class="Statement">return</span> { <span class="Constant">true</span>, <span class="Constant">false</span> }; };
 <span id="L4" class="LineNr">  4 </span>
 <span id="L5" class="LineNr">  5 </span><span class="Comment">// Non-empty powerset. Powerset without the empty set.</span>
-<span id="L6" class="LineNr"><a href="#tl-4" data-file="test_lib" title="test_ne_pow" class="checkmark">&10004;</a>  6 </span><span class="Identifier">ne_pow</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(s) {
+<span id="L6" class="LineNr"><a href="#tl-4" data-file="test_lib" title="test_ne_pow" class="checkmark">&#10004;</a>  6 </span><span class="Identifier">ne_pow</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(s) {
 <span id="L7" class="LineNr">  7 </span>  <span class="Statement">return</span> <span class="Identifier">pow</span>(s) <span class="Type">-</span> {{}};
 <span id="L8" class="LineNr">  8 </span>};
 <span id="L9" class="LineNr">  9 </span>
-<span id="L10" class="LineNr"><a href="#tl-11" data-file="test_lib" title="test_min" class="checkmark">&10004;</a> 10 </span><span class="Identifier">min</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l) {
+<span id="L10" class="LineNr"><a href="#tl-11" data-file="test_lib" title="test_min" class="checkmark">&#10004;</a> 10 </span><span class="Identifier">min</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l) {
 <span id="L11" class="LineNr"> 11 </span>  mins <span class="Statement">:=</span> { e <span class="Type">:</span> e <span class="Type">in</span> l <span class="Type">|</span> <span class="Type">forall</span>(e2 <span class="Type">in</span> [x <span class="Type">:</span> x <span class="Type">in</span> l <span class="Type">|</span> x <span class="Type">!=</span> e ] <span class="Type">|</span> e2 <span class="Type">&gt;=</span> e) };
 <span id="L12" class="LineNr"> 12 </span>  <span class="Statement">return</span> <span class="Identifier">first</span>(mins);
 <span id="L13" class="LineNr"> 13 </span>};
 <span id="L14" class="LineNr"> 14 </span>
-<span id="L15" class="LineNr"><a href="#tl-17" data-file="test_lib" title="test_max" class="checkmark">&10004;</a> 15 </span><span class="Identifier">max</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l) {
+<span id="L15" class="LineNr"><a href="#tl-17" data-file="test_lib" title="test_max" class="checkmark">&#10004;</a> 15 </span><span class="Identifier">max</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l) {
 <span id="L16" class="LineNr"> 16 </span>  maxs <span class="Statement">:=</span> { e <span class="Type">:</span> e <span class="Type">in</span> l <span class="Type">|</span> <span class="Type">forall</span>(e2 <span class="Type">in</span> [x <span class="Type">:</span> x <span class="Type">in</span> l <span class="Type">|</span> x <span class="Type">!=</span> e ] <span class="Type">|</span> e <span class="Type">&gt;=</span> e2) };
 <span id="L17" class="LineNr"> 17 </span>  <span class="Statement">return</span> <span class="Identifier">first</span>(maxs);
 <span id="L18" class="LineNr"> 18 </span>};
 <span id="L19" class="LineNr"> 19 </span>
-<span id="L20" class="LineNr"><a href="#tl-23" data-file="test_lib" title="test_avg" class="checkmark">&10004;</a> 20 </span><span class="Identifier">avg</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l) {
+<span id="L20" class="LineNr"><a href="#tl-23" data-file="test_lib" title="test_avg" class="checkmark">&#10004;</a> 20 </span><span class="Identifier">avg</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l) {
 <span id="L21" class="LineNr"> 21 </span>  <span class="Statement">return</span> (<span class="Type">+/</span> l)  <span class="Type">/</span> <span class="Type">#</span>l;
 <span id="L22" class="LineNr"> 22 </span>};
 <span id="L23" class="LineNr"> 23 </span>
-<span id="L24" class="LineNr"><a href="#tl-29" data-file="test_lib" title="test_index_of" class="checkmark">&10004;</a> 24 </span><span class="Identifier">index_of</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(e, xs) {
+<span id="L24" class="LineNr"><a href="#tl-29" data-file="test_lib" title="test_index_of" class="checkmark">&#10004;</a> 24 </span><span class="Identifier">index_of</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(e, xs) {
 <span id="L25" class="LineNr"> 25 </span>  i <span class="Statement">:=</span> <span class="Constant">1</span>;
 <span id="L26" class="LineNr"> 26 </span>  <span class="Statement">while</span> (xs[i] <span class="Type">!=</span> e) {
 <span id="L27" class="LineNr"> 27 </span>    i <span class="Statement">:=</span> i <span class="Type">+</span> <span class="Constant">1</span>;
@@ -4818,7 +4818,7 @@
 <span id="L33" class="LineNr"> 33 </span>  }
 <span id="L34" class="LineNr"> 34 </span>};
 <span id="L35" class="LineNr"> 35 </span>
-<span id="L36" class="LineNr"><a href="#tl-35" data-file="test_lib" title="test_equiv_expr" class="checkmark">&10004;</a> 36 </span><span class="Identifier">equiv_expr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(e1, e2, dom) {
+<span id="L36" class="LineNr"><a href="#tl-35" data-file="test_lib" title="test_equiv_expr" class="checkmark">&#10004;</a> 36 </span><span class="Identifier">equiv_expr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(e1, e2, dom) {
 <span id="L37" class="LineNr"> 37 </span>  <span class="Statement">if</span> (dev) { <span class="Identifier">print</span>(<span class="Constant">'equiv_expr dom '</span> <span class="Type">+</span> dom); }
 <span id="L38" class="LineNr"> 38 </span>  <span class="Statement">if</span> (<span class="Identifier">isList</span>(e1) <span class="Type">&amp;&amp;</span> <span class="Type">!</span><span class="Identifier">isList</span>(e2) <span class="Type">||</span>
 <span id="L39" class="LineNr"> 39 </span>      <span class="Identifier">isList</span>(e2) <span class="Type">&amp;&amp;</span> <span class="Type">!</span><span class="Identifier">isList</span>(e1)   ) {
@@ -4837,7 +4837,7 @@
 <span id="L52" class="LineNr"> 52 </span>};
 <span id="L53" class="LineNr"> 53 </span>
 <span id="L54" class="LineNr"> 54 </span><span class="Comment">// Possible references for arity of expr</span>
-<span id="L55" class="LineNr"><a href="#tl-440" data-file="test_lib" title="test_range_for_arity" class="checkmark">&10004;</a> 55 </span><span class="Identifier">range_for_arity</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(e_arity, poss_sts) {
+<span id="L55" class="LineNr"><a href="#tl-440" data-file="test_lib" title="test_range_for_arity" class="checkmark">&#10004;</a> 55 </span><span class="Identifier">range_for_arity</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(e_arity, poss_sts) {
 <span id="L56" class="LineNr"> 56 </span>  <span class="Comment">/* Propositions are sets of possible states. They can also be treated as </span>
 <span id="L57" class="LineNr"> 57 </span><span class="Comment">     objects. You might think of them as the essential realization conditions</span>
 <span id="L58" class="LineNr"> 58 </span><span class="Comment">     for objects. */</span>
@@ -4858,7 +4858,7 @@
 <span id="L73" class="LineNr"> 73 </span>  <span class="Statement">return</span> {<span class="Constant">'And'</span>,<span class="Constant">'Not'</span>,<span class="Constant">'Or'</span>,<span class="Constant">'Implies'</span>,<span class="Constant">'BoxArrow'</span>,<span class="Constant">'At_t'</span>,<span class="Constant">'Forall'</span>,<span class="Constant">'Exists'</span>};
 <span id="L74" class="LineNr"> 74 </span>};
 <span id="L75" class="LineNr"> 75 </span>
-<span id="L76" class="LineNr"><a href="#tl-50" data-file="test_lib" title="test_maybe_not" class="checkmark">&10004;</a> 76 </span><span class="Identifier">maybe_not</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(var, val) {
+<span id="L76" class="LineNr"><a href="#tl-50" data-file="test_lib" title="test_maybe_not" class="checkmark">&#10004;</a> 76 </span><span class="Identifier">maybe_not</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(var, val) {
 <span id="L77" class="LineNr"> 77 </span>  <span class="Statement">if</span> (val <span class="Type">==</span> <span class="Constant">true</span>) {
 <span id="L78" class="LineNr"> 78 </span>    <span class="Statement">return</span> var;
 <span id="L79" class="LineNr"> 79 </span>  } <span class="Statement">else</span> {
@@ -4876,7 +4876,7 @@
 <span id="L91" class="LineNr"> 91 </span>
 <span id="L92" class="LineNr"> 92 </span><span class="Comment">/* Takes an expr and returns the set of vars, atomic propositions and objects</span>
 <span id="L93" class="LineNr"> 93 </span><span class="Comment">   that occur in it.  */</span>
-<span id="L94" class="LineNr"><a href="#tl-60" data-file="test_lib" title="test_atomic_exprs" class="checkmark">&10004;</a> 94 </span><span class="Identifier">atomic_exprs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
+<span id="L94" class="LineNr"><a href="#tl-60" data-file="test_lib" title="test_atomic_exprs" class="checkmark">&#10004;</a> 94 </span><span class="Identifier">atomic_exprs</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
 <span id="L95" class="LineNr"> 95 </span>  <span class="Statement">if</span> (<span class="Identifier">isTerm</span>(expr)) {
 <span id="L96" class="LineNr"> 96 </span>    <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-94">atomic_exprs</a>(arg_i) <span class="Type">:</span> arg_i <span class="Type">in</span> <span class="Identifier">args</span>(expr) };
 <span id="L97" class="LineNr"> 97 </span>  } <span class="Statement">else</span> {
@@ -4886,14 +4886,14 @@
 <span id="L101" class="LineNr">101 </span>
 <span id="L102" class="LineNr">102 </span><span class="Comment">/* Takes an expr and returns the set of atomic propositions and objects</span>
 <span id="L103" class="LineNr">103 </span><span class="Comment">   that occur in it (but not its variables).  */</span>
-<span id="L104" class="LineNr"><a href="#tl-67" data-file="test_lib" title="test_atomic_terms" class="checkmark">&10004;</a>104 </span><span class="Identifier">atomic_terms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
+<span id="L104" class="LineNr"><a href="#tl-67" data-file="test_lib" title="test_atomic_terms" class="checkmark">&#10004;</a>104 </span><span class="Identifier">atomic_terms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
 <span id="L105" class="LineNr">105 </span>  <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-94">atomic_exprs</a>(expr) <span class="Type">-</span> <a class="Identifier code-proc-link" href="#l-526">parse_vars</a>(expr);
 <span id="L106" class="LineNr">106 </span>};
 <span id="L107" class="LineNr">107 </span>
 <span id="L108" class="LineNr">108 </span><span class="Comment">/* Takes a function assigning true or false to vars and turns it into an </span>
 <span id="L109" class="LineNr">109 </span><span class="Comment">   expression that is a conjunction of either var or Not(var) depending </span>
 <span id="L110" class="LineNr">110 </span><span class="Comment">   on each variable's truth value.  */</span>
-<span id="L111" class="LineNr"><a href="#tl-74" data-file="test_lib" title="test_func_to_expr" class="checkmark">&10004;</a>111 </span><span class="Identifier">func_to_expr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(g) {
+<span id="L111" class="LineNr"><a href="#tl-74" data-file="test_lib" title="test_func_to_expr" class="checkmark">&#10004;</a>111 </span><span class="Identifier">func_to_expr</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(g) {
 <span id="L112" class="LineNr">112 </span>  sorted_vs <span class="Statement">:=</span> <span class="Identifier">sort</span>([ v <span class="Type">:</span> v <span class="Type">in</span> <span class="Identifier">domain</span>(g) ]);
 <span id="L113" class="LineNr">113 </span>  <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-233">iter_fct</a>(<span class="Constant">"And"</span>, [ <a class="Identifier code-proc-link" href="#l-76">maybe_not</a>(v, g[v]) <span class="Type">:</span> v <span class="Type">in</span> sorted_vs ]);
 <span id="L114" class="LineNr">114 </span>};
@@ -4902,12 +4902,12 @@
 <span id="L117" class="LineNr">117 </span>  <span class="Statement">return</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-120">atomic_formulas</a>(expr) <span class="Type">:</span> expr <span class="Type">in</span> exprs };
 <span id="L118" class="LineNr">118 </span>};
 <span id="L119" class="LineNr">119 </span>
-<span id="L120" class="LineNr"><a href="#tl-85" data-file="test_lib" title="test_atomic_formulas" class="checkmark">&10004;</a>120 </span><span class="Identifier">atomic_formulas</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
+<span id="L120" class="LineNr"><a href="#tl-85" data-file="test_lib" title="test_atomic_formulas" class="checkmark">&#10004;</a>120 </span><span class="Identifier">atomic_formulas</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
 <span id="L121" class="LineNr">121 </span>  <span class="Statement">if</span> (dev) { <span class="Identifier">print</span>(<span class="Constant">'expr '</span> <span class="Type">+</span> expr); }
 <span id="L122" class="LineNr">122 </span>  <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-125">atomic_forms</a>(expr) <span class="Type">-</span> <a class="Identifier code-proc-link" href="#l-526">parse_vars</a>(expr);
 <span id="L123" class="LineNr">123 </span>};
 <span id="L124" class="LineNr">124 </span>
-<span id="L125" class="LineNr"><a href="#tl-93" data-file="test_lib" title="test_atomic_forms" class="checkmark">&10004;</a>125 </span><span class="Identifier">atomic_forms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
+<span id="L125" class="LineNr"><a href="#tl-93" data-file="test_lib" title="test_atomic_forms" class="checkmark">&#10004;</a>125 </span><span class="Identifier">atomic_forms</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
 <span id="L126" class="LineNr">126 </span>  <span class="Statement">if</span> (dev) { <span class="Identifier">print</span>(<span class="Constant">'atomic forms '</span> <span class="Type">+</span> expr); }
 <span id="L127" class="LineNr">127 </span>  <span class="Statement">if</span> (<span class="Type">!</span><span class="Identifier">isTerm</span>(expr) <span class="Type">||</span> <span class="Type">!</span>(<span class="Identifier">fct</span>(expr) <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-72">connectives</a>())) {
 <span id="L128" class="LineNr">128 </span>    <span class="Statement">return</span> { expr };
@@ -4916,7 +4916,7 @@
 <span id="L131" class="LineNr">131 </span>  }
 <span id="L132" class="LineNr">132 </span>};
 <span id="L133" class="LineNr">133 </span>
-<span id="L134" class="LineNr"><a href="#tl-95" data-file="test_lib" title="test_expr_to_events" class="checkmark">&10004;</a>134 </span><span class="Identifier">expr_to_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, dom) {
+<span id="L134" class="LineNr"><a href="#tl-95" data-file="test_lib" title="test_expr_to_events" class="checkmark">&#10004;</a>134 </span><span class="Identifier">expr_to_events</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, dom) {
 <span id="L135" class="LineNr">135 </span>  <span class="Statement">if</span> (dev) { <span class="Identifier">print</span>(<span class="Constant">'dom: '</span> <span class="Type">+</span> dom); }
 <span id="L136" class="LineNr">136 </span>  state_space <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-647">exprs_to_state_space</a>(dom);
 <span id="L137" class="LineNr">137 </span>  <span class="Statement">if</span> (dev) { <span class="Identifier">print</span>(<span class="Constant">'st sp: '</span> <span class="Type">+</span> state_space); }
@@ -5021,13 +5021,13 @@
 <span id="L236" class="LineNr">236 </span>
 <span id="L237" class="LineNr">237 </span><span class="Comment">/* Takes a function f and returns its inverse. To avoid having to return a set </span>
 <span id="L238" class="LineNr">238 </span><span class="Comment">   or list, it just returns the first preimage that f maps to the img. */</span>
-<span id="L239" class="LineNr"><a href="#tl-117" data-file="test_lib" title="test_inv" class="checkmark">&10004;</a>239 </span><span class="Identifier">inv</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(f) {
+<span id="L239" class="LineNr"><a href="#tl-117" data-file="test_lib" title="test_inv" class="checkmark">&#10004;</a>239 </span><span class="Identifier">inv</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(f) {
 <span id="L240" class="LineNr">240 </span>  <span class="Statement">return</span> { [img, ([ pre <span class="Type">:</span> pre <span class="Type">in</span> <span class="Identifier">domain</span>(f) <span class="Type">|</span> f[pre] <span class="Type">==</span> img])[<span class="Constant">1</span>] ]
 <span id="L241" class="LineNr">241 </span>           <span class="Type">:</span> img <span class="Type">in</span> <span class="Identifier">range</span>(f) };
 <span id="L242" class="LineNr">242 </span>};
 <span id="L243" class="LineNr">243 </span>
 <span id="L244" class="LineNr">244 </span><span class="Comment">/* Takes a setlx functor and returns its arity */</span>
-<span id="L245" class="LineNr"><a href="#tl-124" data-file="test_lib" title="test_arity" class="checkmark">&10004;</a>245 </span><span class="Identifier">arity</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(fct) {
+<span id="L245" class="LineNr"><a href="#tl-124" data-file="test_lib" title="test_arity" class="checkmark">&#10004;</a>245 </span><span class="Identifier">arity</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(fct) {
 <span id="L246" class="LineNr">246 </span>  <span class="Statement">if</span> (<span class="Identifier">isTerm</span>(fct)) {
 <span id="L247" class="LineNr">247 </span>    <span class="Statement">return</span> <span class="Type">#</span><span class="Identifier">args</span>(fct);
 <span id="L248" class="LineNr">248 </span>  } <span class="Statement">else</span> {
@@ -5036,7 +5036,7 @@
 <span id="L251" class="LineNr">251 </span>};
 <span id="L252" class="LineNr">252 </span>
 <span id="L253" class="LineNr">253 </span><span class="Comment">/* Takes a set like s &gt;&lt; s &gt;&lt; s and returns tuples instead of nested pairs */</span>
-<span id="L254" class="LineNr"><a href="#tl-133" data-file="test_lib" title="test_flatten" class="checkmark">&10004;</a>254 </span><span class="Identifier">flatten</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(set) {
+<span id="L254" class="LineNr"><a href="#tl-133" data-file="test_lib" title="test_flatten" class="checkmark">&#10004;</a>254 </span><span class="Identifier">flatten</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(set) {
 <span id="L255" class="LineNr">255 </span>  <span class="Statement">return</span> { <a class="Identifier code-proc-link" href="#l-259">flatten_list</a>(e) <span class="Type">:</span> e <span class="Type">in</span> set <span class="Type">|</span> <span class="Identifier">isList</span>(e)  } <span class="Type">+</span>
 <span id="L256" class="LineNr">256 </span>         { e               <span class="Type">:</span> e <span class="Type">in</span> set <span class="Type">|</span> <span class="Type">!</span><span class="Identifier">isList</span>(e) };
 <span id="L257" class="LineNr">257 </span>};
@@ -5051,7 +5051,7 @@
 <span id="L266" class="LineNr">266 </span>
 <span id="L267" class="LineNr">267 </span><span class="Comment">/* Takes a list of sets and returns the set of tuples taking a value from </span>
 <span id="L268" class="LineNr">268 </span><span class="Comment">   each set.  */</span>
-<span id="L269" class="LineNr"><a href="#tl-141" data-file="test_lib" title="test_cart_prod" class="checkmark">&10004;</a>269 </span><span class="Identifier">cart_prod</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(list) {
+<span id="L269" class="LineNr"><a href="#tl-141" data-file="test_lib" title="test_cart_prod" class="checkmark">&#10004;</a>269 </span><span class="Identifier">cart_prod</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(list) {
 <span id="L270" class="LineNr">270 </span>  <span class="Statement">if</span> (<span class="Type">#</span>list <span class="Type">==</span> <span class="Constant">1</span>) {
 <span id="L271" class="LineNr">271 </span>    <span class="Statement">return</span> <span class="Identifier">first</span>(list);
 <span id="L272" class="LineNr">272 </span>  } <span class="Statement">else</span> {
@@ -5061,7 +5061,7 @@
 <span id="L276" class="LineNr">276 </span>
 <span id="L277" class="LineNr">277 </span><span class="Comment">/* Iterated Cartesian Product </span>
 <span id="L278" class="LineNr">278 </span><span class="Comment">   Yields the cartesian product of a set with itself n times.  */</span>
-<span id="L279" class="LineNr"><a href="#tl-148" data-file="test_lib" title="test_iter_prod" class="checkmark">&10004;</a>279 </span><span class="Identifier">iter_prod</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(set, n) {
+<span id="L279" class="LineNr"><a href="#tl-148" data-file="test_lib" title="test_iter_prod" class="checkmark">&#10004;</a>279 </span><span class="Identifier">iter_prod</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(set, n) {
 <span id="L280" class="LineNr">280 </span>  <span class="Statement">if</span> (n <span class="Type">==</span> <span class="Constant">1</span>) {
 <span id="L281" class="LineNr">281 </span>    <span class="Statement">return</span> set;
 <span id="L282" class="LineNr">282 </span>  } <span class="Statement">else</span> {
@@ -5069,7 +5069,7 @@
 <span id="L284" class="LineNr">284 </span>  }
 <span id="L285" class="LineNr">285 </span>};
 <span id="L286" class="LineNr">286 </span>
-<span id="L287" class="LineNr"><a href="#tl-155" data-file="test_lib" title="test_iter_mult" class="checkmark">&10004;</a>287 </span><span class="Identifier">iter_mult</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(set) {
+<span id="L287" class="LineNr"><a href="#tl-155" data-file="test_lib" title="test_iter_mult" class="checkmark">&#10004;</a>287 </span><span class="Identifier">iter_mult</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(set) {
 <span id="L288" class="LineNr">288 </span>  <span class="Statement">if</span> (<span class="Type">#</span>set <span class="Type">==</span> <span class="Constant">1</span>) {
 <span id="L289" class="LineNr">289 </span>    <span class="Statement">return</span> <span class="Identifier">first</span>(set);
 <span id="L290" class="LineNr">290 </span>  } <span class="Statement">else</span> {
@@ -5079,7 +5079,7 @@
 <span id="L294" class="LineNr">294 </span>
 <span id="L295" class="LineNr">295 </span><span class="Comment">/* Takes a set of sets and returns a set of all possible choices taking an </span>
 <span id="L296" class="LineNr">296 </span><span class="Comment">   element from each set. */</span>
-<span id="L297" class="LineNr"><a href="#tl-162" data-file="test_lib" title="test_choices" class="checkmark">&10004;</a>297 </span><span class="Identifier">choices</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(set) {
+<span id="L297" class="LineNr"><a href="#tl-162" data-file="test_lib" title="test_choices" class="checkmark">&#10004;</a>297 </span><span class="Identifier">choices</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(set) {
 <span id="L298" class="LineNr">298 </span>  list <span class="Statement">:=</span> [ [elem <span class="Type">:</span> elem <span class="Type">in</span> subset] <span class="Type">:</span> subset <span class="Type">in</span> set ];
 <span id="L299" class="LineNr">299 </span>  <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-303">set_choices</a>(list);
 <span id="L300" class="LineNr">300 </span>};
@@ -5101,7 +5101,7 @@
 <span id="L316" class="LineNr">316 </span>
 <span id="L317" class="LineNr">317 </span><span class="Comment">/* Generate the set of all functions from dom to rng. </span>
 <span id="L318" class="LineNr">318 </span><span class="Comment">   Generate atomic maps. Collect the choices of those atomic maps. */</span>
-<span id="L319" class="LineNr"><a href="#tl-171" data-file="test_lib" title="test_function_space" class="checkmark">&10004;</a>319 </span><span class="Identifier">function_space</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(dom, rng) {
+<span id="L319" class="LineNr"><a href="#tl-171" data-file="test_lib" title="test_function_space" class="checkmark">&#10004;</a>319 </span><span class="Identifier">function_space</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(dom, rng) {
 <span id="L320" class="LineNr">320 </span>  <span class="Comment">// Collect into a set the elements from a list of choices of atomic maps</span>
 <span id="L321" class="LineNr">321 </span>  <span class="Comment">// p for preimage and permutation? o is ordered pair?</span>
 <span id="L322" class="LineNr">322 </span>  <span class="Statement">return</span> { { o <span class="Type">:</span> o <span class="Type">in</span> p } <span class="Type">:</span> p <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-309">list_choices</a>([ [ [p, i] <span class="Type">:</span> i <span class="Type">in</span> rng ] <span class="Type">:</span> p <span class="Type">in</span> dom]) };
@@ -5110,7 +5110,7 @@
 <span id="L325" class="LineNr">325 </span><span class="Comment">/* Takes a set of variables s and a function r assigning a set which is the </span>
 <span id="L326" class="LineNr">326 </span><span class="Comment">   range of possible values to each variable and returns the set of possible </span>
 <span id="L327" class="LineNr">327 </span><span class="Comment">   functions assigning values to those variables.  */</span>
-<span id="L328" class="LineNr"><a href="#tl-184" data-file="test_lib" title="test_possible_states" class="checkmark">&10004;</a>328 </span><span class="Identifier">possible_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(s, r) {
+<span id="L328" class="LineNr"><a href="#tl-184" data-file="test_lib" title="test_possible_states" class="checkmark">&#10004;</a>328 </span><span class="Identifier">possible_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(s, r) {
 <span id="L329" class="LineNr">329 </span>  <span class="Statement">if</span> (s <span class="Type">==</span> {} <span class="Type">||</span> r <span class="Type">==</span> {}) {
 <span id="L330" class="LineNr">330 </span>    <span class="Statement">return</span> {{}};
 <span id="L331" class="LineNr">331 </span>  }
@@ -5118,13 +5118,13 @@
 <span id="L333" class="LineNr">333 </span>};
 <span id="L334" class="LineNr">334 </span>
 <span id="L335" class="LineNr">335 </span><span class="Comment">/* Takes a function and returns all partial functions, including empty.  */</span>
-<span id="L336" class="LineNr"><a href="#tl-197" data-file="test_lib" title="test_partial_functions" class="checkmark">&10004;</a>336 </span><span class="Identifier">partial_functions</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(f) {
+<span id="L336" class="LineNr"><a href="#tl-197" data-file="test_lib" title="test_partial_functions" class="checkmark">&#10004;</a>336 </span><span class="Identifier">partial_functions</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(f) {
 <span id="L337" class="LineNr">337 </span>  <span class="Statement">return</span> <span class="Constant">2</span> <span class="Type">**</span> f;
 <span id="L338" class="LineNr">338 </span>};
 <span id="L339" class="LineNr">339 </span>
 <span id="L340" class="LineNr">340 </span><span class="Comment">/* Takes two functions assigning values to vars and tests whether they are</span>
 <span id="L341" class="LineNr">341 </span><span class="Comment">   compatible, i.e. do not assign different values to the same var.  */</span>
-<span id="L342" class="LineNr"><a href="#tl-204" data-file="test_lib" title="test_compatible_values" class="checkmark">&10004;</a>342 </span><span class="Identifier">compatible_values</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(f, g) {
+<span id="L342" class="LineNr"><a href="#tl-204" data-file="test_lib" title="test_compatible_values" class="checkmark">&#10004;</a>342 </span><span class="Identifier">compatible_values</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(f, g) {
 <span id="L343" class="LineNr">343 </span>  h <span class="Statement">:=</span> f <span class="Type">+</span> g;
 <span id="L344" class="LineNr">344 </span>  <span class="Statement">return</span> <span class="Type">forall</span>(var <span class="Type">in</span> <span class="Identifier">domain</span>(f) <span class="Type">+</span> <span class="Identifier">domain</span>(g) <span class="Type">|</span> h[var] <span class="Type">!=</span> <span class="Constant">om</span>);
 <span id="L345" class="LineNr">345 </span>};
@@ -5134,7 +5134,7 @@
 <span id="L349" class="LineNr">349 </span><span class="Comment">   variables, and set of complete states cs, a set of functions assigning </span>
 <span id="L350" class="LineNr">350 </span><span class="Comment">   values to a larger set of variables and returns the subset of cs compatible </span>
 <span id="L351" class="LineNr">351 </span><span class="Comment">   with ps.  */</span>
-<span id="L352" class="LineNr"><a href="#tl-219" data-file="test_lib" title="test_compatible_complete_states" class="checkmark">&10004;</a>352 </span><span class="Identifier">compatible_complete_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(ps, cs) {
+<span id="L352" class="LineNr"><a href="#tl-219" data-file="test_lib" title="test_compatible_complete_states" class="checkmark">&#10004;</a>352 </span><span class="Identifier">compatible_complete_states</span> <span class="Statement">:=</span> <span class="Type">cachedProcedure</span>(ps, cs) {
 <span id="L353" class="LineNr">353 </span>  <span class="Statement">return</span> { c <span class="Type">:</span> c <span class="Type">in</span> cs
 <span id="L354" class="LineNr">354 </span>             <span class="Type">|</span> <span class="Type">forall</span>(d <span class="Type">in</span> <span class="Identifier">domain</span>(ps) <span class="Type">|</span> c[d] <span class="Type">==</span> ps[d] ) };
 <span id="L355" class="LineNr">355 </span>};
@@ -5159,12 +5159,12 @@
 <span id="L374" class="LineNr">374 </span>  <span class="Statement">return</span> { <a class="Identifier code-proc-link" href="#l-751">restrict_domain</a>(cs, vars <span class="Type">-</span> unneeded) <span class="Type">:</span> cs <span class="Type">in</span> css };
 <span id="L375" class="LineNr">375 </span>};
 <span id="L376" class="LineNr">376 </span>
-<span id="L377" class="LineNr"><a href="#tl-232" data-file="test_lib" title="test_proc2func" class="checkmark">&10004;</a>377 </span><span class="Identifier">proc2func</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p, dom) {
+<span id="L377" class="LineNr"><a href="#tl-232" data-file="test_lib" title="test_proc2func" class="checkmark">&#10004;</a>377 </span><span class="Identifier">proc2func</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(p, dom) {
 <span id="L378" class="LineNr">378 </span>  <span class="Statement">return</span> { [d, <span class="Identifier">p</span>(d)] <span class="Type">:</span> d <span class="Type">in</span> dom };
 <span id="L379" class="LineNr">379 </span>};
 <span id="L380" class="LineNr">380 </span>
 <span id="L381" class="LineNr">381 </span><span class="Comment">// Breaks apart a var label of form 'V_ti' into ['V', i]</span>
-<span id="L382" class="LineNr"><a href="#tl-240" data-file="test_lib" title="test_parse_var" class="checkmark">&10004;</a>382 </span><span class="Identifier">parse_var</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(label) {
+<span id="L382" class="LineNr"><a href="#tl-240" data-file="test_lib" title="test_parse_var" class="checkmark">&#10004;</a>382 </span><span class="Identifier">parse_var</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(label) {
 <span id="L383" class="LineNr">383 </span>  j <span class="Statement">:=</span> <span class="Type">#</span>label;
 <span id="L384" class="LineNr">384 </span>  <span class="Statement">while</span> (<span class="Identifier">int</span>(label[j]) <span class="Type">!=</span> <span class="Constant">om</span> <span class="Type">&amp;&amp;</span> j <span class="Type">!=</span> <span class="Constant">1</span>) {
 <span id="L385" class="LineNr">385 </span>    j <span class="Statement">-=</span> <span class="Constant">1</span>;
@@ -5175,23 +5175,23 @@
 <span id="L390" class="LineNr">390 </span>  <span class="Statement">return</span> [var, t];
 <span id="L391" class="LineNr">391 </span>};
 <span id="L392" class="LineNr">392 </span>
-<span id="L393" class="LineNr"><a href="#tl-247" data-file="test_lib" title="test_orig_var" class="checkmark">&10004;</a>393 </span><span class="Identifier">orig_var</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(label) {
+<span id="L393" class="LineNr"><a href="#tl-247" data-file="test_lib" title="test_orig_var" class="checkmark">&#10004;</a>393 </span><span class="Identifier">orig_var</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(label) {
 <span id="L394" class="LineNr">394 </span>  <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-382">parse_var</a>(label)[<span class="Constant">1</span>];
 <span id="L395" class="LineNr">395 </span>};
 <span id="L396" class="LineNr">396 </span>
-<span id="L397" class="LineNr"><a href="#tl-254" data-file="test_lib" title="test_var_time" class="checkmark">&10004;</a>397 </span><span class="Identifier">var_time</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(label) {
+<span id="L397" class="LineNr"><a href="#tl-254" data-file="test_lib" title="test_var_time" class="checkmark">&#10004;</a>397 </span><span class="Identifier">var_time</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(label) {
 <span id="L398" class="LineNr">398 </span>  <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-382">parse_var</a>(label)[<span class="Constant">2</span>];
 <span id="L399" class="LineNr">399 </span>};
 <span id="L400" class="LineNr">400 </span>
 <span id="L401" class="LineNr">401 </span><span class="Comment">/* Takes an assignment of values to variables and adds a time subscript to the </span>
 <span id="L402" class="LineNr">402 </span><span class="Comment">   variables' labels. */</span>
-<span id="L403" class="LineNr"><a href="#tl-261" data-file="test_lib" title="test_assign_time" class="checkmark">&10004;</a>403 </span><span class="Identifier">assign_time</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(g, t) {
+<span id="L403" class="LineNr"><a href="#tl-261" data-file="test_lib" title="test_assign_time" class="checkmark">&#10004;</a>403 </span><span class="Identifier">assign_time</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(g, t) {
 <span id="L404" class="LineNr">404 </span>  <span class="Statement">return</span> { [ y<span class="Type">+</span><span class="Constant">'_t'</span><span class="Type">+</span>t, g[y] ] <span class="Type">:</span> y <span class="Type">in</span> <span class="Identifier">domain</span>(g) };
 <span id="L405" class="LineNr">405 </span>};
 <span id="L406" class="LineNr">406 </span>
 <span id="L407" class="LineNr">407 </span><span class="Comment">/* Takes an assignment of values to variables and removes time subscripts </span>
 <span id="L408" class="LineNr">408 </span><span class="Comment">   from the variables' labels. */</span>
-<span id="L409" class="LineNr"><a href="#tl-269" data-file="test_lib" title="test_drop_time" class="checkmark">&10004;</a>409 </span><span class="Identifier">drop_time</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(g) {
+<span id="L409" class="LineNr"><a href="#tl-269" data-file="test_lib" title="test_drop_time" class="checkmark">&#10004;</a>409 </span><span class="Identifier">drop_time</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(g) {
 <span id="L410" class="LineNr">410 </span>  <span class="Statement">return</span> { [ <a class="Identifier code-proc-link" href="#l-393">orig_var</a>(y), g[y] ] <span class="Type">:</span> y <span class="Type">in</span> <span class="Identifier">domain</span>(g) };
 <span id="L411" class="LineNr">411 </span>};
 <span id="L412" class="LineNr">412 </span>
@@ -5308,7 +5308,7 @@
 <span id="L523" class="LineNr">523 </span>  <span class="Statement">return</span> expr <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-516">derive</a>(<a class="Identifier code-proc-link" href="#l-552">subformulas</a>(expr), <span class="Constant">10</span> <span class="Type">**</span> <span class="Constant">6</span>);
 <span id="L524" class="LineNr">524 </span>};
 <span id="L525" class="LineNr">525 </span>
-<span id="L526" class="LineNr"><a href="#tl-286" data-file="test_lib" title="test_parse_vars" class="checkmark">&10004;</a>526 </span><span class="Identifier">parse_vars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
+<span id="L526" class="LineNr"><a href="#tl-286" data-file="test_lib" title="test_parse_vars" class="checkmark">&#10004;</a>526 </span><span class="Identifier">parse_vars</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
 <span id="L527" class="LineNr">527 </span>  <span class="Statement">if</span> (<span class="Identifier">isTerm</span>(expr)) {
 <span id="L528" class="LineNr">528 </span>    parse_more <span class="Statement">:=</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-526">parse_vars</a>(arg) <span class="Type">:</span> arg <span class="Type">in</span> <span class="Identifier">args</span>(expr) };
 <span id="L529" class="LineNr">529 </span>    <span class="Statement">if</span> (<span class="Identifier">fct</span>(expr) <span class="Type">in</span> {<span class="Constant">'Forall'</span>, <span class="Constant">'Exists'</span>}) {
@@ -5322,7 +5322,7 @@
 <span id="L537" class="LineNr">537 </span>};
 <span id="L538" class="LineNr">538 </span>
 <span id="L539" class="LineNr">539 </span><span class="Comment">/* Substitute any occurrences of var in expr with sub_var instead. */</span>
-<span id="L540" class="LineNr"><a href="#tl-294" data-file="test_lib" title="test_sub" class="checkmark">&10004;</a>540 </span><span class="Identifier">sub</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, var, sub_var) {
+<span id="L540" class="LineNr"><a href="#tl-294" data-file="test_lib" title="test_sub" class="checkmark">&#10004;</a>540 </span><span class="Identifier">sub</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr, var, sub_var) {
 <span id="L541" class="LineNr">541 </span>  <span class="Statement">if</span> (<span class="Identifier">isTerm</span>(expr)) {
 <span id="L542" class="LineNr">542 </span>    <span class="Statement">return</span> <span class="Identifier">makeTerm</span>(<span class="Identifier">fct</span>(expr), [<a class="Identifier code-proc-link" href="#l-540">sub</a>(arg, var, sub_var) <span class="Type">:</span> arg <span class="Type">in</span> <span class="Identifier">args</span>(expr)]);
 <span id="L543" class="LineNr">543 </span>  } <span class="Statement">else</span> {
@@ -5334,7 +5334,7 @@
 <span id="L549" class="LineNr">549 </span>  }
 <span id="L550" class="LineNr">550 </span>};
 <span id="L551" class="LineNr">551 </span>
-<span id="L552" class="LineNr"><a href="#tl-302" data-file="test_lib" title="test_subformulas" class="checkmark">&10004;</a>552 </span><span class="Identifier">subformulas</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
+<span id="L552" class="LineNr"><a href="#tl-302" data-file="test_lib" title="test_subformulas" class="checkmark">&#10004;</a>552 </span><span class="Identifier">subformulas</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(expr) {
 <span id="L553" class="LineNr">553 </span>  <span class="Statement">if</span> (<span class="Identifier">isTerm</span>(expr) <span class="Type">&amp;&amp;</span> <span class="Identifier">fct</span>(expr) <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-72">connectives</a>()) {
 <span id="L554" class="LineNr">554 </span>    <span class="Statement">return</span> { expr } <span class="Type">+</span> (<span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-552">subformulas</a>(arg) <span class="Type">:</span> arg <span class="Type">in</span> <span class="Identifier">args</span>(expr) })
 <span id="L555" class="LineNr">555 </span>                    <span class="Type">-</span> <a class="Identifier code-proc-link" href="#l-526">parse_vars</a>(expr);
@@ -5348,7 +5348,7 @@
 <span id="L563" class="LineNr">563 </span><span class="Comment">    closest point in the other set."   </span>
 <span id="L564" class="LineNr">564 </span><span class="Comment">      -- <a href="https://en.wikipedia.org/wiki/Hausdorff_distance" target="_blank">https://en.wikipedia.org/wiki/Hausdorff_distance</a> </span>
 <span id="L565" class="LineNr">565 </span><span class="Comment">*/</span>
-<span id="L566" class="LineNr"><a href="#tl-313" data-file="test_lib" title="test_hausdorff_dist" class="checkmark">&10004;</a>566 <a title="1.2.3.5.2.3.4" class="back_to_li" href="#t-1-2-3-5-2-3-4"><i class="fas fa-list-ol"></i></a><a title="1.4.2.2.3" class="back_to_li" href="#t-1-4-2-2-3"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">hausdorff_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(s1, s2, dist_f) {
+<span id="L566" class="LineNr"><a href="#tl-313" data-file="test_lib" title="test_hausdorff_dist" class="checkmark">&#10004;</a>566 <a title="1.2.3.5.2.3.4" class="back_to_li" href="#t-1-2-3-5-2-3-4"><i class="fas fa-list-ol"></i></a><a title="1.4.2.2.3" class="back_to_li" href="#t-1-4-2-2-3"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">hausdorff_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(s1, s2, dist_f) {
 <span id="L567" class="LineNr">567 </span>  <span class="Identifier">dist_to_closest</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(e1) {
 <span id="L568" class="LineNr">568 </span>    <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-10">min</a>([ <span class="Identifier">dist_f</span>(e1, e2) <span class="Type">:</span> e2 <span class="Type">in</span> s2 ]);
 <span id="L569" class="LineNr">569 </span>  };
@@ -5367,7 +5367,7 @@
 <span id="L582" class="LineNr">582 </span><span class="Comment">    take to place one list in the same order as the other list."</span>
 <span id="L583" class="LineNr">583 </span><span class="Comment">      -- <a href="https://en.wikipedia.org/wiki/Kendall_tau_distance" target="_blank">https://en.wikipedia.org/wiki/Kendall_tau_distance</a>  </span>
 <span id="L584" class="LineNr">584 </span><span class="Comment">*/</span>
-<span id="L585" class="LineNr"><a href="#tl-321" data-file="test_lib" title="test_kendalls_tau_dist" class="checkmark">&10004;</a>585 <a title="1.2.3.5.2.3.5" class="back_to_li" href="#t-1-2-3-5-2-3-5"><i class="fas fa-list-ol"></i></a><a title="1.4.2.2.4" class="back_to_li" href="#t-1-4-2-2-4"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">kendalls_tau_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(u1, u2) {
+<span id="L585" class="LineNr"><a href="#tl-321" data-file="test_lib" title="test_kendalls_tau_dist" class="checkmark">&#10004;</a>585 <a title="1.2.3.5.2.3.5" class="back_to_li" href="#t-1-2-3-5-2-3-5"><i class="fas fa-list-ol"></i></a><a title="1.4.2.2.4" class="back_to_li" href="#t-1-4-2-2-4"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">kendalls_tau_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(u1, u2) {
 <span id="L586" class="LineNr">586 </span>  pairs <span class="Statement">:=</span> { [x,y] <span class="Type">:</span> [x,y] <span class="Type">in</span> <a class="Identifier code-proc-link" href="#l-606">states_u</a>(u1) <span class="Type">&gt;&lt;</span> <a class="Identifier code-proc-link" href="#l-606">states_u</a>(u1) <span class="Type">|</span> x <span class="Type">!=</span> y };
 <span id="L587" class="LineNr">587 </span>  <span class="Comment">// Discordant (unordered) pairs</span>
 <span id="L588" class="LineNr">588 </span>  disc_un_pairs <span class="Statement">:=</span> <span class="Type">#</span>{ [x,y] <span class="Type">:</span> [x,y] <span class="Type">in</span> pairs
@@ -5381,7 +5381,7 @@
 <span id="L596" class="LineNr">596 </span><span class="Comment">/* Takes an ordinal utility function expressed as a set of SuccEq setlx</span>
 <span id="L597" class="LineNr">597 </span><span class="Comment">   functors comparing events or states and returns the set of atomic variables</span>
 <span id="L598" class="LineNr">598 </span><span class="Comment">   those events or states range over.  */</span>
-<span id="L599" class="LineNr"><a href="#tl-339" data-file="test_lib" title="test_atom_u" class="checkmark">&10004;</a>599 </span><span class="Identifier">atom_u</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(u) {
+<span id="L599" class="LineNr"><a href="#tl-339" data-file="test_lib" title="test_atom_u" class="checkmark">&#10004;</a>599 </span><span class="Identifier">atom_u</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(u) {
 <span id="L600" class="LineNr">600 </span>  states <span class="Statement">:=</span> <span class="Type">+/</span> { { <span class="Identifier">args</span>(pref)[<span class="Constant">1</span>], <span class="Identifier">args</span>(pref)[<span class="Constant">2</span>] } <span class="Type">:</span> pref <span class="Type">in</span> u };
 <span id="L601" class="LineNr">601 </span>  <span class="Statement">return</span> <span class="Type">+/</span> { <span class="Identifier">domain</span>(state) <span class="Type">:</span> state <span class="Type">in</span> states };
 <span id="L602" class="LineNr">602 </span>};
@@ -5393,7 +5393,7 @@
 <span id="L608" class="LineNr">608 </span>};
 <span id="L609" class="LineNr">609 </span>
 <span id="L610" class="LineNr">610 </span><span class="Comment">/* Cardinal Utility Function to Ordinal Utility Function */</span>
-<span id="L611" class="LineNr"><a href="#tl-347" data-file="test_lib" title="test_card_u_to_ord_u" class="checkmark">&10004;</a>611 <a title="1.2.3.5.2.3.2.2" class="back_to_li" href="#t-1-2-3-5-2-3-2-2"><i class="fas fa-list-ol"></i></a><a title="1.4.2.2.1" class="back_to_li" href="#t-1-4-2-2-1"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">card_u_to_ord_u</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(card_u, state_space, probs) {
+<span id="L611" class="LineNr"><a href="#tl-347" data-file="test_lib" title="test_card_u_to_ord_u" class="checkmark">&#10004;</a>611 <a title="1.2.3.5.2.3.2.2" class="back_to_li" href="#t-1-2-3-5-2-3-2-2"><i class="fas fa-list-ol"></i></a><a title="1.4.2.2.1" class="back_to_li" href="#t-1-4-2-2-1"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">card_u_to_ord_u</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(card_u, state_space, probs) {
 <span id="L612" class="LineNr">612 </span>  poss_lotteries <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-297">choices</a>({ { [state, prob] <span class="Type">:</span> prob <span class="Type">in</span> probs }
 <span id="L613" class="LineNr">613 </span>                              <span class="Type">:</span> state <span class="Type">in</span> state_space });
 <span id="L614" class="LineNr">614 </span>  lotteries <span class="Statement">:=</span> { lottery <span class="Type">:</span> lottery <span class="Type">in</span> poss_lotteries
@@ -5417,7 +5417,7 @@
 <span id="L632" class="LineNr">632 </span><span class="Comment">   Returns a cardinal utility function assigning values to states rather than</span>
 <span id="L633" class="LineNr">633 </span><span class="Comment">   expressions.</span>
 <span id="L634" class="LineNr">634 </span><span class="Comment">*/</span>
-<span id="L635" class="LineNr"><a href="#tl-361" data-file="test_lib" title="test_add_u_to_card_u" class="checkmark">&10004;</a>635 <a title="1.2.3.5.2.3.2.1" class="back_to_li" href="#t-1-2-3-5-2-3-2-1"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">add_u_to_card_u</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(add_u, state_space) {
+<span id="L635" class="LineNr"><a href="#tl-361" data-file="test_lib" title="test_add_u_to_card_u" class="checkmark">&#10004;</a>635 <a title="1.2.3.5.2.3.2.1" class="back_to_li" href="#t-1-2-3-5-2-3-2-1"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">add_u_to_card_u</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(add_u, state_space) {
 <span id="L636" class="LineNr">636 </span>  atoms <span class="Statement">:=</span> <span class="Type">+/</span> { <span class="Identifier">domain</span>(state) <span class="Type">:</span> state <span class="Type">in</span> state_space };
 <span id="L637" class="LineNr">637 </span>  <span class="Identifier">util</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(state) {
 <span id="L638" class="LineNr">638 </span>    sum <span class="Statement">:=</span> <span class="Type">+/</span> { val <span class="Type">:</span> [expr, val] <span class="Type">in</span> add_u <span class="Type">|</span> <a class="Identifier code-proc-link" href="#l-658">is_true_in</a>(expr, state, atoms) };
@@ -5429,7 +5429,7 @@
 <span id="L644" class="LineNr">644 </span>
 <span id="L645" class="LineNr">645 </span><span class="Comment">/* Expressions to State Space:</span>
 <span id="L646" class="LineNr">646 </span><span class="Comment">   Return the possible ways of assigning true or false to each expr in exprs. */</span>
-<span id="L647" class="LineNr"><a href="#tl-457" data-file="test_lib" title="test_exprs_to_state_space" class="checkmark">&10004;</a>647 </span><span class="Identifier">exprs_to_state_space</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(exprs) {
+<span id="L647" class="LineNr"><a href="#tl-457" data-file="test_lib" title="test_exprs_to_state_space" class="checkmark">&#10004;</a>647 </span><span class="Identifier">exprs_to_state_space</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(exprs) {
 <span id="L648" class="LineNr">648 </span>  <span class="Statement">if</span> (dev) { <span class="Identifier">print</span>(<span class="Constant">'exprs_to_state_space '</span> <span class="Type">+</span> exprs); }
 <span id="L649" class="LineNr">649 </span>  atoms <span class="Statement">:=</span> <span class="Type">+/</span> { <a class="Identifier code-proc-link" href="#l-120">atomic_formulas</a>(expr) <span class="Type">:</span> expr <span class="Type">in</span> exprs };
 <span id="L650" class="LineNr">650 </span>  <span class="Statement">return</span> <a class="Identifier code-proc-link" href="#l-297">choices</a>({ {[atom,<span class="Constant">true</span>], [atom,<span class="Constant">false</span>]} <span class="Type">:</span> atom <span class="Type">in</span> atoms });
@@ -5456,7 +5456,7 @@
 <span id="L671" class="LineNr">671 </span><span class="Comment">     than elicit them through votes, we don't need to be concerned with </span>
 <span id="L672" class="LineNr">672 </span><span class="Comment">     strategic manipulation through insincere votes.</span>
 <span id="L673" class="LineNr">673 </span><span class="Comment">*/</span>
-<span id="L674" class="LineNr"><a href="#tl-379" data-file="test_lib" title="test_ord_u_dist" class="checkmark">&10004;</a>674 <a title="1.2.3.5.2.3" class="back_to_li" href="#t-1-2-3-5-2-3"><i class="fas fa-list-ol"></i></a><a title="1.4.2.2" class="back_to_li" href="#t-1-4-2-2"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">ord_u_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(u1, u2) {
+<span id="L674" class="LineNr"><a href="#tl-379" data-file="test_lib" title="test_ord_u_dist" class="checkmark">&#10004;</a>674 <a title="1.2.3.5.2.3" class="back_to_li" href="#t-1-2-3-5-2-3"><i class="fas fa-list-ol"></i></a><a title="1.4.2.2" class="back_to_li" href="#t-1-4-2-2"><i class="fas fa-list-ol"></i></a></span><span class="Identifier">ord_u_dist</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(u1, u2) {
 <span id="L675" class="LineNr">675 </span>  lots <span class="Statement">:=</span> <a class="Identifier code-proc-link" href="#l-702">lots_of_u</a>(u1) <span class="Type">+</span> <a class="Identifier code-proc-link" href="#l-702">lots_of_u</a>(u2);
 <span id="L676" class="LineNr">676 </span>  <span class="Identifier">sharpenings</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(u) {
 <span id="L677" class="LineNr">677 </span>    poss_total_orders <span class="Statement">:=</span> <span class="Identifier">permutations</span>([lot <span class="Type">:</span> lot <span class="Type">in</span> lots]);
@@ -5490,7 +5490,7 @@
 <span id="L705" class="LineNr">705 </span>};
 <span id="L706" class="LineNr">706 </span>
 <span id="L707" class="LineNr">707 </span><span class="Comment">/* p 56 of setlx tutorial */</span>
-<span id="L708" class="LineNr"><a href="#tl-399" data-file="test_lib" title="test_sort_list" class="checkmark">&10004;</a>708 </span><span class="Identifier">sort_list</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l, cmp) {
+<span id="L708" class="LineNr"><a href="#tl-399" data-file="test_lib" title="test_sort_list" class="checkmark">&#10004;</a>708 </span><span class="Identifier">sort_list</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(l, cmp) {
 <span id="L709" class="LineNr">709 </span>  <span class="Statement">if</span> (<span class="Type">#</span>l <span class="Type">&lt;</span> <span class="Constant">2</span>) { <span class="Statement">return</span> l; }
 <span id="L710" class="LineNr">710 </span>  m <span class="Statement">:=</span> <span class="Type">#</span>l <span class="Type">\</span> <span class="Constant">2</span>;
 <span id="L711" class="LineNr">711 </span>  [l1, l2] <span class="Statement">:=</span> [l[<span class="Statement">..</span> m], l[m<span class="Type">+</span><span class="Constant">1</span> <span class="Statement">..</span>]];
@@ -5533,11 +5533,11 @@
 <span id="L748" class="LineNr">748 </span>  <span class="Statement">return</span> poss_strs;
 <span id="L749" class="LineNr">749 </span>};
 <span id="L750" class="LineNr">750 </span>
-<span id="L751" class="LineNr"><a href="#tl-420" data-file="test_lib" title="test_restrict_domain" class="checkmark">&10004;</a>751 </span><span class="Identifier">restrict_domain</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(event, vars) {
+<span id="L751" class="LineNr"><a href="#tl-420" data-file="test_lib" title="test_restrict_domain" class="checkmark">&#10004;</a>751 </span><span class="Identifier">restrict_domain</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(event, vars) {
 <span id="L752" class="LineNr">752 </span>  <span class="Statement">return</span> { [var, val] <span class="Type">:</span> [var, val] <span class="Type">in</span> event <span class="Type">|</span> var <span class="Type">in</span> vars };
 <span id="L753" class="LineNr">753 </span>};
 <span id="L754" class="LineNr">754 </span>
-<span id="L755" class="LineNr"><a href="#tl-428" data-file="test_lib" title="test_restricted_eq" class="checkmark">&10004;</a>755 </span><span class="Identifier">restricted_eq</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(state, event) {
+<span id="L755" class="LineNr"><a href="#tl-428" data-file="test_lib" title="test_restricted_eq" class="checkmark">&#10004;</a>755 </span><span class="Identifier">restricted_eq</span> <span class="Statement">:=</span> <span class="Type">procedure</span>(state, event) {
 <span id="L756" class="LineNr">756 </span>  <span class="Statement">return</span> event <span class="Type">==</span> <a class="Identifier code-proc-link" href="#l-751">restrict_domain</a>(state, <span class="Identifier">domain</span>(event));
 <span id="L757" class="LineNr">757 </span>};
 <span id="L758" class="LineNr">758 </span>

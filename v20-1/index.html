@@ -7013,6 +7013,9 @@
 					 style="position: relative; top: -4px; cursor: pointer;"
 					 onclick="window.alert_coin('XRP');">
 			<script type="text/javascript">
+				if (location.protocol !== 'https:') {
+					location.replace(`https:${location.href.substring(location.protocol.length)}`);
+				}
 				window.digest = async function(msg) {
 					const encoder = new TextEncoder();
 					const data = encoder.encode(msg);

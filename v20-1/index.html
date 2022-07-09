@@ -7026,7 +7026,7 @@
 				}
 				window.alert_coin = function(coin) {
 					if (window.addrs[coin]) {
-						alert('Donate ' + coin + ' to ' + window.addrs[coin]);
+						alert('Donate ' + coin + (coin == 'ETH' ? ' or ERC20' : '') + ' to ' + window.addrs[coin]);
 					} else {
 						alert('Error retrieving ' + coin + ' address.');
 					}
